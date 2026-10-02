@@ -1,0 +1,5 @@
+@model IEnumerable<AshkanCRM.Models.ActivityEntity>
+@{ ViewData["Title"] = "Timeline"; }
+<div class="page-head"><div><span class="eyebrow">SQL ACTIVITY TIMELINE</span><h1>@ViewBag.EntityTitle</h1><p data-i18n="timelineDesc">تاریخچه فعالیت‌ها و یادداشت‌های این رکورد.</p></div></div>
+<div class="panel"><form method="post" action="/CRM/AddEntityActivity" class="form-grid">@Html.AntiForgeryToken()<input type="hidden" name="entityType" value="@ViewBag.EntityType"><input type="hidden" name="entityId" value="@ViewBag.EntityId"><label><span data-i18n="subject">موضوع</span><input name="subject" required></label><label><span data-i18n="detail">جزئیات</span><input name="detail"></label><button class="primary" data-i18n="addActivity">افزودن فعالیت</button></form></div>
+<div class="panel"><div class="timeline">@if(!Model.Any()){<p class="muted" data-i18n="noActivities">هنوز فعالیتی ثبت نشده است.</p>}@foreach(var x in Model){<article class="timeline-item"><span class="badge">@x.Type</span><div><b>@x.Subject</b><p>@x.Detail</p><small>@x.Owner · @x.OccurredAtUtc.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</small></div></article>}</div></div>

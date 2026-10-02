@@ -1,0 +1,4 @@
+@model IEnumerable<AshkanCRM.Models.ProductItem>
+@{ ViewData["Title"]="محصولات و خدمات"; }
+<div class="page-head"><div><p class="eyebrow">CATALOG</p><h1>محصولات و خدمات</h1><p>کاتالوگ مرکزی قیمت‌گذاری برای فروش و پیشنهادها</p></div><button class="primary">＋ محصول جدید</button></div>
+<div class="catalog-grid">@foreach(var x in Model){<article class="feature-card"><span class="feature-icon">◆</span><small>@x.Category · @x.Sku</small><h2>@x.Name</h2><strong>@x.Price.ToString("N0") ریال</strong><footer><span class="status">@x.Status</span><span>موجودی: @x.Stock</span></footer></article>}</div>

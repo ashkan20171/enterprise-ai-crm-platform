@@ -1,0 +1,4 @@
+@model IEnumerable<AshkanCRM.Models.NotificationEntity>
+@{ ViewData["Title"]="Notifications"; }
+<div class="page-head"><div><span class="eyebrow">PERSISTENT NOTIFICATION CENTER</span><h1 data-i18n="notifications">اعلان‌ها</h1><p data-i18n="notificationDesc">اعلان‌های پایدار و مبتنی بر رویدادهای CRM.</p></div></div>
+<div class="panel">@if(!Model.Any()){<p class="muted" data-i18n="noNotifications">اعلان جدیدی وجود ندارد.</p>}@foreach(var n in Model){<article class="notification-row @(n.IsRead?"":"unread")"><div><span class="badge">@n.Type</span><b>@n.Title</b><p>@n.Message</p><small>@n.CreatedAtUtc.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</small></div>@if(!n.IsRead){<form method="post" action="/CRM/MarkNotificationRead">@Html.AntiForgeryToken()<input type="hidden" name="id" value="@n.Id"><button class="ghost" data-i18n="markRead">خوانده شد</button></form>}</article>}</div>

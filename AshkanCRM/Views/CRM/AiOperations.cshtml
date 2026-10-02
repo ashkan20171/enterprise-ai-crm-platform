@@ -1,0 +1,3 @@
+@{ ViewData["Title"]="AI Operations"; }
+<div class="page-head"><div><span class="eyebrow">EXPLAINABLE AI • SCOPE AWARE</span><h1>AI Operations Assistant</h1><p>Ask operational questions. The local assistant only reads CRM records available to your current data scope.</p></div></div>
+<form class="card ai-prompt" method="get"><input name="q" value="@ViewBag.Query" placeholder="e.g. Which deals are risky? / hot leads / pipeline summary"><button class="primary">Analyze</button></form><div class="card ai-answer"><span class="eyebrow">ASSISTANT RESPONSE</span><h3>@ViewBag.Answer</h3><p class="muted">Explainable local intelligence; no external model or hidden API key is required.</p></div>

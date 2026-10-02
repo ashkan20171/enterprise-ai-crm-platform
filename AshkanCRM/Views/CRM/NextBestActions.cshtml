@@ -1,0 +1,5 @@
+@model IEnumerable<AshkanCRM.Models.NextBestActionVm>
+@{ ViewData["Title"]="Next Best Action"; }
+<div class="page-head"><div><span class="eyebrow">AI-READY SALES ASSISTANT</span><h1>Next Best Action</h1><p>پیشنهاد اقدام بعدی بر اساس Pipeline مجاز کاربر؛ بدون نمایش داده خارج از Scope.</p></div><a class="secondary" href="/CRM/AiCopilot">AI Copilot</a></div>
+<div class="stats compact"><article><small>پیشنهادها</small><strong>@Model.Count()</strong></article><article><small>کارهای عقب‌افتاده</small><strong>@ViewBag.OverdueTasks</strong></article></div>
+<section class="panel"><div class="nba-grid">@foreach(var x in Model){<article class="insight-card"><div class="panel-title"><span class="badge">Priority @x.Priority</span><a href="/CRM/DealTimeline?id=@x.DealId">#@x.DealId</a></div><h3>@x.DealTitle</h3><b>@x.Action</b><p>@x.Reason</p></article>}@if(!Model.Any()){<div class="empty">در حال حاضر اقدام پیشنهادی فوری وجود ندارد.</div>}</div></section>

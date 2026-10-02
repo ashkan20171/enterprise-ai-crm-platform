@@ -1,0 +1,4 @@
+@model IEnumerable<AshkanCRM.Models.SavedViewItem>
+@{ ViewData["Title"]="نماهای ذخیره‌شده"; }
+<div class="page-head"><div><p class="eyebrow">PRODUCTIVITY</p><h1>نماهای هوشمند و ذخیره‌شده</h1><p>فیلترهای پرتکرار تیم را ذخیره و در صورت نیاز با همکاران به اشتراک بگذارید.</p></div><button class="primary">＋ نمای جدید</button></div>
+<div class="cards-3">@foreach(var x in Model){<article class="panel"><span class="badge">@x.Module</span><h2>@x.Name</h2><p>@x.Filter</p><small>@x.Owner • @(x.Shared?"Shared":"Private")</small><div style="margin-top:14px"><button class="chip">باز کردن</button></div></article>}</div>

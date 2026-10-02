@@ -1,0 +1,5 @@
+@model IEnumerable<AshkanCRM.Models.QuoteItem>
+@{ ViewData["Title"]="پیشنهادها"; }
+<div class="page-head"><div><p class="eyebrow">CPQ</p><h1>پیشنهاد قیمت و قرارداد</h1><p>مدیریت چرخه Quote تا تایید و تبدیل به قرارداد</p></div><button class="primary">＋ پیشنهاد جدید</button></div>
+<div class="stats-grid"><article class="stat"><span>ارزش پیشنهادها</span><strong>@Model.Sum(x=>x.Amount).ToString("N0")</strong><small>ریال</small></article><article class="stat"><span>در انتظار اقدام</span><strong>@Model.Count(x=>x.Status!="تایید شده")</strong><small>پیشنهاد</small></article><article class="stat"><span>تایید شده</span><strong>@Model.Count(x=>x.Status=="تایید شده")</strong><small>این دوره</small></article></div>
+<section class="panel"><div class="table-wrap"><table><thead><tr><th>شماره</th><th>مشتری</th><th>مسئول</th><th>مبلغ</th><th>وضعیت</th><th>اعتبار تا</th></tr></thead><tbody>@foreach(var x in Model){<tr><td><b>@x.Number</b></td><td>@x.Customer</td><td>@x.Owner</td><td>@x.Amount.ToString("N0")</td><td><span class="badge">@x.Status</span></td><td>@x.ValidUntil</td></tr>}</tbody></table></div></section>

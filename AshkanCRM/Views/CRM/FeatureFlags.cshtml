@@ -1,0 +1,4 @@
+@model IEnumerable<AshkanCRM.Models.FeatureFlagItem>
+@{ ViewData["Title"]="Feature Flags"; }
+<div class="page-head"><div><span class="eyebrow">ADMIN / RELEASE CONTROL</span><h1>Feature Flags</h1><p>قابلیت‌های جدید را بدون انتشار مجدد برای گروه‌های مشخص فعال یا غیرفعال کنید.</p></div></div>
+<div class="grid cards-2">@foreach(var x in Model){<div class="panel"><div class="panel-title"><div><h3>@x.Name</h3><code>@x.Key</code></div><span class="badge @(x.Enabled?"success":"")">@(x.Enabled?"فعال":"غیرفعال")</span></div><p>Audience: <b>@x.Audience</b></p><small>آخرین تغییر: @x.UpdatedBy</small><div class="panel-actions"><button class="@(x.Enabled?"ghost":"primary")">@(x.Enabled?"غیرفعال‌سازی":"فعال‌سازی")</button></div></div>}</div>

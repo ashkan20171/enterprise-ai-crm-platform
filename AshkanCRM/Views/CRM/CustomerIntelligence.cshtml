@@ -1,0 +1,4 @@
+@model IEnumerable<AshkanCRM.Models.CustomerIntelligenceVm>
+@{ ViewData["Title"]="Customer Intelligence"; }
+<div class="page-head"><div><span class="eyebrow">AI • CUSTOMER 360</span><h1>Customer Intelligence</h1><p>Explainable health, risk and next-best-action signals calculated from scoped CRM data.</p></div></div>
+<div class="intel-grid">@foreach(var x in Model){<article class="card intel-card"><div class="row-between"><h3>@x.Customer</h3><span class="risk @x.Risk.ToLower()">@x.Risk</span></div><div class="health"><strong>@x.HealthScore</strong><span>/100 health</span></div><p>@x.Summary</p><div class="signal"><small>Open pipeline</small><b>@x.OpenPipeline.ToString("N0")</b></div><div class="ai-callout"><b>Next best action</b><p>@x.RecommendedAction</p></div><a class="chip" href="/CRM/Customer360/@x.CustomerId">Open Customer 360</a></article>}</div>

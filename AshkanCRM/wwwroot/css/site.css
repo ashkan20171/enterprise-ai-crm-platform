@@ -1,0 +1,34 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}/* Stage 17: sales execution */
+.card-actions{display:flex;gap:.45rem;align-items:center;flex-wrap:wrap;margin-top:.8rem}.card-actions form{margin:0}.card-actions select{max-width:150px}.notification-row{display:flex;justify-content:space-between;gap:1rem;padding:1rem;border-bottom:1px solid var(--border,#e5e7eb)}.notification-row.unread{font-weight:600}.timeline{display:grid;gap:.8rem}.timeline-item{display:flex;gap:1rem;padding:1rem;border:1px solid var(--border,#e5e7eb);border-radius:14px}.timeline-item p{margin:.35rem 0}.danger{background:#b42318;color:#fff;border:0;border-radius:10px;padding:.65rem 1rem;cursor:pointer}
+/* Stage 19: sales execution */
+.kanban-drop{min-height:180px}.kanban-col.drag-over{outline:2px dashed var(--primary,#6d5dfc);outline-offset:-6px}.deal-card[draggable="true"]{cursor:grab}.deal-card[draggable="true"]:active{cursor:grabbing;opacity:.75}

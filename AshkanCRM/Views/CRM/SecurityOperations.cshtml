@@ -1,0 +1,5 @@
+@model IEnumerable<AshkanCRM.Models.LoginAuditEntity>
+@{ ViewData["Title"]="Security Operations"; }
+<div class="page-head"><div><span class="eyebrow">SECURITY • AUDIT</span><h1>Security Operations</h1><p>Login telemetry, lockout signals and traceable authentication events.</p></div><a class="chip" href="/health">Health endpoint</a></div>
+<div class="kpi-grid"><article class="kpi"><small>Successful / 24h</small><strong>@ViewBag.Success24h</strong></article><article class="kpi"><small>Failed / 24h</small><strong>@ViewBag.Failed24h</strong></article></div>
+<div class="card table-wrap"><table><thead><tr><th>User</th><th>Result</th><th>IP</th><th>Time UTC</th></tr></thead><tbody>@foreach(var x in Model){<tr><td>@x.UserName</td><td><span class="status">@(x.Succeeded?"Success":x.Result)</span></td><td>@x.IpAddress</td><td>@x.CreatedAtUtc.ToString("u")</td></tr>}</tbody></table></div>

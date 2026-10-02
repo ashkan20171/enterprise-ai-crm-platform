@@ -1,0 +1,4 @@
+@model IEnumerable<AshkanCRM.Models.CrmTaskEntity>
+@{ViewData["Title"]="تقویم CRM";}
+<div class="page-head"><div><span class="eyebrow">CRM CALENDAR</span><h1 data-i18n="calendar">تقویم CRM</h1><p data-i18n="calendarSqlDesc">نمای زمانی کارها، Follow-upها، تماس‌ها و جلسات ذخیره‌شده.</p></div><a class="primary" href="/CRM/Tasks">＋ <span data-i18n="newTask">کار جدید</span></a></div>
+<section class="panel"><div class="timeline">@foreach(var x in Model){<article class="timeline-item"><div class="timeline-dot"></div><div><small>@x.DueAtUtc.ToLocalTime().ToString("yyyy/MM/dd HH:mm") · @x.Type</small><h3>@x.Title</h3><p>@x.Description</p><span class="badge">@x.Assignee · @x.Priority · @x.Status</span></div></article>}@if(!Model.Any()){<div class="empty" data-i18n="noCalendarItems">رویدادی وجود ندارد.</div>}</div></section>

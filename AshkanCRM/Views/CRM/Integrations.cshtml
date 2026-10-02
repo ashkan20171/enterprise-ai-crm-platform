@@ -1,0 +1,5 @@
+@model IEnumerable<AshkanCRM.Models.ApiKeyItem>
+@{ViewData["Title"]="Integrations";}
+<div class="page-head"><div><span class="eyebrow">CONNECTED CRM</span><h1>Integration Hub</h1><p>API، Webhook، Email، BI و سیستم‌های سازمانی</p></div><button class="primary">＋ اتصال جدید</button></div>
+<div class="grid-3"><div class="panel"><h3>REST API</h3><p>اتصال امن سرویس‌های خارجی با Scope محدود.</p><span class="badge good">Healthy</span></div><div class="panel"><h3>Webhooks</h3><p>ارسال رویداد Deal/Lead/Ticket به سیستم‌های خارجی.</p><span class="badge good">12 endpoints</span></div><div class="panel"><h3>Email Sync</h3><p>ثبت مکاتبات مشتری در Timeline مرکزی.</p><span class="badge warn">Setup required</span></div></div>
+<section class="panel"><div class="panel-title"><h3>API Keys</h3></div><div class="table-wrap"><table><thead><tr><th>نام</th><th>Prefix</th><th>Scope</th><th>Owner</th><th>آخرین استفاده</th><th>وضعیت</th></tr></thead><tbody>@foreach(var x in Model){<tr><td><b>@x.Name</b></td><td><code>@x.Prefix</code></td><td>@x.Scope</td><td>@x.Owner</td><td>@x.LastUsed</td><td><span class="badge good">@x.Status</span></td></tr>}</tbody></table></div></section>

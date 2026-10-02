@@ -1,0 +1,5 @@
+@model IEnumerable<AshkanCRM.Models.ImportJob>
+@{ViewData["Title"]="Data Management";}
+<div class="page-head"><div><span class="eyebrow">DATA OPERATIONS</span><h1>مدیریت داده</h1><p>Import، کیفیت داده، Deduplication و سیاست نگهداری</p></div><button class="primary">＋ Import جدید</button></div>
+<div class="stats-grid"><div class="stat"><span>Data quality</span><b>96.8%</b><small>↑ 1.4% این ماه</small></div><div class="stat"><span>Duplicates</span><b>27</b><small>نیازمند Merge</small></div><div class="stat"><span>Missing fields</span><b>41</b><small>در 18 رکورد</small></div><div class="stat"><span>Last backup</span><b>02:00</b><small>موفق</small></div></div>
+<section class="panel"><div class="panel-title"><h3>Import history</h3></div><div class="table-wrap"><table><thead><tr><th>فایل</th><th>Entity</th><th>Owner</th><th>نتیجه</th><th>موفق</th><th>خطا</th><th>زمان</th></tr></thead><tbody>@foreach(var x in Model){<tr><td><b>@x.FileName</b></td><td>@x.Entity</td><td>@x.Owner</td><td><span class="badge good">@x.Status</span></td><td>@x.Success / @x.Total</td><td>@x.Failed</td><td>@x.Created</td></tr>}</tbody></table></div></section>

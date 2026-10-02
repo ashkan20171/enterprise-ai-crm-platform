@@ -1,0 +1,4 @@
+@model IEnumerable<AshkanCRM.Models.DashboardWidgetItem>
+@{ ViewData["Title"]="Dashboard Builder"; }
+<div class="page-head"><div><span class="eyebrow">ADMIN EXPERIENCE</span><h1>سازنده داشبورد</h1><p>Widgetهای هر نقش را فعال کنید و تجربه داشبورد را متناسب با مسئولیت کاربران تنظیم کنید.</p></div><button class="primary">＋ Widget جدید</button></div>
+<div class="card-grid">@foreach(var x in Model){<article class="feature-card"><div class="feature-icon">▦</div><h3>@x.Name</h3><p>@x.Category • @x.Audience</p><div class="row-between"><span class="badge @(x.Enabled?"success":"")">@(x.Enabled?"فعال":"غیرفعال")</span><span>@x.Size</span></div></article>}</div>

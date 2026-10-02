@@ -1,0 +1,5 @@
+@model IEnumerable<AshkanCRM.Models.DuplicateCandidate>
+@{ ViewData["Title"]="کیفیت داده"; }
+<div class="page-head"><div><p class="eyebrow">DATA STEWARDSHIP</p><h1>مرکز کیفیت داده</h1><p>تشخیص Duplicate، استانداردسازی و پاکیزگی داده قبل از گزارش‌گیری و AI.</p></div><a class="primary" href="/CRM/DataManagement">Import Center</a></div>
+<div class="stats compact"><article><small>کیفیت کلی</small><strong>94%</strong><em>Healthy</em></article><article><small>Duplicate مشکوک</small><strong>@Model.Count()</strong><em>Review</em></article><article><small>ایمیل نامعتبر</small><strong>3</strong><em>Needs fix</em></article><article><small>رکورد ناقص</small><strong>7</strong><em>Enrichment</em></article></div>
+<div class="panel"><div class="table-wrap"><table><thead><tr><th>نوع</th><th>رکورد اصلی</th><th>کاندیدا</th><th>اطمینان</th><th>وضعیت</th><th>اقدام</th></tr></thead><tbody>@foreach(var x in Model){<tr><td>@x.Entity</td><td><b>@x.Primary</b></td><td>@x.Candidate</td><td>@x.Confidence%</td><td><span class="badge">@x.Status</span></td><td><button class="chip">مقایسه و Merge</button></td></tr>}</tbody></table></div></div>

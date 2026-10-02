@@ -1,0 +1,5 @@
+@model IEnumerable<AshkanCRM.Models.GoalItem>
+@{ ViewData["Title"]="پیش‌بینی فروش"; }
+<div class="page-head"><div><p class="eyebrow">REVENUE INTELLIGENCE</p><h1>Forecast و اهداف فروش</h1><p>پایش هدف، عملکرد و پوشش پایپ‌لاین تیم</p></div><button class="primary">تنظیم اهداف</button></div>
+<div class="goal-grid">@foreach(var x in Model){var pct=x.Target==0?0:Math.Min(100,(int)(x.Actual/x.Target*100));<article class="goal-card"><div class="row-between"><div><small>@x.Metric</small><h2>@x.Owner</h2></div><strong>@pct%</strong></div><div class="goal-track"><i style="width:@pct%"></i></div><p>@x.Actual.ToString("N0") / @x.Target.ToString("N0") · @x.Period</p></article>}</div>
+<section class="panel"><div class="panel-head"><div><h2>Forecast Health</h2><p>سیگنال‌های مدیریتی برای تصمیم‌گیری سریع‌تر</p></div><span class="success-pill">Healthy</span></div><div class="insight-grid"><div><b>84%</b><span>Target attainment</span></div><div><b>3.1×</b><span>Pipeline coverage</span></div><div><b>61%</b><span>Weighted forecast confidence</span></div><div><b>18d</b><span>Average sales cycle</span></div></div></section>

@@ -1,0 +1,4 @@
+@model IEnumerable<AshkanCRM.Models.ActivityItem>
+@{ ViewData["Title"]="فعالیت‌ها"; }
+<div class="page-head"><div><span class="eyebrow">ACTIVITY HUB</span><h1>مرکز فعالیت‌ها</h1><p>تماس‌ها، جلسات و ایمیل‌ها در یک Timeline واحد.</p></div><button class="primary">＋ فعالیت جدید</button></div>
+<div class="timeline">@foreach(var x in Model){<article class="timeline-item"><div class="timeline-icon">@(x.Type=="جلسه"?"◫":x.Type=="تماس"?"☎":"✉")</div><div><div class="row-between"><h3>@x.Title</h3><span class="badge">@x.Status</span></div><p>@x.Type · @x.RelatedTo · @x.Owner</p><small>@x.When</small></div></article>}</div>

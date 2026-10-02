@@ -1,0 +1,4 @@
+@model IEnumerable<AshkanCRM.Models.SessionItem>
+@{ ViewData["Title"]="نشست‌های کاربران"; }
+<div class="page-head"><div><span class="eyebrow">SECURITY / SESSIONS</span><h1>نشست‌های فعال کاربران</h1><p>دستگاه، موقعیت، IP و آخرین فعالیت نشست‌های ورود را برای کنترل امنیتی مشاهده کنید.</p></div><button class="ghost">خروج از همه نشست‌های مشکوک</button></div>
+<div class="panel"><div class="table-wrap"><table><thead><tr><th>کاربر</th><th>دستگاه</th><th>موقعیت</th><th>IP</th><th>آخرین فعالیت</th><th>وضعیت</th><th></th></tr></thead><tbody>@foreach(var x in Model){<tr><td><b>@x.User</b></td><td>@x.Device</td><td>@x.Location</td><td><code>@x.Ip</code></td><td>@x.LastActive</td><td><span class="badge success">@x.Status</span></td><td><button class="ghost">Revoke</button></td></tr>}</tbody></table></div></div>

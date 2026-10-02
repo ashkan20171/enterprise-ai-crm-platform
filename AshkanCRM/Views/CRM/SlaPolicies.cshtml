@@ -1,0 +1,4 @@
+@model IEnumerable<AshkanCRM.Models.SlaPolicyItem>
+@{ ViewData["Title"]="SLA Policies"; }
+<div class="page-head"><div><span class="eyebrow">SERVICE OPERATIONS</span><h1>سیاست‌های SLA</h1><p>زمان پاسخ، حل و Escalation را برای گروه‌های مختلف مشتری کنترل کنید.</p></div><button class="primary">＋ سیاست جدید</button></div>
+<div class="panel"><div class="table-wrap"><table><thead><tr><th>نام</th><th>اعمال روی</th><th>پاسخ اولیه</th><th>حل</th><th>Escalation</th><th>وضعیت</th></tr></thead><tbody>@foreach(var x in Model){<tr><td><b>@x.Name</b></td><td>@x.AppliesTo</td><td>@x.FirstResponse</td><td>@x.Resolution</td><td>@x.Escalation</td><td><span class="badge success">@x.Status</span></td></tr>}</tbody></table></div></div>

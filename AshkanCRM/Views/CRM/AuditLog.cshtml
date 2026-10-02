@@ -1,0 +1,4 @@
+@model IEnumerable<AshkanCRM.Models.AuditItem>
+@{ ViewData["Title"]="گزارش ممیزی"; }
+<div class="page-head"><div><span class="eyebrow">SECURITY & GOVERNANCE</span><h1>Audit Log</h1><p>ردیابی فعالیت‌های حساس کاربران برای امنیت و پاسخ‌گویی.</p></div><button class="ghost">خروجی CSV</button></div>
+<div class="panel"><div class="table-wrap"><table><thead><tr><th>کاربر</th><th>عملیات</th><th>موجودیت</th><th>جزئیات</th><th>زمان</th></tr></thead><tbody>@foreach(var x in Model){<tr><td><b>@x.User</b></td><td><span class="badge">@x.Action</span></td><td>@x.Entity</td><td>@x.Detail</td><td>@x.Time</td></tr>}</tbody></table></div></div>

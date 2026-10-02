@@ -1,0 +1,5 @@
+@model IEnumerable<AshkanCRM.Models.SmartScoreItem>
+@{ ViewData["Title"]="امتیازدهی هوشمند"; }
+<div class="page-head"><div><p class="eyebrow">EXPLAINABLE AI</p><h1>امتیازدهی هوشمند</h1><p>Lead، Deal و Customer scoring با دلیل قابل مشاهده و اقدام پیشنهادی؛ تصمیم نهایی با کاربر است.</p></div><a class="chip" href="/CRM/AiCopilot">✦ AI Copilot</a></div>
+<div class="score-grid">@foreach(var x in Model){<article class="panel score-card"><div class="score-ring"><strong>@x.Score</strong><small>/100</small></div><div><span class="badge">@x.Entity • @x.Band</span><h2>@x.Name</h2><p>@x.Reason</p><div class="callout">پیشنهاد: @x.SuggestedAction</div></div></article>}</div>
+<div class="panel"><h2>AI Governance</h2><p class="muted">امتیازها باید قابل توضیح، قابل بازبینی و محدود به داده‌هایی باشند که کاربر مجاز به مشاهده آن‌هاست. از تصمیم خودکار برای اقدامات حساس استفاده نمی‌شود.</p></div>

@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "داشبورد ادمین";
+}
+<div class="page-head"><div><span class="eyebrow">ADMIN CONTROL PLANE</span><h1>داشبورد ادمین</h1><p>مدیریت متمرکز کاربران، دسترسی‌ها، امنیت، داده و یکپارچه‌سازی‌ها.</p></div><div class="head-actions"><a class="primary" href="/CRM/Users">＋ تعریف کاربر جدید</a><a class="ghost" href="/CRM/Permissions">مدیریت دسترسی‌ها</a></div></div>
+<div class="stat-grid"><div class="stat"><small>کل کاربران</small><b>@ViewBag.TotalUsers</b><span>حساب سازمانی</span></div><div class="stat"><small>کاربران فعال</small><b>@ViewBag.ActiveUsers</b><span>دسترسی فعال</span></div><div class="stat"><small>حساب قفل‌شده</small><b>@ViewBag.LockedUsers</b><span>نیازمند بررسی</span></div><div class="stat"><small>نقش‌های سیستم</small><b>@ViewBag.RolesCount</b><span>RBAC</span></div></div>
+<div class="admin-launch-grid">
+<a class="launch-card" href="/CRM/Users"><i>♚</i><div><h3>کاربران و دسترسی‌ها</h3><p>ایجاد کاربر، تعیین سمت و Role، فعال‌سازی، تغییر رمز و Unlock.</p></div><b>←</b></a>
+<a class="launch-card" href="/CRM/Permissions"><i>⊞</i><div><h3>ماتریس دسترسی</h3><p>مرور سیاست Least Privilege و محدوده دسترسی نقش‌ها.</p></div><b>←</b></a>
+<a class="launch-card" href="/CRM/SecurityCenter"><i>⛨</i><div><h3>مرکز امنیت</h3><p>کنترل Login، Session، Lockout و وضعیت امنیت سازمان.</p></div><b>←</b></a>
+<a class="launch-card" href="/CRM/AuditLog"><i>☷</i><div><h3>Audit Trail</h3><p>ردیابی فعالیت‌های حساس و تغییرات مدیریتی.</p></div><b>←</b></a>
+<a class="launch-card" href="/CRM/DataManagement"><i>◫</i><div><h3>مدیریت داده</h3><p>Import، کیفیت داده، Deduplication و نگهداری.</p></div><b>←</b></a>
+<a class="launch-card" href="/CRM/Integrations"><i>⌁</i><div><h3>Integration Hub</h3><p>API Key، Webhook و اتصال سرویس‌های خارجی.</p></div><b>←</b></a>
+</div>
+<div class="split-grid"><section class="panel"><div class="panel-head"><h2>سلامت عملیات</h2><span class="badge success">Live</span></div><div class="health-list"><div><span>اتوماسیون‌های فعال</span><b>@ViewBag.Automations</b></div><div><span>تیکت‌های باز</span><b>@ViewBag.OpenTickets</b></div><div><span>Identity & RBAC</span><b>فعال</b></div><div><span>SQL Identity Store</span><b>متصل</b></div></div></section><section class="panel"><div class="panel-head"><h2>اقدامات پیشنهادی ادمین</h2></div><div class="action-stack"><a href="/CRM/Users">تعریف کاربر و تعیین دسترسی</a><a href="/CRM/SecurityCenter">بازبینی حساب‌های قفل‌شده</a><a href="/CRM/AuditLog">مرور رخدادهای امنیتی</a><a href="/CRM/AiCopilot">مشاهده تحلیل هوشمند CRM</a></div></section></div>

@@ -1,0 +1,5 @@
+@model IEnumerable<AshkanCRM.Models.WebhookDelivery>
+@{ ViewData["Title"]="مانیتور یکپارچه‌سازی"; }
+<div class="page-head"><div><p class="eyebrow">OBSERVABILITY</p><h1>مانیتور Integration و Webhook</h1><p>وضعیت ارسال Eventها، Retry و سلامت اتصال سیستم‌های خارجی.</p></div><a class="primary" href="/CRM/Integrations">Integration Hub</a></div>
+<div class="panel"><div class="table-wrap"><table><thead><tr><th>Endpoint</th><th>Event</th><th>Status</th><th>Attempts</th><th>آخرین تلاش</th></tr></thead><tbody>@foreach(var x in Model){<tr><td><b>@x.Endpoint</b></td><td><code>@x.Event</code></td><td><span class="badge">@x.Status</span></td><td>@x.Attempts</td><td>@x.LastAttempt</td></tr>}</tbody></table></div></div>
+<div class="grid-2"><div class="panel"><h2>Retry Policy</h2><p class="muted">ارسال‌های ناموفق با Backoff و محدودیت تلاش مجدد مدیریت می‌شوند.</p></div><div class="panel"><h2>Secret Hygiene</h2><p class="muted">کلیدهای واقعی نباید در UI یا Log نمایش داده شوند؛ فقط Prefix و Scope قابل مشاهده است.</p></div></div>

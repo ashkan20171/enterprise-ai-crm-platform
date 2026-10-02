@@ -1,0 +1,308 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFramework = net10.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.EntryPointFilePath = 
+build_property.RootNamespace = AshkanCRM
+build_property.RootNamespace = AshkanCRM
+build_property.ProjectDir = E:\project\Asp.net core\AshkanCRM\AshkanCRM\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 10.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\project\Asp.net core\AshkanCRM\AshkanCRM
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/Auth/Denied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/AccessHealth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEFjY2Vzc0hlYWx0aC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/AccessStudio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEFjY2Vzc1N0dWRpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Activities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEFjdGl2aXRpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/AdminHub.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEFkbWluSHViLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/AiAgents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEFpQWdlbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/AiCopilot.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEFpQ29waWxvdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/AiInsights.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEFpSW5zaWdodHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/AiOperations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEFpT3BlcmF0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Approvals.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEFwcHJvdmFscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/AuditLog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEF1ZGl0TG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Automations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEF1dG9tYXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Calendar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXENhbGVuZGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/CommandCenter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXENvbW1hbmRDZW50ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Customer360.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEN1c3RvbWVyMzYwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/CustomerIntelligence.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEN1c3RvbWVySW50ZWxsaWdlbmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/CustomerRecycleBin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEN1c3RvbWVyUmVjeWNsZUJpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Customers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEN1c3RvbWVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/CustomerTimeline.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEN1c3RvbWVyVGltZWxpbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXERhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/DashboardBuilder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXERhc2hib2FyZEJ1aWxkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/DataCore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXERhdGFDb3JlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/DataGovernance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXERhdGFHb3Zlcm5hbmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/DataManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXERhdGFNYW5hZ2VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/DataQuality.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXERhdGFRdWFsaXR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Deals.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXERlYWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/DuplicateDetection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXER1cGxpY2F0ZURldGVjdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/EntityTimeline.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEVudGl0eVRpbWVsaW5lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/ExecutiveCockpit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEV4ZWN1dGl2ZUNvY2twaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/FeatureFlags.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEZlYXR1cmVGbGFncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Forecast.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEZvcmVjYXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/GlobalSearch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEdsb2JhbFNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/IntegrationMonitor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEludGVncmF0aW9uTW9uaXRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Integrations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEludGVncmF0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Knowledge.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXEtub3dsZWRnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/LeadRouting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXExlYWRSb3V0aW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Leads.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXExlYWRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Marketing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXE1hcmtldGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/NextBestActions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXE5leHRCZXN0QWN0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXE5vdGlmaWNhdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Permissions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFBlcm1pc3Npb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Playbooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFBsYXlib29rcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Products.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFByb2R1Y3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Quotes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFF1b3Rlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Reports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFJlcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/RevenueIntelligence.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFJldmVudWVJbnRlbGxpZ2VuY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/SavedViews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFNhdmVkVmlld3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/SecurityCenter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFNlY3VyaXR5Q2VudGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/SecurityOperations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFNlY3VyaXR5T3BlcmF0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Sessions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFNlc3Npb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Settings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFNldHRpbmdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/SlaPolicies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFNsYVBvbGljaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/SmartScoring.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFNtYXJ0U2NvcmluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/SqlForecast.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFNxbEZvcmVjYXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/SqlNotifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFNxbE5vdGlmaWNhdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Tasks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFRhc2tzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Teams.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFRlYW1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Tickets.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFRpY2tldHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFVzZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/CRM/WinLossAnalytics.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1JNXFdpbkxvc3NBbmFseXRpY3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/project/Asp.net core/AshkanCRM/AshkanCRM/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-j9feu3rkul

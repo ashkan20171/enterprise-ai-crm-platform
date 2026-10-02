@@ -1,0 +1,4 @@
+@model IEnumerable<AshkanCRM.Models.AutomationRule>
+@{ ViewData["Title"]="اتوماسیون"; }
+<div class="page-head"><div><p class="eyebrow">WORKFLOW ENGINE</p><h1>اتوماسیون و گردش‌کار</h1><p>قوانین هوشمند برای حذف کارهای تکراری و واکنش سریع تیم‌ها</p></div><button class="primary">＋ قانون جدید</button></div>
+<div class="automation-list">@foreach(var x in Model){<article class="automation-card"><div class="auto-state @(x.Enabled?"on":"off")">@(x.Enabled?"ON":"OFF")</div><div><h2>@x.Name</h2><p><b>WHEN</b> @x.Trigger <span>→</span> <b>THEN</b> @x.Action</p><small>@x.Owner · @x.Runs اجرا</small></div><button class="ghost">ویرایش</button></article>}</div>

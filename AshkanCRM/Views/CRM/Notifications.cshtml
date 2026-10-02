@@ -1,0 +1,4 @@
+@model IEnumerable<AshkanCRM.Models.NotificationItem>
+@{ ViewData["Title"]="اعلان‌ها"; }
+<div class="page-head"><div><span class="eyebrow">SMART INBOX</span><h1>مرکز اعلان‌ها</h1><p>هشدارهای فروش، SLA و بازاریابی بر اساس نقش کاربر.</p></div><button class="ghost">خواندن همه</button></div>
+<div class="notification-list">@foreach(var x in Model){<article class="notice @(x.IsRead?"":"unread")"><span class="notice-dot"></span><div><div class="row-between"><h3>@x.Title</h3><small>@x.Time</small></div><p>@x.Detail</p><span class="badge">@x.Audience</span></div></article>}</div>

@@ -1,0 +1,5 @@
+@model IEnumerable<AshkanCRM.Models.AiInsightItem>
+@{ ViewData["Title"]="بینش‌های هوشمند"; }
+<div class="page-head"><div><span class="eyebrow">AI / ROLE-AWARE INTELLIGENCE</span><h1>بینش‌های هوشمند متناسب با دسترسی شما</h1><p>سیگنال‌های فروش، پشتیبانی، بازاریابی و امنیت فقط در محدوده مجاز هر نقش نمایش داده می‌شوند.</p></div><span class="badge success">Privacy-aware AI</span></div>
+<div class="grid cards-2">@foreach(var x in Model){<div class="panel"><div class="panel-title"><div><span class="eyebrow">@x.Area</span><h3>@x.Title</h3></div><span class="badge">@x.Severity</span></div><p>@x.Detail</p><div class="insight-action"><b>Next best action</b><p>@x.SuggestedAction</p></div><button class="primary">ایجاد اقدام پیشنهادی</button></div>}</div>
+<div class="panel"><div class="panel-title"><h3>AI Guardrails</h3><span class="badge success">Enabled</span></div><p>دستیار هوشمند باید همان محدودیت‌های دسترسی کاربر را رعایت کند؛ AI مجاز نیست داده‌ای خارج از Role/Scope کاربر بازیابی یا نمایش دهد.</p></div>
