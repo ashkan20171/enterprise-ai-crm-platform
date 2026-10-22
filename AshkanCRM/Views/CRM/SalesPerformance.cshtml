@@ -1,0 +1,69 @@
+@model IReadOnlyList<AshkanCRM.Models.SalesAgentPerformanceVm>
+@{
+ var en = System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "en";
+ ViewData["Title"] = en ? "Sales agent performance" : "عملکرد کارشناسان فروش";
+ var max = Model.Count == 0 ? 0m : Model.Max(x => x.WonValue);
+ var months = (int)ViewBag.Months;
+}
+<div class="hero-row">
+ <div><p class="eyebrow" data-fa="گزارش مدیریتی" data-en="Management report">@(en ? "Management report" : "گزارش مدیریتی")</p>
+ <h1 data-fa="عملکرد کارشناسان فروش" data-en="Sales agent performance">@ViewData["Title"]</h1>
+ <p data-fa="مقایسه فرصت‌های بسته‌شده در بازه انتخابی و فرصت‌های باز فعلی" data-en="Closed deals within the selected period and currently open pipeline">@(en ? "Closed deals within the selected period and currently open pipeline" : "مقایسه فرصت‌های بسته‌شده در بازه انتخابی و فرصت‌های باز فعلی")</p></div>
+ <a href="/CRM/Dashboard" data-fa="بازگشت به داشبورد" data-en="Back to dashboard">@(en ? "Back to dashboard" : "بازگشت به داشبورد")</a>
+</div>
+<section class="panel crm56-chart-panel">
+ <form method="get" asp-controller="CRM" asp-action="SalesPerformance" style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+  <label for="months" data-fa="بازه گزارش" data-en="Reporting period">@(en ? "Reporting period" : "بازه گزارش")</label>
+  <select id="months" name="months">
+   @foreach (var n in new[] { 1, 3, 6, 12 }) {
+    <option value="@n" selected="@(months == n)">@(en ? $"{n} months" : $"{n} ماه")</option>
+   }
+  </select>
+  <button type="submit" data-fa="اعمال فیلتر" data-en="Apply filter">@(en ? "Apply filter" : "اعمال فیلتر")</button>
+ </form>
+ <div style="margin-block:12px"><a class="btn" asp-controller="CRM" asp-action="PrintSalesPerformance" asp-route-months="@months" target="_blank" rel="noopener">@(en ? "Print / Save as PDF" : "چاپ / ذخیره PDF")</a>
+<a class="btn" asp-controller="CRM" asp-action="ExportSalesPerformanceCsv" asp-route-months="@months">@(en ? "Export CSV (Excel compatible)" : "خروجی CSV سازگار با اکسل")</a>
+<a class="btn" asp-controller="CRM" asp-action="ExportSalesPerformanceExcel" asp-route-months="@months">@(en ? "Download Excel (.xlsx)" : "دانلود اکسل (.xlsx)")</a></div>
+ @if (Model.Count == 0) {
+  <p data-fa="اطلاعاتی برای نمایش وجود ندارد." data-en="No data to display.">@(en ? "No data to display." : "اطلاعاتی برای نمایش وجود ندارد.")</p>
+ } else {
+  <div class="crm77-controls" data-report-controls>
+ <label for="crm77-search">@(en ? "Find an agent" : "جستجوی کارشناس")</label>
+ <input id="crm77-search" type="search" autocomplete="off" placeholder="@(en ? "Agent name" : "نام کارشناس")" data-report-search />
+ <label for="crm77-sort">@(en ? "Sort by" : "مرتب‌سازی")</label>
+ <select id="crm77-sort" data-report-sort>
+ <option value="actual-desc">@(en ? "Won value (highest)" : "ارزش فروش موفق (بیشترین)")</option>
+ <option value="target-desc">@(en ? "Won deals (highest)" : "تعداد فرصت موفق (بیشترین)")</option>
+ <option value="name-asc">@(en ? "Name (A–Z)" : "نام (الفبا)")</option>
+ </select>
+ <button type="button" class="crm78-clear" data-report-clear hidden>@(en ? "Clear search" : "پاک‌کردن جست‌وجو")</button>
+ <output class="crm77-count" data-report-count aria-live="polite"></output>
+ <p class="crm78-empty" data-report-empty hidden role="status">@(en ? "No matching results. Try another search." : "نتیجه‌ای یافت نشد. عبارت دیگری جست‌وجو کنید.")</p>
+ </div>
+<div class="crm56-bars" data-report-chart role="img" aria-label="Won deal value by agent">
+   @foreach (var agent in Model) {
+    var width = max > 0 ? (double)(agent.WonValue / max) * 100 : 0;
+    <div class="crm56-bar-row" data-report-item data-name="@agent.Owner" data-actual="@agent.WonValue.ToString(System.Globalization.CultureInfo.InvariantCulture)" data-target="@agent.WonCount">
+     <span>@agent.Owner</span>
+     <div class="crm56-track"><div class="crm56-fill" style="width:@(width.ToString("0.##",System.Globalization.CultureInfo.InvariantCulture))%"></div></div>
+     <strong>@agent.WonValue.ToString("N0")</strong><small>@agent.WonCount</small>
+    </div>
+   }
+  </div>
+  <div class="table-wrap"><table data-report-table><thead><tr>
+   <th data-fa="کارشناس" data-en="Agent">@(en ? "Agent" : "کارشناس")</th>
+   <th data-fa="تعداد موفق" data-en="Won">@(en ? "Won" : "تعداد موفق")</th>
+   <th data-fa="تعداد ناموفق" data-en="Lost">@(en ? "Lost" : "تعداد ناموفق")</th>
+   <th data-fa="نرخ موفقیت" data-en="Win rate">@(en ? "Win rate" : "نرخ موفقیت")</th>
+   <th data-fa="ارزش فروش موفق" data-en="Won value">@(en ? "Won value" : "ارزش فروش موفق")</th>
+   <th data-fa="ارزش فرصت‌های باز" data-en="Open pipeline">@(en ? "Open pipeline" : "ارزش فرصت‌های باز")</th>
+  </tr></thead><tbody>
+   @foreach (var agent in Model) {
+    <tr data-report-item data-name="@agent.Owner" data-actual="@agent.WonValue.ToString(System.Globalization.CultureInfo.InvariantCulture)" data-target="@agent.WonCount"><td>@agent.Owner</td><td>@agent.WonCount</td><td>@agent.LostCount</td><td>@agent.WinRate.ToString("0.0")%</td><td>@agent.WonValue.ToString("N0")</td><td>@agent.OpenValue.ToString("N0")</td></tr>
+   }
+  </tbody></table></div>
+ }
+</section>
+
+<link rel="stylesheet" href="~/css/crm77-report-interactions.css" asp-append-version="true" />
+<script defer src="~/js/crm77-report-interactions.js" asp-append-version="true"></script>

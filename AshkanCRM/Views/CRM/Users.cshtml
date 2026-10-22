@@ -1,9 +1,150 @@
 @model IEnumerable<AshkanCRM.Models.UserAdminRow>
+@using System.Globalization
 @using AshkanCRM.Models
-@{ViewData["Title"]="کاربران و دسترسی‌ها"; var roles=(List<string>)ViewBag.Roles;}
-<div class="page-head"><div><p class="eyebrow">IDENTITY & ACCESS MANAGEMENT</p><h1>کاربران و دسترسی‌ها</h1><p>ایجاد کاربر، تعیین سمت و سطح دسترسی، فعال‌سازی، رفع قفل و مدیریت رمز عبور.</p></div><button class="primary" onclick="document.getElementById('createUser').showModal()">＋ ایجاد کاربر</button></div>
-@if(TempData["Success"]!=null){<div class="alert success">@TempData["Success"]</div>} @if(TempData["Error"]!=null){<div class="alert danger">@TempData["Error"]</div>}
-<div class="grid-3"><div class="panel"><span class="eyebrow">TOTAL USERS</span><h2>@Model.Count()</h2><p>کاربران ثبت‌شده</p></div><div class="panel"><span class="eyebrow">ACTIVE</span><h2>@Model.Count(x=>x.IsActive)</h2><p>حساب فعال</p></div><div class="panel"><span class="eyebrow">LOCKED</span><h2>@Model.Count(x=>x.IsLocked)</h2><p>حساب قفل‌شده</p></div></div>
-<section class="panel"><div class="table-wrap"><table><thead><tr><th>کاربر</th><th>ایمیل</th><th>واحد</th><th>نقش / دسترسی</th><th>وضعیت</th><th>آخرین ورود</th><th>عملیات</th></tr></thead><tbody>@foreach(var x in Model){<tr><td><div class="person"><span class="avatar">@x.Initials</span><b>@x.Name</b></div></td><td>@x.Email</td><td>@x.Department</td><td><span class="badge">@(x.Roles.FirstOrDefault()??"—")</span></td><td>@if(x.IsLocked){<span class="badge warn">قفل</span>}else if(x.IsActive){<span class="status">● فعال</span>}else{<span class="badge">غیرفعال</span>}</td><td>@(x.LastLoginAtUtc?.ToLocalTime().ToString("yyyy/MM/dd HH:mm")??"—")</td><td><details class="action-menu"><summary>مدیریت</summary><div class="action-pop"><form method="post" asp-action="UpdateUser"><input type="hidden" name="Id" value="@x.Id"><input name="Name" value="@x.Name" required><input name="Department" value="@x.Department"><select name="Role">@foreach(var r in roles){<option value="@r" selected="@(x.Roles.Contains(r))">@r</option>}</select><label><input type="checkbox" name="IsActive" value="true" checked="@x.IsActive"> فعال</label><button class="primary">ذخیره دسترسی</button></form><form method="post" asp-action="ResetUserPassword"><input type="hidden" name="id" value="@x.Id"><input name="newPassword" type="password" placeholder="رمز جدید" required><button class="ghost">تغییر رمز</button></form>@if(x.IsLocked){<form method="post" asp-action="UnlockUser"><input type="hidden" name="id" value="@x.Id"><button class="ghost">رفع قفل</button></form>}</div></details></td></tr>}</tbody></table></div></section>
-<section class="panel"><div class="page-head"><div><h2>سطوح دسترسی استاندارد</h2><p>دسترسی صفحات سمت سرور نیز با Role کنترل می‌شود؛ مخفی‌کردن منو تنها لایه ظاهری نیست.</p></div><a class="ghost" href="/CRM/Permissions">مشاهده ماتریس کامل</a></div><div class="permission-grid"><div><b>Admin</b><span>مدیریت کامل، کاربران، امنیت، تنظیمات و داده</span></div><div><b>SalesManager</b><span>فروش، مشتری، Forecast و گزارش تیم</span></div><div><b>Sales</b><span>مشتری، Lead، Deal، Quote و فعالیت‌های فروش</span></div><div><b>Support</b><span>Ticket، SLA، دانش و فعالیت‌های پشتیبانی</span></div><div><b>Marketing</b><span>کمپین، Automation و فعالیت‌های بازاریابی</span></div></div></section>
-<dialog id="createUser" class="crm-dialog"><form method="post" asp-action="CreateUser"><div class="dialog-head"><div><span class="eyebrow">NEW TEAM MEMBER</span><h2>ایجاد کاربر جدید</h2></div><button type="button" class="icon-btn" onclick="createUser.close()">×</button></div><label>نام و نام خانوادگی<input name="Name" required></label><label>ایمیل<input name="Email" type="email" required></label><label>واحد سازمانی<input name="Department"></label><label>رمز اولیه<input name="Password" type="password" minlength="8" required></label><label>نقش و سطح دسترسی<select name="Role">@foreach(var r in roles){<option value="@r">@r</option>}</select></label><label class="check-row"><input type="checkbox" name="IsActive" value="true" checked> حساب از ابتدا فعال باشد</label><div class="dialog-actions"><button type="button" class="ghost" onclick="createUser.close()">انصراف</button><button class="primary">ایجاد کاربر</button></div></form></dialog>
+@{
+    var en = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "en";
+    ViewData["Title"] = en ? "Users & Access" : "کاربران و دسترسی‌ها";
+    var roles = ViewBag.Roles as List<string> ?? new List<string>();
+    var users = Model.ToList();
+    Func<string, string> roleLabel = role => en ? role : role switch
+    {
+        "Admin" => "مدیر سیستم",
+        "SalesManager" => "مدیر فروش",
+        "Sales" => "کارشناس فروش",
+        "Support" => "پشتیبانی",
+        "Marketing" => "بازاریابی",
+        _ => role
+    };
+}
+<div class="page-head">
+    <div>
+        <p class="eyebrow">@(en ? "IDENTITY & ACCESS" : "هویت و مدیریت دسترسی")</p>
+        <h1>@(en ? "Users & Access" : "کاربران و دسترسی‌ها")</h1>
+        <p>@(en ? "Create accounts, manage roles, unlock users and reset passwords." : "ایجاد حساب، مدیریت نقش‌ها، رفع قفل و تغییر رمز عبور کاربران.")</p>
+    </div>
+    <button type="button" class="primary" onclick="document.getElementById('createUser').showModal()">@(en ? "+ New user" : "＋ ایجاد کاربر")</button>
+</div>
+@if (TempData["Success"] != null)
+{
+    <div class="alert success" role="status">@TempData["Success"]</div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert danger" role="alert">@TempData["Error"]</div>
+}
+<div class="grid-3">
+    <div class="panel"><span class="eyebrow">@(en ? "TOTAL USERS" : "کل کاربران")</span><h2>@users.Count</h2><p>@(en ? "Registered accounts" : "حساب‌های ثبت‌شده")</p></div>
+    <div class="panel"><span class="eyebrow">@(en ? "ACTIVE" : "فعال")</span><h2>@users.Count(x => x.IsActive)</h2><p>@(en ? "Active accounts" : "حساب‌های فعال")</p></div>
+    <div class="panel"><span class="eyebrow">@(en ? "LOCKED" : "قفل‌شده")</span><h2>@users.Count(x => x.IsLocked)</h2><p>@(en ? "Locked accounts" : "حساب‌های قفل‌شده")</p></div>
+</div>
+<section class="panel">
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>@(en ? "User" : "کاربر")</th>
+                    <th>@(en ? "Email" : "ایمیل")</th>
+                    <th>@(en ? "Department" : "واحد")</th>
+                    <th>@(en ? "Role" : "نقش")</th>
+                    <th>@(en ? "Status" : "وضعیت")</th>
+                    <th>@(en ? "Last login" : "آخرین ورود")</th>
+                    <th>@(en ? "Actions" : "عملیات")</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in users)
+                {
+                    <tr>
+                        <td><div class="person"><span class="avatar">@user.Initials</span><b>@user.Name</b></div></td>
+                        <td>@user.Email</td>
+                        <td>@user.Department</td>
+                        <td><span class="badge">@(user.Roles.Count > 0 ? string.Join("، ", user.Roles.Select(roleLabel)) : "—")</span></td>
+                        <td>
+                            @if (user.IsLocked)
+                            {
+                                <span class="badge warn">@(en ? "Locked" : "قفل‌شده")</span>
+                            }
+                            else if (user.IsActive)
+                            {
+                                <span class="status">@(en ? "● Active" : "● فعال")</span>
+                            }
+                            else
+                            {
+                                <span class="badge">@(en ? "Inactive" : "غیرفعال")</span>
+                            }
+                        </td>
+                        <td>@(user.LastLoginAtUtc?.ToLocalTime().ToString("yyyy/MM/dd HH:mm") ?? "—")</td>
+                        <td>
+                            <details class="action-menu">
+                                <summary>@(en ? "Manage" : "مدیریت")</summary>
+                                <div class="action-pop">
+                                    <form method="post" asp-controller="CRM" asp-action="UpdateUser">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="Id" value="@user.Id" />
+                                        <label>@(en ? "Name" : "نام")<input name="Name" value="@user.Name" required /></label>
+                                        <label>@(en ? "Department" : "واحد")<input name="Department" value="@user.Department" /></label>
+                                        <label>@(en ? "Role" : "نقش")
+                                            <select name="Role">
+                                                @foreach (var role in roles)
+                                                {
+                                                    <option value="@role" selected="@user.Roles.Contains(role)">@roleLabel(role)</option>
+                                                }
+                                            </select>
+                                        </label>
+                                        <label><input type="checkbox" name="IsActive" value="true" checked="@user.IsActive" /> @(en ? "Active" : "فعال")</label>
+                                        <button type="submit" class="primary">@(en ? "Save changes" : "ذخیره تغییرات")</button>
+                                    </form>
+                                    <form method="post" asp-controller="CRM" asp-action="ResetUserPassword">
+                                        @Html.AntiForgeryToken()
+                                        <input type="hidden" name="id" value="@user.Id" />
+                                        <label>@(en ? "New password" : "رمز جدید")<input name="newPassword" type="password" minlength="8" autocomplete="new-password" required /></label>
+                                        <button type="submit" class="ghost">@(en ? "Reset password" : "تغییر رمز")</button>
+                                    </form>
+                                    @if (user.IsLocked)
+                                    {
+                                        <form method="post" asp-controller="CRM" asp-action="UnlockUser">
+                                            @Html.AntiForgeryToken()
+                                            <input type="hidden" name="id" value="@user.Id" />
+                                            <button type="submit" class="ghost">@(en ? "Unlock account" : "رفع قفل")</button>
+                                        </form>
+                                    }
+                                </div>
+                            </details>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</section>
+<section class="panel">
+    <div class="page-head">
+        <div><h2>@(en ? "Standard access roles" : "سطوح دسترسی استاندارد")</h2><p>@(en ? "Server-side role checks protect access beyond menu visibility." : "سطح دسترسی در سمت سرور بررسی می‌شود؛ مخفی‌کردن منو تنها لایه امنیتی نیست.")</p></div>
+        <a class="ghost" asp-controller="CRM" asp-action="Permissions">@(en ? "Permission matrix" : "ماتریس دسترسی")</a>
+    </div>
+    <div class="permission-grid">
+        <div><b>@roleLabel("Admin")</b><span>@(en ? "Full administration" : "مدیریت کامل")</span></div>
+        <div><b>@roleLabel("SalesManager")</b><span>@(en ? "Sales and team reports" : "فروش و گزارش تیم")</span></div>
+        <div><b>@roleLabel("Sales")</b><span>@(en ? "Leads, deals and customers" : "مشتریان و فرصت‌ها")</span></div>
+        <div><b>@roleLabel("Support")</b><span>@(en ? "Tickets and support" : "تیکت‌ها و پشتیبانی")</span></div>
+        <div><b>@roleLabel("Marketing")</b><span>@(en ? "Campaigns and automation" : "کمپین و اتوماسیون")</span></div>
+    </div>
+</section>
+<dialog id="createUser" class="crm-dialog">
+    <form method="post" asp-controller="CRM" asp-action="CreateUser">
+        @Html.AntiForgeryToken()
+        <div class="dialog-head"><div><span class="eyebrow">@(en ? "NEW TEAM MEMBER" : "عضو جدید تیم")</span><h2>@(en ? "Create user" : "ایجاد کاربر جدید")</h2></div><button type="button" class="icon-btn" onclick="document.getElementById('createUser').close()" aria-label="@(en ? "Close" : "بستن")">×</button></div>
+        <label>@(en ? "Full name" : "نام و نام خانوادگی")<input name="Name" required /></label>
+        <label>@(en ? "Email" : "ایمیل")<input name="Email" type="email" required /></label>
+        <label>@(en ? "Department" : "واحد سازمانی")<input name="Department" /></label>
+        <label>@(en ? "Initial password" : "رمز اولیه")<input name="Password" type="password" minlength="8" autocomplete="new-password" required /></label>
+        <label>@(en ? "Role" : "نقش")<select name="Role">
+            @foreach (var role in roles)
+            {
+                <option value="@role">@roleLabel(role)</option>
+            }
+        </select></label>
+        <label class="check-row"><input type="checkbox" name="IsActive" value="true" checked /> @(en ? "Activate account immediately" : "حساب از ابتدا فعال باشد")</label>
+        <div class="dialog-actions"><button type="button" class="ghost" onclick="document.getElementById('createUser').close()">@(en ? "Cancel" : "انصراف")</button><button type="submit" class="primary">@(en ? "Create user" : "ایجاد کاربر")</button></div>
+    </form>
+</dialog>

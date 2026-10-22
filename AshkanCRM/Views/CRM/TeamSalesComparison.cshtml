@@ -1,0 +1,65 @@
+@model AshkanCRM.Models.TeamSalesComparisonVm
+@using System.Globalization
+@{
+    var en = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "en";
+    ViewData["Title"] = en ? "Team sales comparison" : "مقایسه فروش تیم‌ها";
+    var maximum = Model.Rows.Count > 0 ? Model.Rows.Max(x => Math.Max(x.Actual, x.Target)) : 0m;
+}
+<div class="hero-row"><div>
+    <p class="eyebrow">@(en ? "Sales intelligence" : "هوشمندی فروش")</p>
+    <h1>@ViewData["Title"]</h1>
+    <p>@(en ? "Compare monthly sales targets and completed wins by team." : "مقایسه اهداف فروش و فرصت‌های موفق تیم‌ها در بازه انتخابی.")</p>
+</div><a asp-controller="CRM" asp-action="Dashboard">@(en ? "Back to dashboard" : "بازگشت به داشبورد")</a></div>
+<section class="panel" style="padding:24px;margin-block:20px">
+<form method="get" asp-action="TeamSalesComparison" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+<label for="months">@(en ? "Period" : "بازه زمانی")</label>
+<select name="months" id="months">
+@foreach(var n in new[]{3,6,12}) {
+<option value="@n" selected="@(n==Model.Months)">@(en ? $"{n} months" : $"{n} ماه")</option>
+}
+</select><button type="submit">@(en ? "Apply" : "اعمال")</button>
+<a class="btn" asp-controller="CRM" asp-action="PrintTeamSalesComparison" asp-route-months="@Model.Months" target="_blank" rel="noopener">@(en ? "Print / Save as PDF" : "چاپ / ذخیره PDF")</a>
+<a class="btn" asp-action="ExportTeamSalesComparisonCsv" asp-route-months="@Model.Months">@(en ? "Export CSV" : "خروجی CSV")</a>
+<a class="btn" asp-controller="CRM" asp-action="ExportTeamSalesComparisonExcel" asp-route-months="@Model.Months">@(en ? "Download Excel (.xlsx)" : "دانلود اکسل (.xlsx)")</a>
+</form>
+@if(Model.Rows.Count == 0){
+<p style="margin-top:20px">@(en ? "No active teams found." : "تیم فعالی یافت نشد.")</p>
+}else{
+<div class="crm77-controls" data-report-controls>
+ <label for="crm77-search">@(en ? "Find a team" : "جستجوی تیم")</label>
+ <input id="crm77-search" type="search" autocomplete="off" placeholder="@(en ? "Team name" : "نام تیم")" data-report-search />
+ <label for="crm77-sort">@(en ? "Sort by" : "مرتب‌سازی")</label>
+ <select id="crm77-sort" data-report-sort>
+ <option value="actual-desc">@(en ? "Actual sales (highest)" : "فروش واقعی (بیشترین)")</option>
+ <option value="target-desc">@(en ? "Target (highest)" : "هدف (بیشترین)")</option>
+ <option value="name-asc">@(en ? "Name (A–Z)" : "نام (الفبا)")</option>
+ </select>
+ <button type="button" class="crm78-clear" data-report-clear hidden>@(en ? "Clear search" : "پاک‌کردن جست‌وجو")</button>
+ <output class="crm77-count" data-report-count aria-live="polite"></output>
+ <p class="crm78-empty" data-report-empty hidden role="status">@(en ? "No matching results. Try another search." : "نتیجه‌ای یافت نشد. عبارت دیگری جست‌وجو کنید.")</p>
+ </div>
+<div class="crm68-chart" data-report-chart aria-label="@(en ? "Team sales chart" : "نمودار فروش تیم‌ها")">
+@foreach(var row in Model.Rows){
+var targetWidth = maximum>0 ? Math.Clamp(row.Target/maximum*100m,0m,100m) : 0m;
+var actualWidth = maximum>0 ? Math.Clamp(row.Actual/maximum*100m,0m,100m) : 0m;
+<div class="crm68-team" data-report-item data-name="@row.TeamName" data-actual="@row.Actual.ToString(CultureInfo.InvariantCulture)" data-target="@row.Target.ToString(CultureInfo.InvariantCulture)">
+<strong>@row.TeamName</strong>
+<div class="crm68-bar"><span>@(en ? "Target" : "هدف")</span><div class="crm68-track"><i class="crm68-target" style="width:@(targetWidth.ToString("0.##",CultureInfo.InvariantCulture))%"></i></div><b>@row.Target.ToString("N0")</b></div>
+<div class="crm68-bar"><span>@(en ? "Actual" : "واقعی")</span><div class="crm68-track"><i class="crm68-actual" style="width:@(actualWidth.ToString("0.##",CultureInfo.InvariantCulture))%"></i></div><b>@row.Actual.ToString("N0")</b></div>
+</div>
+}
+</div>
+<div class="table-wrap"><table data-report-table><thead><tr><th>@(en ? "Team" : "تیم")</th><th>@(en ? "Target" : "هدف")</th><th>@(en ? "Actual" : "واقعی")</th><th>@(en ? "Won deals" : "فرصت موفق")</th><th>@(en ? "Attainment" : "تحقق")</th></tr></thead><tbody>
+@foreach(var row in Model.Rows){
+<tr data-report-item data-name="@row.TeamName" data-actual="@row.Actual.ToString(CultureInfo.InvariantCulture)" data-target="@row.Target.ToString(CultureInfo.InvariantCulture)"><td>@row.TeamName</td><td>@row.Target.ToString("N0")</td><td>@row.Actual.ToString("N0")</td><td>@row.WonDeals</td><td>@(row.Target>0 ? row.Attainment.ToString("N1")+"%" : "—")</td></tr>
+}
+</tbody></table></div>
+}
+<p class="crm68-note">@(en ? "Actual sales are won deals closed during the selected UTC months. Targets sum primary team members' monthly targets; members assigned to multiple primary teams may appear in more than one team." : "فروش واقعی شامل فرصت‌های موفق بسته‌شده در ماه‌های انتخابی بر مبنای UTC است. هدف هر تیم از اهداف ماهانه اعضای اصلی آن محاسبه می‌شود؛ اعضای دارای عضویت اصلی در چند تیم ممکن است در چند ردیف لحاظ شوند.")</p>
+</section>
+<style>
+.crm68-chart{display:grid;gap:18px;margin:24px 0}.crm68-team{border-bottom:1px solid rgba(127,127,127,.2);padding-bottom:14px}.crm68-team>strong{display:block;margin-bottom:10px}.crm68-bar{display:grid;grid-template-columns:65px minmax(0,1fr) 120px;align-items:center;gap:10px;margin:7px 0;font-size:.87rem}.crm68-bar b{text-align:end;font-variant-numeric:tabular-nums}.crm68-track{height:13px;border-radius:20px;background:rgba(127,127,127,.13);overflow:hidden}.crm68-track i{display:block;height:100%;border-radius:20px}.crm68-target{background:#6886c5}.crm68-actual{background:#19a78e}.crm68-note{font-size:.85rem;opacity:.75;margin-top:16px}@@media(max-width:600px){.crm68-bar{grid-template-columns:50px minmax(0,1fr) 80px;font-size:.74rem;gap:6px}}
+</style>
+
+<link rel="stylesheet" href="~/css/crm77-report-interactions.css" asp-append-version="true" />
+<script defer src="~/js/crm77-report-interactions.js" asp-append-version="true"></script>

@@ -1,5 +1,12 @@
 @model IEnumerable<AshkanCRM.Models.PermissionItem>
-@{ViewData["Title"]="Permission Matrix";}
-<div class="page-head"><div><span class="eyebrow">ZERO TRUST ACCESS</span><h1>ماتریس نقش و دسترسی</h1><p>مرور متمرکز مجوزها بر اساس اصل حداقل دسترسی</p></div><button class="primary">＋ نقش سفارشی</button></div>
-<section class="panel"><div class="table-wrap"><table><thead><tr><th>Role</th><th>Scope</th><th>View</th><th>Create</th><th>Edit</th><th>Delete</th><th>Export</th></tr></thead><tbody>@foreach(var x in Model){<tr><td><b>@x.Role</b></td><td>@x.Module</td><td>✓</td><td>@(x.Create?"✓":"—")</td><td>@(x.Edit?"✓":"—")</td><td>@(x.Delete?"✓":"—")</td><td>@(x.Export?"✓":"—")</td></tr>}</tbody></table></div></section>
-<div class="grid-3"><div class="panel"><h3>Field-level Security</h3><p>فیلدهای حساس مالی، شماره تماس و Export می‌توانند مستقل از سطح ماژول کنترل شوند.</p><span class="badge good">فعال</span></div><div class="panel"><h3>Ownership Rules</h3><p>کارشناس فروش فقط رکوردهای خود و رکوردهای Share شده را ویرایش می‌کند.</p><span class="badge good">Enforced</span></div><div class="panel"><h3>Approval Gates</h3><p>تخفیف‌های بزرگ، حذف داده و Export انبوه نیازمند تایید مدیر هستند.</p><span class="badge warn">3 policy</span></div></div>
+@using System.Globalization
+@{ var fa = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "fa"; }
+@{ ViewData["Title"] = fa ? "ماتریس دسترسی" : "Permission matrix"; }
+<div class="page-head"><div><span class="eyebrow">@(fa ? "دسترسی مبتنی بر نقش" : "ROLE-BASED ACCESS")</span><h1>@(fa ? "ماتریس نقش و دسترسی" : "Role and permission matrix")</h1><p>@(fa ? "نمایش سیاست‌های نقش‌ها؛ این جدول صرفاً خواندنی است." : "Review role policies; this matrix is read-only.")</p></div><a class="primary" href="/CRM/AccessStudio">@(fa ? "مدیریت مجوزهای کاربران" : "Manage user grants")</a></div>
+<section class="panel"><div class="table-wrap"><table><thead><tr><th>@(fa ? "نقش" : "Role")</th><th>@(fa ? "ماژول" : "Module")</th><th>@(fa ? "مشاهده" : "View")</th><th>@(fa ? "ایجاد" : "Create")</th><th>@(fa ? "ویرایش" : "Edit")</th><th>@(fa ? "حذف" : "Delete")</th><th>@(fa ? "خروجی" : "Export")</th></tr></thead><tbody>
+@foreach (var item in Model)
+{
+<tr><td><b>@item.Role</b></td><td>@item.Module</td><td>✓</td><td>@(item.Create ? "✓" : "—")</td><td>@(item.Edit ? "✓" : "—")</td><td>@(item.Delete ? "✓" : "—")</td><td>@(item.Export ? "✓" : "—")</td></tr>
+}
+@if (!Model.Any()) { <tr><td colspan="7">@(fa ? "مجوزی برای نمایش وجود ندارد." : "No permissions to display.")</td></tr> }</tbody></table></div></section>
+<div class="grid-3"><section class="panel"><h3>@(fa ? "امنیت در سطح فیلد" : "Field-level security")</h3><p>@(fa ? "دسترسی به داده‌های حساس باید در سمت سرور اعمال شود." : "Sensitive data permissions must be enforced on the server.")</p></section><section class="panel"><h3>@(fa ? "مالکیت رکوردها" : "Record ownership")</h3><p>@(fa ? "سطح دسترسی کاربر باید برای هر درخواست بررسی شود." : "User scope must be checked on every request.")</p></section><section class="panel"><h3>@(fa ? "تأیید عملیات" : "Approval gates")</h3><p>@(fa ? "عملیات حساس را با سیاست تأیید مدیریتی کنترل کنید." : "Protect sensitive operations with approval policies.")</p></section></div>

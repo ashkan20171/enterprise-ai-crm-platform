@@ -1,0 +1,10 @@
+@using System.Globalization
+@{ var stage112English = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "en"; }
+@model List<AshkanCRM.Models.SupportKnowledgeArticle>
+@{ ViewData["Title"]=stage112English ? "Knowledge Base" : "پایگاه دانش"; }
+<link rel="stylesheet" href="~/css/support.css" asp-append-version="true" />
+<section class="support-hero"><div><h1 data-fa="پایگاه دانش پشتیبانی" data-en="Support Knowledge Base">@(stage112English ? "Support Knowledge Base" : "پایگاه دانش پشتیبانی")</h1><p data-fa="راهنماها و پاسخ‌های قابل جست‌وجو" data-en="Searchable help articles">@(stage112English ? "Searchable help articles" : "راهنماها و پاسخ‌های قابل جست‌وجو")</p></div></section>
+<section class="support-panel"><form method="get" asp-action="Knowledge"><input name="q" value="@ViewBag.Query" placeholder="@(stage112English ? "Search articles" : "جست‌وجوی مقالات")" maxlength="120"/><button class="support-primary" type="submit" data-fa="جست‌وجو" data-en="Search">@(stage112English ? "Search" : "جست‌وجو")</button></form></section>
+@foreach(var article in Model){<article class="support-panel"><small>@article.Category · @article.UpdatedAtUtc.ToString("yyyy-MM-dd")</small><h2>@article.Title</h2><p style="white-space:pre-wrap">@article.Content</p></article>}
+@if(User.IsInRole("Admin") || User.IsInRole("SalesManager")){<section class="support-panel"><h2 data-fa="مقاله جدید" data-en="New article">@(stage112English ? "New article" : "مقاله جدید")</h2><form method="post" asp-action="PublishArticle"><label>@(stage112English ? "Title" : "عنوان")</label><input name="title" maxlength="180" required/><label>@(stage112English ? "Category" : "دسته‌بندی")</label><input name="category" maxlength="100" value="General" required/><label>@(stage112English ? "Content" : "محتوا")</label><textarea name="content" maxlength="6000" rows="8" required></textarea><button type="submit" class="support-primary" data-fa="انتشار" data-en="Publish">@(stage112English ? "Publish" : "انتشار")</button></form></section>}
+@section Scripts { <script src="~/js/support-localization.js" asp-append-version="true"></script> }

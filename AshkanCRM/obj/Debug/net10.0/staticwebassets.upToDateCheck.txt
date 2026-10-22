@@ -1,8 +1,57 @@
 wwwroot\css\crm.css
+wwwroot\css\crm77-report-interactions.css
+wwwroot\css\design-system-29.css
+wwwroot\css\premium-ux.css
 wwwroot\css\site.css
+wwwroot\css\stage30.css
+wwwroot\css\stage31.css
+wwwroot\css\stage32-workspace.css
+wwwroot\css\stage56.css
+wwwroot\css\stage82-sidebar.css
+wwwroot\css\stage83-sidebar.css
+wwwroot\css\stage84-sidebar.css
+wwwroot\css\stage85-sidebar.css
+wwwroot\css\stage86-sidebar.css
+wwwroot\css\stage89-appearance.css
+wwwroot\css\stage90-theme.css
+wwwroot\css\stage91-dashboard.css
+wwwroot\css\stage92-dashboard.css
+wwwroot\css\stage93-dashboard.css
+wwwroot\css\stage94-dashboard.css
+wwwroot\css\stage97-dashboard.css
+wwwroot\css\stage98-dashboard.css
+wwwroot\css\support-workspace-38.css
+wwwroot\css\support.css
 wwwroot\favicon.ico
+wwwroot\js\accessibility-29.js
 wwwroot\js\crm.js
+wwwroot\js\crm77-report-interactions.js
+wwwroot\js\localization-28.js
+wwwroot\js\premium-ux.js
 wwwroot\js\site.js
+wwwroot\js\stage100-i18n.js
+wwwroot\js\stage101-i18n.js
+wwwroot\js\stage105-culture-switch.js
+wwwroot\js\stage30.js
+wwwroot\js\stage31.js
+wwwroot\js\stage32-workspace.js
+wwwroot\js\stage56-locale.js
+wwwroot\js\stage57-culture.js
+wwwroot\js\stage58-i18n.js
+wwwroot\js\stage60-forms.js
+wwwroot\js\stage82-sidebar.js
+wwwroot\js\stage83-sidebar.js
+wwwroot\js\stage84-sidebar.js
+wwwroot\js\stage85-sidebar.js
+wwwroot\js\stage86-sidebar.js
+wwwroot\js\stage87-sidebar-sync.js
+wwwroot\js\stage89-appearance.js
+wwwroot\js\stage90-theme.js
+wwwroot\js\stage92-dashboard.js
+wwwroot\js\stage99-global-localization.js
+wwwroot\js\support-live.js
+wwwroot\js\support-localization.js
+wwwroot\js\support-workspace-38.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -63,67 +112,116 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\css\crm.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\css\site.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\favicon.ico
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\js\crm.js
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\js\site.js
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.js
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\jquery-validation\dist\additional-methods.js
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\jquery-validation\dist\jquery.validate.js
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\jquery-validation\LICENSE.md
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\jquery\dist\jquery.js
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\jquery\dist\jquery.min.js
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\jquery\dist\jquery.min.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\jquery\dist\jquery.slim.js
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\jquery\dist\jquery.slim.min.js
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\jquery\dist\jquery.slim.min.map
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\wwwroot\lib\jquery\LICENSE.txt
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\crm.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\crm77-report-interactions.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\design-system-29.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\premium-ux.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\site.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\stage30.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\stage31.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\stage32-workspace.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\stage56.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\stage82-sidebar.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\stage83-sidebar.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\stage84-sidebar.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\stage85-sidebar.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\stage86-sidebar.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\stage89-appearance.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\stage90-theme.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\stage91-dashboard.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\stage92-dashboard.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\stage93-dashboard.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\stage94-dashboard.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\stage97-dashboard.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\stage98-dashboard.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\support-workspace-38.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\css\support.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\favicon.ico
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\accessibility-29.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\crm.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\crm77-report-interactions.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\localization-28.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\premium-ux.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\site.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage100-i18n.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage101-i18n.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage105-culture-switch.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage30.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage31.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage32-workspace.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage56-locale.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage57-culture.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage58-i18n.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage60-forms.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage82-sidebar.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage83-sidebar.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage84-sidebar.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage85-sidebar.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage86-sidebar.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage87-sidebar-sync.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage89-appearance.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage90-theme.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage92-dashboard.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\stage99-global-localization.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\support-live.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\support-localization.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\js\support-workspace-38.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\jquery-validation\dist\additional-methods.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\jquery-validation\LICENSE.md
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\jquery\dist\jquery.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\jquery\dist\jquery.min.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\jquery\dist\jquery.min.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\jquery\dist\jquery.slim.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\jquery\dist\jquery.slim.min.js
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\jquery\dist\jquery.slim.min.map
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\wwwroot\lib\jquery\LICENSE.txt

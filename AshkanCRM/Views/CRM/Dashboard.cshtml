@@ -1,2 +1,217 @@
 @model IEnumerable<AshkanCRM.Models.Deal>
-@{ViewData["Title"]="داشبورد";}<div class="hero-row"><div><p class="eyebrow" data-i18n="overview">نمای کلی کسب‌وکار</p><h1><span data-i18n="hello">سلام</span>، @User.Identity?.Name 👋</h1><p data-i18n="dashboardSub">امروز فرصت خوبی برای پیشبرد فروش و ساختن رابطه‌های بهتر است.</p></div><button class="primary">＋ <span data-i18n="newDeal">فرصت جدید</span></button></div><div class="stats"><article><span class="stat-icon">♙</span><small data-i18n="activeCustomers">مشتریان فعال</small><strong>@ViewBag.Customers</strong><em>↑ 12.4%</em></article><article><span class="stat-icon">◇</span><small data-i18n="pipeline">ارزش پایپ‌لاین</small><strong>@(((decimal)ViewBag.Pipeline/1000000000).ToString("0.0"))B</strong><em>↑ 8.2%</em></article><article><span class="stat-icon">✓</span><small data-i18n="won">فروش موفق</small><strong>@(((decimal)ViewBag.Won/1000000).ToString("0"))M</strong><em>این ماه</em></article><article><span class="stat-icon">◷</span><small data-i18n="openTasks">کارهای باز</small><strong>@ViewBag.Tasks</strong><em>3 فوری</em></article></div><div class="grid-2"><section class="panel"><div class="panel-head"><div><h2 data-i18n="salesTrend">روند فروش</h2><p>۶ ماه اخیر</p></div><span class="success-pill">+18.6%</span></div><div class="chart"><div class="y-labels"><span>2B</span><span>1.5B</span><span>1B</span><span>500M</span><span>0</span></div><svg viewBox="0 0 600 210" preserveAspectRatio="none"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6d5dfc" stop-opacity=".28"/><stop offset="1" stop-color="#6d5dfc" stop-opacity="0"/></linearGradient></defs><path class="area" d="M0 180 C70 160 85 125 145 140 S240 95 300 110 S380 55 430 80 S520 45 600 30 L600 210 L0 210Z"/><path class="line" d="M0 180 C70 160 85 125 145 140 S240 95 300 110 S380 55 430 80 S520 45 600 30"/></svg><div class="months"><span>فروردین</span><span>اردیبهشت</span><span>خرداد</span><span>تیر</span><span>مرداد</span><span>شهریور</span></div></div></section><section class="panel"><div class="panel-head"><div><h2 data-i18n="pipelineStage">پایپ‌لاین فروش</h2><p data-i18n="byStage">بر اساس مرحله</p></div><a href="/CRM/Deals">مشاهده همه</a></div><div class="funnel"><div style="--w:92%"><b>مذاکره</b><span>1.85B</span></div><div style="--w:75%"><b>پیشنهاد</b><span>980M</span></div><div style="--w:58%"><b>بررسی</b><span>420M</span></div><div style="--w:44%"><b>برنده</b><span>760M</span></div></div></section></div><section class="panel"><div class="panel-head"><div><h2 data-i18n="recentDeals">فرصت‌های اخیر</h2><p data-i18n="recentDealsSub">آخرین تغییرات تیم فروش</p></div><a href="/CRM/Deals" data-i18n="viewAll">مشاهده همه</a></div><div class="table-wrap"><table><thead><tr><th>عنوان</th><th>مشتری</th><th>مسئول</th><th>ارزش</th><th>مرحله</th><th>احتمال</th></tr></thead><tbody>@foreach(var x in Model){<tr><td><b>@x.Title</b></td><td>@x.Customer</td><td>@x.Owner</td><td>@x.Value.ToString("N0")</td><td><span class="badge">@x.Stage</span></td><td><div class="prob"><i style="width:@(x.Probability)%"></i></div> @x.Probability%</td></tr>}</tbody></table></div></section>
+<link rel="stylesheet" href="~/css/stage93-dashboard.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/stage94-dashboard.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/stage97-dashboard.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/stage98-dashboard.css" asp-append-version="true" />
+@using System.Linq
+@{
+ ViewData["Title"] = System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "en" ? "Dashboard" : "داشبورد";
+ var deals = Model.ToList();
+ var selectedPeriod = (int)(ViewBag.DashboardPeriod ?? 0);
+ var stages = new[] { new { Key="Qualification", Fa="بررسی", En="Qualification" }, new { Key="Proposal", Fa="پیشنهاد", En="Proposal" }, new { Key="Negotiation", Fa="مذاکره", En="Negotiation" }, new { Key="Won", Fa="برنده", En="Won" }, new { Key="Lost", Fa="ناموفق", En="Lost" } };
+ var totals = stages.Select(s => new { s.Key, s.Fa, s.En, Value=deals.Where(d=>d.Stage==s.Key || d.Stage==s.Fa).Sum(d=>d.Value), Count=deals.Count(d=>d.Stage==s.Key || d.Stage==s.Fa) }).ToList();
+ var max = totals.Count > 0 ? totals.Max(x=>x.Value) : 0m;
+ var maxCount = totals.Count > 0 ? totals.Max(x=>x.Count) : 0;
+ var total = totals.Sum(x=>x.Value);
+ // Projected closing values (not booked revenue); preserve stored CloseDate strings.
+ var today = DateTime.UtcNow.Date;
+ var monthStart = new DateTime(today.Year, today.Month, 1);
+ var months = Enumerable.Range(0, 6).Select(i => monthStart.AddMonths(i)).ToList();
+ var scheduled = deals.Select(d => {
+  DateTime date;
+  var valid = DateTime.TryParseExact(d.CloseDate, new[] { "yyyy-MM-dd", "yyyy/MM/dd", "MM/dd/yyyy", "yyyy-MM-ddTHH:mm:ss" },
+   System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out date);
+  return new { Deal=d, Valid=valid, Date=date };
+ }).Where(x => x.Valid && x.Deal.Stage != "Lost" && x.Deal.Stage != "ناموفق" && x.Deal.Stage != "Won" && x.Deal.Stage != "برنده").ToList();
+ var forecast = months.Select(m => new {
+  Month=m,
+  Value=scheduled.Where(x => x.Date.Year==m.Year && x.Date.Month==m.Month).Sum(x=>x.Deal.Value),
+  Count=scheduled.Count(x => x.Date.Year==m.Year && x.Date.Month==m.Month)
+ }).ToList();
+ var forecastMax = forecast.Count > 0 ? forecast.Max(x=>x.Value) : 0m;
+ var isEnglish = System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "en";
+ // Only translate known system stage codes. Customer-entered content stays unchanged.
+ string LocalizedStage(string? code) => code?.Trim() switch
+ {
+  "Qualification" or "بررسی" => isEnglish ? "Qualification" : "بررسی",
+  "Proposal" or "پیشنهاد" => isEnglish ? "Proposal" : "پیشنهاد",
+  "Negotiation" or "مذاکره" => isEnglish ? "Negotiation" : "مذاکره",
+  "Won" or "برنده" => isEnglish ? "Won" : "برنده",
+  "Lost" or "ناموفق" => isEnglish ? "Lost" : "ناموفق",
+  _ => code ?? string.Empty
+ };
+ var visibleDeals = deals.Take(15).ToList();
+ var realized = ViewBag.RealizedSales as List<AshkanCRM.Models.MonthlyRealizedSalesVm> ?? new();
+ var comparable = ViewBag.RealizedComparable as AshkanCRM.Models.ComparableSalesVm;
+ var yearSales = ViewBag.YearSales as AshkanCRM.Models.YearSalesVm;
+ var realizedMax = realized.Count > 0 ? realized.Max(x => x.Amount) : 0m;
+ var realizedTotal = realized.Sum(x => x.Amount);
+ var realizedWonCount = realized.Sum(x => x.WonDeals);
+ var currentMonth = realized.LastOrDefault()?.Amount ?? 0m;
+ var previousMonth = realized.Count > 1 ? realized[^2].Amount : 0m;
+ decimal? monthGrowth = previousMonth != 0m ? (currentMonth - previousMonth) / Math.Abs(previousMonth) * 100m : null;
+}
+<div class="hero-row">
+ <div><p class="eyebrow" data-fa="نمای کلی کسب‌وکار" data-en="Business overview">@(isEnglish ? "Business overview" : "نمای کلی کسب‌وکار")</p><h1><span data-fa="داشبورد فروش" data-en="Sales dashboard">@(isEnglish ? "Sales dashboard" : "داشبورد فروش")</span></h1><p data-fa="نمای زنده از فرصت‌های ثبت‌شده در پایگاه داده" data-en="Live overview of deals stored in the database">@(isEnglish ? "Live overview of deals stored in the database" : "نمای زنده از فرصت‌های ثبت‌شده در پایگاه داده")</p></div>
+ <a class="primary" href="/CRM/Deals#newDeal" data-fa="＋ فرصت جدید" data-en="＋ New deal">@(isEnglish ? "＋ New deal" : "＋ فرصت جدید")</a>
+</div>
+<section class="panel crm93-filter" aria-label="@(isEnglish ? "Scheduled closing date filter" : "فیلتر تاریخ بسته‌شدن برنامه‌ریزی‌شده")">
+ <form method="get" asp-controller="CRM" asp-action="Dashboard" class="crm93-filter-form">
+  <label for="crm93-period">@(isEnglish ? "Scheduled close date" : "تاریخ بسته‌شدن برنامه‌ریزی‌شده")</label>
+  <select id="crm93-period" name="period">
+   <option value="0" selected="@(selectedPeriod==0)">@(isEnglish ? "All deals" : "همه فرصت‌ها")</option>
+   <option value="3" selected="@(selectedPeriod==3)">@(isEnglish ? "Next 3 months" : "۳ ماه آینده")</option>
+   <option value="6" selected="@(selectedPeriod==6)">@(isEnglish ? "Next 6 months" : "۶ ماه آینده")</option>
+   <option value="12" selected="@(selectedPeriod==12)">@(isEnglish ? "Next 12 months" : "۱۲ ماه آینده")</option>
+  </select>
+  <button class="primary" type="submit">@(isEnglish ? "Apply" : "اعمال")</button>
+  <a asp-controller="CRM" asp-action="Dashboard">@(isEnglish ? "Reset" : "بازنشانی")</a>
+ </form>
+ <p class="crm93-note">@(isEnglish ? "Filters deal-based cards and charts by the scheduled closing date, not actual sales. Deals without a valid date are excluded when a period is selected. Customer and task counts remain unfiltered." : "این فیلتر کارت‌ها و نمودارهای مربوط به فرصت‌ها را بر اساس تاریخ برنامه‌ریزی‌شده محدود می‌کند، نه فروش قطعی. فرصت‌های بدون تاریخ معتبر در بازه انتخابی نمایش داده نمی‌شوند. تعداد مشتریان و کارها مستقل از این فیلتر است.")</p>
+</section>
+@{ var overdueDeals = ViewBag.OverdueScheduledDeals as List<AshkanCRM.Models.Deal> ?? new(); }
+@if (overdueDeals.Count > 0)
+{
+ <section class="panel crm98-overdue" aria-label="@(isEnglish ? "Overdue scheduled deals" : "فرصت‌های دارای موعد گذشته")">
+  <div class="panel-head"><div><h2>@(isEnglish ? "Overdue scheduled deals" : "فرصت‌های دارای موعد گذشته")</h2><p>@(isEnglish ? "Open deals whose planned close date has passed. This is a follow-up alert, not realized revenue." : "فرصت‌های باز با تاریخ بسته‌شدن برنامه‌ریزی‌شده گذشته؛ این هشدار پیگیری است، نه فروش قطعی.")</p></div><span class="crm98-alert-count">@overdueDeals.Count</span></div>
+  <div class="table-responsive"><table><thead><tr><th>@(isEnglish ? "Deal" : "فرصت فروش")</th><th>@(isEnglish ? "Owner" : "مسئول")</th><th>@(isEnglish ? "Planned close" : "موعد برنامه‌ریزی‌شده")</th><th>@(isEnglish ? "Value" : "ارزش")</th><th>@(isEnglish ? "Stage" : "مرحله")</th></tr></thead><tbody>
+  @foreach (var deal in overdueDeals)
+  {
+   <tr><td><a href="/CRM/Deals">@deal.Title</a></td><td>@deal.Owner</td><td>@deal.CloseDate</td><td>@deal.Value.ToString("N0")</td><td>@LocalizedStage(deal.Stage)</td></tr>
+  }
+  </tbody></table></div>
+ </section>
+}
+<div class="stats">
+ <article><small data-fa="مشتریان" data-en="Customers">@(isEnglish ? "Customers" : "مشتریان")</small><strong>@ViewBag.Customers</strong></article>
+ <article><small data-fa="ارزش فرصت‌های باز" data-en="Open pipeline value">@(isEnglish ? "Open pipeline value" : "ارزش فرصت‌های باز")</small><strong>@(((decimal)ViewBag.Pipeline).ToString("N0"))</strong></article>
+ <article><small data-fa="فرصت‌های موفق" data-en="Won deals value">@(isEnglish ? "Won deals value" : "فرصت‌های موفق")</small><strong>@(((decimal)ViewBag.Won).ToString("N0"))</strong></article>
+ <article><small data-fa="ارزش وزنی فرصت‌های باز" data-en="Weighted open pipeline">@(isEnglish ? "Weighted open pipeline" : "ارزش وزنی فرصت‌های باز")</small><strong>@(((decimal)ViewBag.WeightedPipeline).ToString("N0"))</strong></article>
+ <article><small data-fa="نرخ موفقیت فرصت‌های بسته‌شده" data-en="Closed deal win rate">@(isEnglish ? "Closed deal win rate" : "نرخ موفقیت فرصت‌های بسته‌شده")</small><strong>@(((double)ViewBag.WinRate).ToString("0.0"))%</strong></article>
+ <article><small data-fa="کارهای باز" data-en="Open tasks">@(isEnglish ? "Open tasks" : "کارهای باز")</small><strong>@ViewBag.Tasks</strong></article>
+</div>
+@if(User.IsInRole("Admin") || User.IsInRole("SalesManager")){
+<section class="panel crm91-quick-actions" aria-label="@(isEnglish ? "Quick actions" : "دسترسی سریع")">
+ <div class="panel-head"><div><h2>@(isEnglish ? "Quick actions" : "دسترسی سریع")</h2><p>@(isEnglish ? "Open key sales reports and target management" : "دسترسی به گزارش‌های کلیدی و مدیریت اهداف فروش")</p></div></div>
+ <div class="crm91-action-grid">
+  <a asp-controller="CRM" asp-action="ManageSalesTargets"><span aria-hidden="true">◎</span><strong>@(isEnglish ? "Manage targets" : "مدیریت اهداف")</strong><small>@(isEnglish ? "Monthly sales goals" : "اهداف ماهانه فروش")</small></a>
+  <a asp-controller="CRM" asp-action="TargetVsActual"><span aria-hidden="true">▥</span><strong>@(isEnglish ? "Target vs actual" : "هدف و عملکرد")</strong><small>@(isEnglish ? "Track attainment" : "بررسی تحقق اهداف")</small></a>
+  <a asp-controller="CRM" asp-action="SalesPerformance"><span aria-hidden="true">▤</span><strong>@(isEnglish ? "Agent performance" : "عملکرد کارشناسان")</strong><small>@(isEnglish ? "Compare individual results" : "مقایسه نتایج فردی")</small></a>
+  <a asp-controller="CRM" asp-action="TeamSalesComparison"><span aria-hidden="true">▦</span><strong>@(isEnglish ? "Team comparison" : "مقایسه تیم‌ها")</strong><small>@(isEnglish ? "Compare team results" : "مقایسه عملکرد تیمی")</small></a>
+ </div>
+</section>
+}
+<section class="panel crm56-chart-panel">
+ <div class="panel-head"><div><h2 data-fa="تحلیل قیف فروش" data-en="Sales pipeline analytics">@(isEnglish ? "Sales pipeline analytics" : "تحلیل قیف فروش")</h2><p data-fa="داده‌های واقعی فرصت‌های ثبت‌شده؛ به تفکیک مرحله" data-en="Real persisted deal values grouped by stage">@(isEnglish ? "Real persisted deal values grouped by stage" : "داده‌های واقعی فرصت‌های ثبت‌شده؛ به تفکیک مرحله")</p></div><a href="/CRM/Deals" data-fa="مشاهده فرصت‌ها" data-en="View deals">@(isEnglish ? "View deals" : "مشاهده فرصت‌ها")</a></div>
+ <div class="crm92-chart-controls" role="group" aria-label="@(isEnglish ? "Chart metric" : "معیار نمودار")">
+  <button type="button" class="crm92-metric is-selected" data-crm92-metric="value" aria-pressed="true">@(isEnglish ? "Value" : "ارزش")</button>
+  <button type="button" class="crm92-metric" data-crm92-metric="count" aria-pressed="false">@(isEnglish ? "Count" : "تعداد")</button>
+ </div>
+ @if(deals.Count == 0){<p data-fa="هنوز فرصتی ثبت نشده است." data-en="No deals have been recorded yet.">@(isEnglish ? "No deals have been recorded yet." : "هنوز فرصتی ثبت نشده است.")</p>}
+ else {
+  <div class="crm56-bars" id="crm92-pipeline" role="group" aria-label="@(isEnglish ? "Sales pipeline by stage" : "قیف فروش بر اساس مرحله")">
+  @foreach(var stage in totals){
+   var percent=max>0?(double)(stage.Value/max)*100:0;
+   var countPercent=maxCount>0?(double)stage.Count/maxCount*100:0;
+   <div class="crm56-bar-row"><span data-fa="@stage.Fa" data-en="@stage.En">@(isEnglish ? stage.En : stage.Fa)</span><div class="crm56-track"><div class="crm56-fill" data-crm92-value-width="@(percent.ToString("0.##",System.Globalization.CultureInfo.InvariantCulture))" data-crm92-count-width="@(countPercent.ToString("0.##",System.Globalization.CultureInfo.InvariantCulture))" style="width:@(percent.ToString("0.##",System.Globalization.CultureInfo.InvariantCulture))%"></div></div><strong data-crm92-value="@stage.Value.ToString("N0")" data-crm92-count="@stage.Count">@stage.Value.ToString("N0")</strong><small>(@stage.Count)</small></div>
+  }
+  </div>
+ }
+</section>
+<section class="panel crm94-realized" aria-label="@(isEnglish ? "Realized monthly sales" : "فروش قطعی ماهانه")">
+ <div class="panel-head"><div>
+  <h2>@(isEnglish ? "Realized sales — last 12 months" : "فروش قطعی — ۱۲ ماه گذشته")</h2>
+  <p>@(isEnglish ? "Won deals grouped by actual closing date (UTC), independent of the scheduled-close filter above." : "فرصت‌های موفق بر اساس تاریخ واقعی بسته‌شدن (UTC)؛ مستقل از فیلتر تاریخ برنامه‌ریزی‌شده بالا.")</p>
+ </div>
+ @if(User.IsInRole("Admin") || User.IsInRole("SalesManager")){
+  <a class="btn" asp-controller="CRM" asp-action="ExportRealizedSalesExcel">@(isEnglish ? "Export 12-month Excel" : "دانلود اکسل ۱۲ ماهه")</a>
+ }
+ </div>
+ <div class="crm94-summary">
+  <div><small>@(isEnglish ? "Realized sales value" : "ارزش فروش قطعی")</small><strong>@realizedTotal.ToString("N0")</strong></div>
+  <div><small>@(isEnglish ? "Won deals with closing dates" : "فرصت‌های موفق دارای تاریخ قطعی")</small><strong>@realizedWonCount</strong></div>
+  <div><small>@(isEnglish ? "Current month" : "ماه جاری")</small><strong>@currentMonth.ToString("N0")</strong></div>
+  <div><small>@(isEnglish ? "Previous month" : "ماه قبل")</small><strong>@previousMonth.ToString("N0")</strong></div>
+  <div><small>@(isEnglish ? "Month-over-month growth" : "رشد نسبت به ماه قبل")</small><strong>@(monthGrowth.HasValue ? monthGrowth.Value.ToString("+0.##;-0.##;0") + "%" : (isEnglish ? "N/A (zero baseline)" : "غیرقابل محاسبه (مبنای صفر)"))</strong></div>
+ </div>
+ @if(comparable != null){
+ <div class="crm96-comparison" aria-label="@(isEnglish ? "Equal-duration realized sales comparison" : "مقایسه فروش قطعی در بازه‌های هم‌طول")">
+  <h3>@(isEnglish ? "Fair comparison: same elapsed time" : "مقایسه منصفانه: بازه زمانی هم‌طول")</h3>
+  <p>@(isEnglish ? "UTC month-to-date versus the same elapsed duration from the start of the previous month. Only won deals with an actual close timestamp are counted." : "فروش از ابتدای ماه جاری به وقت UTC تا این لحظه، در برابر مدت‌زمان مشابه از ابتدای ماه قبل. فقط فرصت‌های موفق دارای تاریخ بسته‌شدن واقعی محاسبه می‌شوند.")</p>
+  <div class="crm94-summary">
+   <div><small>@(isEnglish ? "This month to date" : "ماه جاری تا این لحظه")</small><strong>@comparable.CurrentAmount.ToString("N0")</strong><small>@comparable.CurrentWon @(isEnglish ? "won deals" : "فرصت موفق")</small></div>
+   <div><small>@(isEnglish ? "Previous month, matching duration" : "ماه قبل، بازه هم‌طول")</small><strong>@comparable.PreviousAmount.ToString("N0")</strong><small>@comparable.PreviousWon @(isEnglish ? "won deals" : "فرصت موفق")</small></div>
+   <div><small>@(isEnglish ? "Equal-duration growth" : "رشد در بازه هم‌طول")</small><strong>@(comparable.GrowthPercent.HasValue ? comparable.GrowthPercent.Value.ToString("+0.##;-0.##;0") + "%" : (isEnglish ? "N/A — zero baseline" : "غیرقابل محاسبه — مبنای صفر"))</strong></div>
+  </div>
+  <small>@(isEnglish ? "Snapshot (UTC): " : "زمان محاسبه (UTC): ")@comparable.AsOfUtc.ToString("yyyy-MM-dd HH:mm", System.Globalization.CultureInfo.InvariantCulture)</small>
+ </div>
+ }
+ @if(realizedWonCount == 0){
+  <p class="crm94-empty">@(isEnglish ? "No won deals with an actual closing date in the last twelve months." : "در دوازده ماه گذشته فرصت موفقی با تاریخ بسته‌شدن واقعی ثبت نشده است.")</p>
+ }else{
+  <div class="crm94-chart" role="list" aria-label="@(isEnglish ? "Monthly realized sales" : "فروش قطعی ماهانه")">
+   @foreach(var item in realized){
+    var width=realizedMax>0?(double)(item.Amount/realizedMax)*100:0;
+    var labelEn=item.Month.ToString("MMM yyyy",System.Globalization.CultureInfo.GetCultureInfo("en-US"));
+    var labelFa=item.Month.ToString("yyyy/MM",System.Globalization.CultureInfo.InvariantCulture);
+    <div class="crm94-row" role="listitem">
+     <span>@(isEnglish ? labelEn : labelFa)</span>
+     <div class="crm94-track"><div class="crm94-fill" style="width:@(width.ToString("0.##",System.Globalization.CultureInfo.InvariantCulture))%"></div></div>
+     <strong>@item.Amount.ToString("N0")</strong>
+     <small>@(isEnglish ? $"{item.WonDeals} won" : $"{item.WonDeals} موفق")</small>
+    </div>
+   }
+  </div>
+ }
+</section>
+@if(yearSales != null){
+<section class="panel crm97-year" aria-label="@(isEnglish ? "Year-to-date realized sales" : "فروش قطعی از ابتدای سال")">
+ <div class="panel-head"><div>
+  <h2>@(isEnglish ? "Year-to-date performance" : "عملکرد فروش از ابتدای سال")</h2>
+  <p>@(isEnglish ? "UTC calendar year versus the same elapsed period last year; actual won-close timestamps only." : "مقایسه سال میلادی جاری با بازه هم‌طول سال قبل به وقت UTC؛ فقط تاریخ واقعی بسته‌شدن فرصت‌های موفق.")</p>
+ </div></div>
+ <div class="crm97-metrics">
+  <div><small>@(isEnglish ? $"{yearSales.CurrentYear} YTD" : $"سال {yearSales.CurrentYear} تا امروز")</small><strong>@yearSales.CurrentAmount.ToString("N0")</strong><small>@yearSales.CurrentWon @(isEnglish ? "won" : "موفق")</small></div>
+  <div><small>@(isEnglish ? $"{yearSales.CurrentYear-1} comparable YTD" : $"بازه مشابه {yearSales.CurrentYear-1}")</small><strong>@yearSales.PreviousAmount.ToString("N0")</strong><small>@yearSales.PreviousWon @(isEnglish ? "won" : "موفق")</small></div>
+  <div><small>@(isEnglish ? "Year-over-year change" : "تغییر نسبت به سال قبل")</small><strong>@(yearSales.GrowthPercent.HasValue ? yearSales.GrowthPercent.Value.ToString("+0.##;-0.##;0")+"%" : (isEnglish ? "N/A (zero baseline)" : "غیرقابل محاسبه (مبنای صفر)"))</strong></div>
+ </div>
+ <h3>@(isEnglish ? "Top 5 sales owners — current year" : "۵ کارشناس برتر فروش — سال جاری")</h3>
+ @if(yearSales.Leaders.Count==0){<p>@(isEnglish ? "No eligible won deals this year." : "امسال فرصت موفق واجد شرایط ثبت نشده است.")</p>}
+ else {
+  <div class="crm97-table-scroll"><table class="crm97-table"><thead><tr><th>@(isEnglish ? "Owner" : "کارشناس")</th><th>@(isEnglish ? "Won deals" : "فرصت موفق")</th><th>@(isEnglish ? "Realized value" : "ارزش فروش قطعی")</th></tr></thead><tbody>
+  @foreach(var leader in yearSales.Leaders){<tr><td>@leader.Owner</td><td>@leader.WonDeals</td><td>@leader.Amount.ToString("N0")</td></tr>}
+  </tbody></table></div>
+ }
+ <small>@(isEnglish ? "Snapshot UTC: " : "زمان محاسبه UTC: ")@yearSales.AsOfUtc.ToString("yyyy-MM-dd HH:mm",System.Globalization.CultureInfo.InvariantCulture)</small>
+</section>
+}
+<section class="panel crm56-chart-panel crm62-forecast">
+ <div class="panel-head"><div>
+  <h2 data-fa="پیش‌بینی زمان‌بندی فرصت‌ها" data-en="Scheduled pipeline forecast">@(isEnglish ? "Scheduled pipeline forecast" : "پیش‌بینی زمان‌بندی فرصت‌ها")</h2>
+  <p data-fa="ارزش فرصت‌های باز بر اساس تاریخ بسته‌شدن برنامه‌ریزی‌شده؛ نه درآمد تحقق‌یافته" data-en="Open deals by scheduled closing month; not realized revenue">@(isEnglish ? "Open deals by scheduled closing month; not realized revenue" : "ارزش فرصت‌های باز بر اساس تاریخ بسته‌شدن برنامه‌ریزی‌شده؛ نه درآمد تحقق‌یافته")</p>
+ </div></div>
+ @if (forecast.All(x => x.Count == 0)) {
+  <p data-fa="برای شش ماه آینده فرصت باز با تاریخ معتبر ثبت نشده است." data-en="No open deals with valid closing dates in the next six months.">@(isEnglish ? "No open deals with valid closing dates in the next six months." : "برای شش ماه آینده فرصت باز با تاریخ معتبر ثبت نشده است.")</p>
+ } else {
+  <div class="crm56-bars" role="img" aria-label="@(isEnglish ? "Scheduled open pipeline by month" : "ارزش فرصت‌های باز برنامه‌ریزی‌شده به تفکیک ماه")">
+   @foreach (var month in forecast) {
+    var percent = forecastMax > 0 ? (double)(month.Value / forecastMax) * 100 : 0;
+    var monthEn = month.Month.ToString("MMM yyyy", System.Globalization.CultureInfo.GetCultureInfo("en-US"));
+    var monthFa = month.Month.ToString("yyyy/MM", System.Globalization.CultureInfo.InvariantCulture);
+    <div class="crm56-bar-row">
+     <span data-fa="@monthFa" data-en="@monthEn">@(isEnglish ? monthEn : monthFa)</span>
+     <div class="crm56-track"><div class="crm56-fill" style="width:@(percent.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture))%"></div></div>
+     <strong>@month.Value.ToString("N0")</strong><small>(@month.Count)</small>
+    </div>
+   }
+  </div>
+ }
+</section>
+<section class="panel"><div class="panel-head"><div><h2 data-fa="فرصت‌های اخیر" data-en="Recent deals">@(isEnglish ? "Recent deals" : "فرصت‌های اخیر")</h2><p data-fa="بر اساس فرصت‌های قابل مشاهده برای شما" data-en="Based on deals visible to your account">@(isEnglish ? "Based on deals visible to your account" : "بر اساس فرصت‌های قابل مشاهده برای شما")</p></div><a href="/CRM/Deals" data-fa="مشاهده همه" data-en="View all">@(isEnglish ? "View all" : "مشاهده همه")</a></div>
+ <div class="table-wrap"><table><thead><tr><th data-fa="عنوان" data-en="Title">@(isEnglish ? "Title" : "عنوان")</th><th data-fa="مشتری" data-en="Customer">@(isEnglish ? "Customer" : "مشتری")</th><th data-fa="مسئول" data-en="Owner">@(isEnglish ? "Owner" : "مسئول")</th><th data-fa="ارزش" data-en="Value">@(isEnglish ? "Value" : "ارزش")</th><th data-fa="مرحله" data-en="Stage">@(isEnglish ? "Stage" : "مرحله")</th><th data-fa="احتمال" data-en="Probability">@(isEnglish ? "Probability" : "احتمال")</th></tr></thead><tbody>
+ @foreach(var deal in visibleDeals){<tr><td><b>@deal.Title</b></td><td>@deal.Customer</td><td>@deal.Owner</td><td>@deal.Value.ToString("N0")</td><td><span class="badge" data-stage58-code="@deal.Stage">@LocalizedStage(deal.Stage)</span></td><td>@deal.Probability%</td></tr>}
+ @if (visibleDeals.Count == 0) { <tr><td colspan="6" class="crm91-empty">@(isEnglish ? "No deals to display yet. Add a deal to get started." : "هنوز فرصتی برای نمایش وجود ندارد. برای شروع یک فرصت ثبت کنید.")</td></tr> }
+ </tbody></table></div>
+</section>
+
+

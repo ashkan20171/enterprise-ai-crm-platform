@@ -1,566 +1,635 @@
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\appsettings.Development.json
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\appsettings.json
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\AshkanCRM.staticwebassets.runtime.json
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\AshkanCRM.staticwebassets.endpoints.json
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\AshkanCRM.exe
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\AshkanCRM.deps.json
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\AshkanCRM.runtimeconfig.json
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\AshkanCRM.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\AshkanCRM.pdb
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\rpswa.dswa.cache.json
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.GeneratedMSBuildEditorConfig.editorconfig
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.AssemblyInfoInputs.cache
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.AssemblyInfo.cs
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.csproj.CoreCompileInputs.cache
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.MvcApplicationPartsAssemblyInfo.cache
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.RazorAssemblyInfo.cache
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.RazorAssemblyInfo.cs
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\rjimswa.dswa.cache.json
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\scopedcss\bundle\AshkanCRM.styles.css
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\scopedcss\projectbundle\AshkanCRM.bundle.scp.css
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\k5ylew6sgn-{0}-b9sayid5wm-b9sayid5wm.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\sp3a2jmq4i-{0}-61n19gt1b8-61n19gt1b8.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\o4f5qyrfuz-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\p4fmlk7jhq-{0}-bqjiyaj88i-bqjiyaj88i.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\130ptxpkc2-{0}-c2jlpeoesf-c2jlpeoesf.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\d7ipv98vxo-{0}-erw9l3u2r3-erw9l3u2r3.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\rgi2orpq2w-{0}-aexeepp0ev-aexeepp0ev.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\0hw5gmrpi1-{0}-d7shbmvgxk-d7shbmvgxk.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\1pkf6x5vy5-{0}-ausgxo2sd3-ausgxo2sd3.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\iye0drpuii-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\aycj9co2ki-{0}-cosvhxvwiu-cosvhxvwiu.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\739syn17y5-{0}-ub07r2b239-ub07r2b239.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\ax8y2ldodw-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\nitmmybl1m-{0}-b7pk76d08c-b7pk76d08c.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\gbkwzk9cl6-{0}-fsbi9cje9m-fsbi9cje9m.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\1obkf7aihb-{0}-rzd6atqjts-rzd6atqjts.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\c2isc7ztuo-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\mmm9uzc5q2-{0}-dxx9fxp4il-dxx9fxp4il.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\u4z9k2o8hc-{0}-jd9uben2k1-jd9uben2k1.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\r6jafjnang-{0}-khv3u5hwcm-khv3u5hwcm.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\vikk2m9e2y-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\odoqu63isd-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\v5alavxpay-{0}-c2oey78nd0-c2oey78nd0.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\0ojv01qonr-{0}-tdbxkamptv-tdbxkamptv.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\5goeuip8gh-{0}-j5mq2jizvt-j5mq2jizvt.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\in5o8a1dxt-{0}-06098lyss8-06098lyss8.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\fubccrrvqy-{0}-nvvlpmu67g-nvvlpmu67g.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\ngwgvaseit-{0}-s35ty4nyc5-s35ty4nyc5.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\vbkznt7ar9-{0}-pj5nd1wqec-pj5nd1wqec.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\r2p1d51u4x-{0}-46ein0sx1k-46ein0sx1k.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\bxouudhj7k-{0}-v0zj4ognzu-v0zj4ognzu.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\ezhdx3vfda-{0}-37tfw0ft22-37tfw0ft22.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\pryv17srdm-{0}-hrwsygsryq-hrwsygsryq.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\f0xx5aqkj4-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\2oz248ifo5-{0}-ft3s53vfgj-ft3s53vfgj.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\mwxb87mkcv-{0}-6cfz1n2cew-6cfz1n2cew.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\6yruoton3f-{0}-6pdc2jztkx-6pdc2jztkx.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\u4ra41jjs8-{0}-493y06b0oq-493y06b0oq.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\8lrtmcb2vz-{0}-iovd86k7lj-iovd86k7lj.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\czwu8p05z6-{0}-vr1egmr9el-vr1egmr9el.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\12zhfptnzb-{0}-kbrnm935zg-kbrnm935zg.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\mj0priruau-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\6rq7vi70br-{0}-y7v9cxd14o-y7v9cxd14o.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\ktp73pskm1-{0}-notf2xhcfb-notf2xhcfb.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\sbwghhtez6-{0}-h1s4sie4z3-h1s4sie4z3.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\asdl0d2syp-{0}-63fj8s7r0e-63fj8s7r0e.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\xf4zftb20z-{0}-0j3bgjxly4-0j3bgjxly4.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\k1gpyrqf42-{0}-47otxtyo56-47otxtyo56.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\q9p7kfwim7-{0}-4v8eqarkd7-4v8eqarkd7.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\mlsmlimytm-{0}-356vix0kms-356vix0kms.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\nr79c9yk5m-{0}-83jwlth58m-83jwlth58m.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\vpabl3psp3-{0}-mrlpezrjn3-mrlpezrjn3.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\0p34te8qn8-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\ebhde7332w-{0}-ag7o75518u-ag7o75518u.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\nhwawibikh-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\tbkt72b4ii-{0}-0i3buxo5is-0i3buxo5is.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\xi8l2rk8ey-{0}-o1o13a6vjx-o1o13a6vjx.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\6cxf1ekzrj-{0}-ttgo8qnofa-ttgo8qnofa.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\xn3zzmdncc-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\n1gvy1j7g2-{0}-muycvpuwrr-muycvpuwrr.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\v33w4kehvu-{0}-87fc7y1x7t-87fc7y1x7t.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\44ft6rsjfj-{0}-mlv21k5csn-mlv21k5csn.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\jf48tkbhqe-{0}-jxgcb6ikmo-jxgcb6ikmo.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\ocf2ciwy2z-{0}-jxgcb6ikmo-jxgcb6ikmo.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\staticwebassets.build.json
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\staticwebassets.build.json.cache
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\staticwebassets.development.json
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\staticwebassets.build.endpoints.json
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\swae.build.ex.cache
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\refint\AshkanCRM.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.pdb
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.genruntimeconfig.cache
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\ref\AshkanCRM.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.csproj.Up2Date
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\Microsoft.Build.Locator.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe.config
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\Microsoft.IO.Redist.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\Newtonsoft.Json.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.Buffers.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.Collections.Immutable.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.CommandLine.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.Memory.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.Numerics.Vectors.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.Runtime.CompilerServices.Unsafe.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.Threading.Tasks.Extensions.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\cs\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\de\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\es\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\fr\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\it\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\ja\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\ko\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\pl\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\pt-BR\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\ru\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\tr\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\zh-Hans\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\zh-Hant\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\Microsoft.Build.Locator.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.deps.json
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll.config
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.runtimeconfig.json
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\Newtonsoft.Json.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\System.Collections.Immutable.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\System.CommandLine.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\cs\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\de\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\es\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\fr\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\it\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\ja\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\ko\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\pl\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\pt-BR\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\ru\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\tr\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\zh-Hans\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\zh-Hant\System.CommandLine.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Azure.Core.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Azure.Identity.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Humanizer.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Build.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Build.Framework.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Build.Tasks.Core.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Build.Utilities.Core.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Data.SqlClient.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Identity.Client.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Identity.Client.Extensions.Msal.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.NET.StringTools.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.SqlServer.Server.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Mono.TextTemplating.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Newtonsoft.Json.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.ClientModel.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.CodeDom.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Composition.AttributedModel.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Composition.Convention.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Composition.Hosting.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Composition.Runtime.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Composition.TypedParts.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Formats.Nrbf.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Memory.Data.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Reflection.MetadataLoadContext.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Resources.Extensions.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Security.Permissions.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Windows.Extensions.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.Data.SqlClient.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\de\Microsoft.Data.SqlClient.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\es\Microsoft.Data.SqlClient.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.Data.SqlClient.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\it\Microsoft.Data.SqlClient.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.Data.SqlClient.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.Data.SqlClient.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.Data.SqlClient.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.Data.SqlClient.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.Data.SqlClient.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\runtimes\win\lib\net9.0\System.Windows.Extensions.dll
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.csproj.AssemblyReference.cache
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\wr677pwxp4-{0}-nsjuq9jim6-nsjuq9jim6.gz
-F:\project\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\an7yvuiqxk-{0}-rpwyom65zu-rpwyom65zu.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\Microsoft.Build.Locator.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe.config
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\Microsoft.IO.Redist.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\Newtonsoft.Json.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.Buffers.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.Collections.Immutable.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.CommandLine.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.Memory.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.Numerics.Vectors.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.Runtime.CompilerServices.Unsafe.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.Threading.Tasks.Extensions.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\cs\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\de\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\es\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\fr\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\it\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\ja\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\ko\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\pl\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\pt-BR\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\ru\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\tr\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\zh-Hans\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\zh-Hant\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\Microsoft.Build.Locator.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.deps.json
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll.config
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.runtimeconfig.json
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\Newtonsoft.Json.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\System.Collections.Immutable.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\System.CommandLine.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\cs\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\de\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\es\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\fr\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\it\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\ja\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\ko\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\pl\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\pt-BR\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\ru\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\tr\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\zh-Hans\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\zh-Hant\System.CommandLine.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\appsettings.Development.json
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\appsettings.json
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\AshkanCRM.staticwebassets.runtime.json
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\AshkanCRM.staticwebassets.endpoints.json
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\AshkanCRM.exe
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\AshkanCRM.deps.json
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\AshkanCRM.runtimeconfig.json
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\AshkanCRM.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\AshkanCRM.pdb
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Azure.Core.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Azure.Identity.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Humanizer.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Build.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Build.Framework.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Build.Tasks.Core.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Build.Utilities.Core.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Data.SqlClient.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Identity.Client.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.Identity.Client.Extensions.Msal.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.NET.StringTools.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Microsoft.SqlServer.Server.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Mono.TextTemplating.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\Newtonsoft.Json.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.ClientModel.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.CodeDom.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Composition.AttributedModel.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Composition.Convention.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Composition.Hosting.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Composition.Runtime.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Composition.TypedParts.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Formats.Nrbf.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Memory.Data.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Reflection.MetadataLoadContext.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Resources.Extensions.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Security.Permissions.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\System.Windows.Extensions.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.Data.SqlClient.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\de\Microsoft.Data.SqlClient.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\es\Microsoft.Data.SqlClient.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.Data.SqlClient.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\it\Microsoft.Data.SqlClient.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.Data.SqlClient.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.Data.SqlClient.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.Data.SqlClient.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.Data.SqlClient.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.Data.SqlClient.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\bin\Debug\net10.0\runtimes\win\lib\net9.0\System.Windows.Extensions.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.csproj.AssemblyReference.cache
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\rpswa.dswa.cache.json
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.GeneratedMSBuildEditorConfig.editorconfig
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.AssemblyInfoInputs.cache
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.AssemblyInfo.cs
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.csproj.CoreCompileInputs.cache
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.MvcApplicationPartsAssemblyInfo.cache
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.RazorAssemblyInfo.cache
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.RazorAssemblyInfo.cs
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\rjimswa.dswa.cache.json
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\scopedcss\bundle\AshkanCRM.styles.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\scopedcss\projectbundle\AshkanCRM.bundle.scp.css
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\k5ylew6sgn-{0}-f7rf0fa459-f7rf0fa459.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\sp3a2jmq4i-{0}-61n19gt1b8-61n19gt1b8.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\an7yvuiqxk-{0}-gnlzhbkns6-gnlzhbkns6.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\o4f5qyrfuz-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\p4fmlk7jhq-{0}-bqjiyaj88i-bqjiyaj88i.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\130ptxpkc2-{0}-c2jlpeoesf-c2jlpeoesf.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\d7ipv98vxo-{0}-erw9l3u2r3-erw9l3u2r3.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\rgi2orpq2w-{0}-aexeepp0ev-aexeepp0ev.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\0hw5gmrpi1-{0}-d7shbmvgxk-d7shbmvgxk.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\1pkf6x5vy5-{0}-ausgxo2sd3-ausgxo2sd3.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\iye0drpuii-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\aycj9co2ki-{0}-cosvhxvwiu-cosvhxvwiu.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\739syn17y5-{0}-ub07r2b239-ub07r2b239.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\ax8y2ldodw-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\nitmmybl1m-{0}-b7pk76d08c-b7pk76d08c.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\gbkwzk9cl6-{0}-fsbi9cje9m-fsbi9cje9m.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\1obkf7aihb-{0}-rzd6atqjts-rzd6atqjts.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\c2isc7ztuo-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\mmm9uzc5q2-{0}-dxx9fxp4il-dxx9fxp4il.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\u4z9k2o8hc-{0}-jd9uben2k1-jd9uben2k1.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\r6jafjnang-{0}-khv3u5hwcm-khv3u5hwcm.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\vikk2m9e2y-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\odoqu63isd-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\v5alavxpay-{0}-c2oey78nd0-c2oey78nd0.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\0ojv01qonr-{0}-tdbxkamptv-tdbxkamptv.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\5goeuip8gh-{0}-j5mq2jizvt-j5mq2jizvt.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\in5o8a1dxt-{0}-06098lyss8-06098lyss8.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\fubccrrvqy-{0}-nvvlpmu67g-nvvlpmu67g.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\ngwgvaseit-{0}-s35ty4nyc5-s35ty4nyc5.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\vbkznt7ar9-{0}-pj5nd1wqec-pj5nd1wqec.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\r2p1d51u4x-{0}-46ein0sx1k-46ein0sx1k.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\bxouudhj7k-{0}-v0zj4ognzu-v0zj4ognzu.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\ezhdx3vfda-{0}-37tfw0ft22-37tfw0ft22.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\pryv17srdm-{0}-hrwsygsryq-hrwsygsryq.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\f0xx5aqkj4-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\2oz248ifo5-{0}-ft3s53vfgj-ft3s53vfgj.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\mwxb87mkcv-{0}-6cfz1n2cew-6cfz1n2cew.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\6yruoton3f-{0}-6pdc2jztkx-6pdc2jztkx.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\u4ra41jjs8-{0}-493y06b0oq-493y06b0oq.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\8lrtmcb2vz-{0}-iovd86k7lj-iovd86k7lj.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\czwu8p05z6-{0}-vr1egmr9el-vr1egmr9el.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\12zhfptnzb-{0}-kbrnm935zg-kbrnm935zg.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\mj0priruau-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\6rq7vi70br-{0}-y7v9cxd14o-y7v9cxd14o.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\ktp73pskm1-{0}-notf2xhcfb-notf2xhcfb.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\sbwghhtez6-{0}-h1s4sie4z3-h1s4sie4z3.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\asdl0d2syp-{0}-63fj8s7r0e-63fj8s7r0e.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\xf4zftb20z-{0}-0j3bgjxly4-0j3bgjxly4.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\k1gpyrqf42-{0}-47otxtyo56-47otxtyo56.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\q9p7kfwim7-{0}-4v8eqarkd7-4v8eqarkd7.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\mlsmlimytm-{0}-356vix0kms-356vix0kms.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\nr79c9yk5m-{0}-83jwlth58m-83jwlth58m.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\vpabl3psp3-{0}-mrlpezrjn3-mrlpezrjn3.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\0p34te8qn8-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\ebhde7332w-{0}-ag7o75518u-ag7o75518u.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\nhwawibikh-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\tbkt72b4ii-{0}-0i3buxo5is-0i3buxo5is.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\xi8l2rk8ey-{0}-o1o13a6vjx-o1o13a6vjx.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\6cxf1ekzrj-{0}-ttgo8qnofa-ttgo8qnofa.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\xn3zzmdncc-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\n1gvy1j7g2-{0}-muycvpuwrr-muycvpuwrr.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\v33w4kehvu-{0}-87fc7y1x7t-87fc7y1x7t.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\44ft6rsjfj-{0}-mlv21k5csn-mlv21k5csn.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\jf48tkbhqe-{0}-jxgcb6ikmo-jxgcb6ikmo.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\ocf2ciwy2z-{0}-jxgcb6ikmo-jxgcb6ikmo.gz
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\staticwebassets.build.json
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\staticwebassets.build.json.cache
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\staticwebassets.development.json
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\staticwebassets.build.endpoints.json
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\swae.build.ex.cache
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.csproj.Up2Date
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\refint\AshkanCRM.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.pdb
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\AshkanCRM.genruntimeconfig.cache
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\ref\AshkanCRM.dll
-E:\project\Asp.net core\AshkanCRM\AshkanCRM\obj\Debug\net10.0\compressed\wr677pwxp4-{0}-2l0xh6bbd7-2l0xh6bbd7.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\Microsoft.Build.Locator.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe.config
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\Microsoft.IO.Redist.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\Newtonsoft.Json.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.Buffers.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.Collections.Immutable.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.CommandLine.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.Memory.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.Numerics.Vectors.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\System.Threading.Tasks.Extensions.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\cs\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\de\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\es\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\fr\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\it\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\ja\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\ko\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\pl\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\pt-BR\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\ru\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\tr\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\zh-Hans\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-net472\zh-Hant\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\Microsoft.Build.Locator.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.deps.json
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll.config
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.runtimeconfig.json
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\Newtonsoft.Json.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\System.Collections.Immutable.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\System.CommandLine.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\cs\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\de\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\es\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\fr\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\it\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\ja\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\ko\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\pl\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\pt-BR\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\ru\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\tr\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\zh-Hans\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\BuildHost-netcore\zh-Hant\System.CommandLine.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\appsettings.json
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\AshkanCRM.staticwebassets.runtime.json
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\AshkanCRM.staticwebassets.endpoints.json
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\AshkanCRM.exe
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\AshkanCRM.deps.json
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\AshkanCRM.runtimeconfig.json
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\AshkanCRM.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\AshkanCRM.pdb
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\en-US\AshkanCRM.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\fa-IR\AshkanCRM.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Azure.Core.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Azure.Identity.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Humanizer.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.Build.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.Build.Framework.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.Build.Tasks.Core.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.Build.Utilities.Core.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.Data.SqlClient.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.Identity.Client.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.NET.StringTools.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Microsoft.SqlServer.Server.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Mono.TextTemplating.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\Newtonsoft.Json.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\System.ClientModel.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\System.CodeDom.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\System.Composition.AttributedModel.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\System.Composition.Convention.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\System.Composition.Hosting.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\System.Composition.Runtime.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\System.Composition.TypedParts.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\System.Formats.Nrbf.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\System.Memory.Data.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\System.Reflection.MetadataLoadContext.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\System.Resources.Extensions.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\System.Security.Permissions.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\System.Windows.Extensions.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\bin\Debug\net10.0\runtimes\win\lib\net9.0\System.Windows.Extensions.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\AshkanCRM.csproj.AssemblyReference.cache
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\AshkanCRM.Resources.SharedResource.en-US.resources
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\AshkanCRM.Resources.SharedResource.fa-IR.resources
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\AshkanCRM.csproj.GenerateResource.cache
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\AshkanCRM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\AshkanCRM.AssemblyInfoInputs.cache
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\AshkanCRM.AssemblyInfo.cs
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\AshkanCRM.csproj.CoreCompileInputs.cache
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\AshkanCRM.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\AshkanCRM.RazorAssemblyInfo.cache
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\AshkanCRM.RazorAssemblyInfo.cs
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\en-US\AshkanCRM.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\fa-IR\AshkanCRM.resources.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\scopedcss\bundle\AshkanCRM.styles.css
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\scopedcss\projectbundle\AshkanCRM.bundle.scp.css
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\wr677pwxp4-{0}-2l0xh6bbd7-2l0xh6bbd7.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\1r6igvt007-{0}-mntc1qsz6j-mntc1qsz6j.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\4dkps38yv6-{0}-tluwukpewt-tluwukpewt.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\ei0mjmcf2o-{0}-a7wazlgdi3-a7wazlgdi3.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\k5ylew6sgn-{0}-f7rf0fa459-f7rf0fa459.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\apla8sj29a-{0}-620j2rsz9w-620j2rsz9w.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\2rad90hpkh-{0}-ix392ajrjt-ix392ajrjt.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\6mu2p0i0tg-{0}-au01nt6phf-au01nt6phf.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\nw5h0uk0c5-{0}-dr8imufg79-dr8imufg79.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\lz5szwdqwi-{0}-phug0xy11c-phug0xy11c.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\ura2rfcvno-{0}-36wwctr1q8-36wwctr1q8.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\5upf5m5t7v-{0}-99lcxqv41v-99lcxqv41v.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\jhlim9jyy5-{0}-1psze2ze1b-1psze2ze1b.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\rr2aijdzh7-{0}-zoi079f80z-zoi079f80z.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\ht9ya17ndo-{0}-4xymy5aehw-4xymy5aehw.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\f0z0y83mac-{0}-e1czlq6n3h-e1czlq6n3h.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\g132uyb21m-{0}-3380klp54x-3380klp54x.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\ezkpmdk10s-{0}-aykjdqvpk1-aykjdqvpk1.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\1y0o479o8j-{0}-rdzwo1gldi-rdzwo1gldi.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\yhc5rlbp0d-{0}-qwtddd22a9-qwtddd22a9.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\xlp29i25zx-{0}-tpnu9muls5-tpnu9muls5.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\sjbuc5bw8w-{0}-81fqv43zvr-81fqv43zvr.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\s7lfto844i-{0}-gk4scr8lxu-gk4scr8lxu.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\gmmglv5pjc-{0}-mrmjhdm41f-mrmjhdm41f.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\sp3a2jmq4i-{0}-61n19gt1b8-61n19gt1b8.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\pzebo7y428-{0}-xx79ws9qxa-xx79ws9qxa.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\an7yvuiqxk-{0}-4e9lkcavxc-4e9lkcavxc.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\6wfs6ivbby-{0}-ivs7qxppxz-ivs7qxppxz.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\vlxiejdd2q-{0}-xgt3hms7c6-xgt3hms7c6.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\z2gp3cqiv0-{0}-rh72tnrpeq-rh72tnrpeq.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\o4f5qyrfuz-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\p29q1xdf89-{0}-80h2ppl5al-80h2ppl5al.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\pauwygopm8-{0}-cg4i8tmvkz-cg4i8tmvkz.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\y8v7o41c1u-{0}-x27acs3lco-x27acs3lco.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\fbbf8qzfzb-{0}-c8ne3nmro4-c8ne3nmro4.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\ylh18hfe1u-{0}-w5lqkysc9p-w5lqkysc9p.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\xeetv5kxxt-{0}-boib8ge5i0-boib8ge5i0.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\yhrj1v5cqg-{0}-1rmbsy4jt1-1rmbsy4jt1.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\dkc82vdsta-{0}-kyl0u0ho8e-kyl0u0ho8e.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\p9sqg73axs-{0}-jhxm0zx54w-jhxm0zx54w.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\tiz0tao7ue-{0}-cicujbqpo9-cicujbqpo9.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\jvtxi3r1wg-{0}-zz848wm8lx-zz848wm8lx.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\pgjuiwzcyp-{0}-jhg0at3icc-jhg0at3icc.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\o1o4d9uykt-{0}-8qvejgk9q0-8qvejgk9q0.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\566yh6s2yd-{0}-6bynq61oxi-6bynq61oxi.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\071a9ba53f-{0}-u018hz6dl1-u018hz6dl1.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\naq95ryabz-{0}-ivj0a5d1j3-ivj0a5d1j3.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\tiuensedpt-{0}-l221qdbj8f-l221qdbj8f.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\zqg6ld5leh-{0}-udibxacykr-udibxacykr.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\wi2q1hw9qo-{0}-guc6mk6yco-guc6mk6yco.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\zmakulxzxm-{0}-hfo32bommv-hfo32bommv.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\j8mj7jclpt-{0}-etbglm6urt-etbglm6urt.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\gzwvk4ad10-{0}-a4a5g1oge7-a4a5g1oge7.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\909o8y5uxg-{0}-dkyj09cigq-dkyj09cigq.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\p4fmlk7jhq-{0}-bqjiyaj88i-bqjiyaj88i.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\130ptxpkc2-{0}-c2jlpeoesf-c2jlpeoesf.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\d7ipv98vxo-{0}-erw9l3u2r3-erw9l3u2r3.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\rgi2orpq2w-{0}-aexeepp0ev-aexeepp0ev.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\0hw5gmrpi1-{0}-d7shbmvgxk-d7shbmvgxk.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\1pkf6x5vy5-{0}-ausgxo2sd3-ausgxo2sd3.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\iye0drpuii-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\aycj9co2ki-{0}-cosvhxvwiu-cosvhxvwiu.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\739syn17y5-{0}-ub07r2b239-ub07r2b239.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\ax8y2ldodw-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\nitmmybl1m-{0}-b7pk76d08c-b7pk76d08c.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\gbkwzk9cl6-{0}-fsbi9cje9m-fsbi9cje9m.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\1obkf7aihb-{0}-rzd6atqjts-rzd6atqjts.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\c2isc7ztuo-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\mmm9uzc5q2-{0}-dxx9fxp4il-dxx9fxp4il.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\u4z9k2o8hc-{0}-jd9uben2k1-jd9uben2k1.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\r6jafjnang-{0}-khv3u5hwcm-khv3u5hwcm.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\vikk2m9e2y-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\odoqu63isd-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\v5alavxpay-{0}-c2oey78nd0-c2oey78nd0.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\0ojv01qonr-{0}-tdbxkamptv-tdbxkamptv.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\5goeuip8gh-{0}-j5mq2jizvt-j5mq2jizvt.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\in5o8a1dxt-{0}-06098lyss8-06098lyss8.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\fubccrrvqy-{0}-nvvlpmu67g-nvvlpmu67g.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\ngwgvaseit-{0}-s35ty4nyc5-s35ty4nyc5.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\vbkznt7ar9-{0}-pj5nd1wqec-pj5nd1wqec.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\r2p1d51u4x-{0}-46ein0sx1k-46ein0sx1k.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\bxouudhj7k-{0}-v0zj4ognzu-v0zj4ognzu.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\ezhdx3vfda-{0}-37tfw0ft22-37tfw0ft22.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\pryv17srdm-{0}-hrwsygsryq-hrwsygsryq.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\f0xx5aqkj4-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\2oz248ifo5-{0}-ft3s53vfgj-ft3s53vfgj.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\mwxb87mkcv-{0}-6cfz1n2cew-6cfz1n2cew.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\6yruoton3f-{0}-6pdc2jztkx-6pdc2jztkx.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\u4ra41jjs8-{0}-493y06b0oq-493y06b0oq.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\8lrtmcb2vz-{0}-iovd86k7lj-iovd86k7lj.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\czwu8p05z6-{0}-vr1egmr9el-vr1egmr9el.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\12zhfptnzb-{0}-kbrnm935zg-kbrnm935zg.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\mj0priruau-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\6rq7vi70br-{0}-y7v9cxd14o-y7v9cxd14o.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\ktp73pskm1-{0}-notf2xhcfb-notf2xhcfb.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\sbwghhtez6-{0}-h1s4sie4z3-h1s4sie4z3.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\asdl0d2syp-{0}-63fj8s7r0e-63fj8s7r0e.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\xf4zftb20z-{0}-0j3bgjxly4-0j3bgjxly4.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\k1gpyrqf42-{0}-47otxtyo56-47otxtyo56.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\q9p7kfwim7-{0}-4v8eqarkd7-4v8eqarkd7.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\mlsmlimytm-{0}-356vix0kms-356vix0kms.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\nr79c9yk5m-{0}-83jwlth58m-83jwlth58m.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\vpabl3psp3-{0}-mrlpezrjn3-mrlpezrjn3.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\0p34te8qn8-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\ebhde7332w-{0}-ag7o75518u-ag7o75518u.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\nhwawibikh-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\tbkt72b4ii-{0}-0i3buxo5is-0i3buxo5is.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\xi8l2rk8ey-{0}-o1o13a6vjx-o1o13a6vjx.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\6cxf1ekzrj-{0}-ttgo8qnofa-ttgo8qnofa.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\xn3zzmdncc-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\n1gvy1j7g2-{0}-muycvpuwrr-muycvpuwrr.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\v33w4kehvu-{0}-87fc7y1x7t-87fc7y1x7t.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\44ft6rsjfj-{0}-mlv21k5csn-mlv21k5csn.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\jf48tkbhqe-{0}-jxgcb6ikmo-jxgcb6ikmo.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\compressed\ocf2ciwy2z-{0}-jxgcb6ikmo-jxgcb6ikmo.gz
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\AshkanCRM.csproj.Up2Date
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\AshkanCRM.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\refint\AshkanCRM.dll
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\AshkanCRM.pdb
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\AshkanCRM.genruntimeconfig.cache
+C:\Users\ashkan2026\Pictures\AshkanCRM\obj\Debug\net10.0\ref\AshkanCRM.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\appsettings.Development.json
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\appsettings.json
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\AshkanCRM.staticwebassets.endpoints.json
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\AshkanCRM.staticwebassets.runtime.json
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\AshkanCRM.exe
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\AshkanCRM.deps.json
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\AshkanCRM.runtimeconfig.json
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\AshkanCRM.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\AshkanCRM.pdb
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\en-US\AshkanCRM.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\fa-IR\AshkanCRM.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Azure.Core.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Azure.Identity.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Humanizer.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.Build.Framework.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.Data.SqlClient.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.Identity.Client.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.Identity.Client.Broker.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.Identity.Client.NativeInterop.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.SqlServer.Server.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Microsoft.VisualStudio.SolutionPersistence.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Mono.TextTemplating.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\Newtonsoft.Json.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\System.ClientModel.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\System.CodeDom.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\System.Composition.AttributedModel.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\System.Composition.Convention.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\System.Composition.Hosting.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\System.Composition.Runtime.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\System.Composition.TypedParts.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\System.Memory.Data.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\System.Security.Cryptography.Pkcs.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\cs\Microsoft.Data.SqlClient.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\de\Microsoft.Data.SqlClient.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\es\Microsoft.Data.SqlClient.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\fr\Microsoft.Data.SqlClient.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\it\Microsoft.Data.SqlClient.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\ja\Microsoft.Data.SqlClient.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\ko\Microsoft.Data.SqlClient.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\pl\Microsoft.Data.SqlClient.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\ru\Microsoft.Data.SqlClient.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\tr\Microsoft.Data.SqlClient.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\runtimes\linux-x64\native\libmsalruntime.so
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\runtimes\osx-arm64\native\msalruntime_arm64.dylib
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\runtimes\osx-x64\native\msalruntime.dylib
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\runtimes\win-arm64\native\msalruntime_arm64.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\runtimes\win-x64\native\msalruntime.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\runtimes\win-x86\native\msalruntime_x86.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Security.Cryptography.Pkcs.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\AshkanCRM.csproj.AssemblyReference.cache
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\rpswa.dswa.cache.json
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\AshkanCRM.Resources.SharedResource.en-US.resources
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\AshkanCRM.Resources.SharedResource.fa-IR.resources
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\AshkanCRM.csproj.GenerateResource.cache
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\AshkanCRM.GeneratedMSBuildEditorConfig.editorconfig
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\AshkanCRM.AssemblyInfoInputs.cache
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\AshkanCRM.AssemblyInfo.cs
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\AshkanCRM.csproj.CoreCompileInputs.cache
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\AshkanCRM.MvcApplicationPartsAssemblyInfo.cache
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\AshkanCRM.RazorAssemblyInfo.cache
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\AshkanCRM.RazorAssemblyInfo.cs
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\AshkanCRM.sourcelink.json
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\en-US\AshkanCRM.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\fa-IR\AshkanCRM.resources.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\rjimswa.dswa.cache.json
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\scopedcss\bundle\AshkanCRM.styles.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\scopedcss\projectbundle\AshkanCRM.bundle.scp.css
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\wr677pwxp4-{0}-2l0xh6bbd7-2l0xh6bbd7.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\1r6igvt007-{0}-mntc1qsz6j-mntc1qsz6j.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\4dkps38yv6-{0}-tluwukpewt-tluwukpewt.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\ei0mjmcf2o-{0}-a7wazlgdi3-a7wazlgdi3.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\k5ylew6sgn-{0}-f7rf0fa459-f7rf0fa459.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\apla8sj29a-{0}-620j2rsz9w-620j2rsz9w.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\2rad90hpkh-{0}-ix392ajrjt-ix392ajrjt.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\6mu2p0i0tg-{0}-au01nt6phf-au01nt6phf.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\nw5h0uk0c5-{0}-dr8imufg79-dr8imufg79.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\lz5szwdqwi-{0}-phug0xy11c-phug0xy11c.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\ura2rfcvno-{0}-36wwctr1q8-36wwctr1q8.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\5upf5m5t7v-{0}-99lcxqv41v-99lcxqv41v.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\jhlim9jyy5-{0}-1psze2ze1b-1psze2ze1b.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\rr2aijdzh7-{0}-zoi079f80z-zoi079f80z.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\ht9ya17ndo-{0}-4xymy5aehw-4xymy5aehw.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\f0z0y83mac-{0}-e1czlq6n3h-e1czlq6n3h.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\g132uyb21m-{0}-3380klp54x-3380klp54x.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\ezkpmdk10s-{0}-aykjdqvpk1-aykjdqvpk1.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\1y0o479o8j-{0}-rdzwo1gldi-rdzwo1gldi.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\yhc5rlbp0d-{0}-qwtddd22a9-qwtddd22a9.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\xlp29i25zx-{0}-tpnu9muls5-tpnu9muls5.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\sjbuc5bw8w-{0}-81fqv43zvr-81fqv43zvr.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\s7lfto844i-{0}-gk4scr8lxu-gk4scr8lxu.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\gmmglv5pjc-{0}-mrmjhdm41f-mrmjhdm41f.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\sp3a2jmq4i-{0}-61n19gt1b8-61n19gt1b8.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\pzebo7y428-{0}-xx79ws9qxa-xx79ws9qxa.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\an7yvuiqxk-{0}-4e9lkcavxc-4e9lkcavxc.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\6wfs6ivbby-{0}-ivs7qxppxz-ivs7qxppxz.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\vlxiejdd2q-{0}-xgt3hms7c6-xgt3hms7c6.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\z2gp3cqiv0-{0}-rh72tnrpeq-rh72tnrpeq.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\o4f5qyrfuz-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\p29q1xdf89-{0}-80h2ppl5al-80h2ppl5al.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\pauwygopm8-{0}-cg4i8tmvkz-cg4i8tmvkz.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\y8v7o41c1u-{0}-x27acs3lco-x27acs3lco.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\fbbf8qzfzb-{0}-c8ne3nmro4-c8ne3nmro4.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\ylh18hfe1u-{0}-w5lqkysc9p-w5lqkysc9p.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\xeetv5kxxt-{0}-boib8ge5i0-boib8ge5i0.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\yhrj1v5cqg-{0}-1rmbsy4jt1-1rmbsy4jt1.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\dkc82vdsta-{0}-kyl0u0ho8e-kyl0u0ho8e.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\p9sqg73axs-{0}-jhxm0zx54w-jhxm0zx54w.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\tiz0tao7ue-{0}-cicujbqpo9-cicujbqpo9.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\jvtxi3r1wg-{0}-zz848wm8lx-zz848wm8lx.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\pgjuiwzcyp-{0}-jhg0at3icc-jhg0at3icc.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\o1o4d9uykt-{0}-8qvejgk9q0-8qvejgk9q0.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\566yh6s2yd-{0}-6bynq61oxi-6bynq61oxi.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\071a9ba53f-{0}-u018hz6dl1-u018hz6dl1.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\naq95ryabz-{0}-ivj0a5d1j3-ivj0a5d1j3.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\tiuensedpt-{0}-l221qdbj8f-l221qdbj8f.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\zqg6ld5leh-{0}-udibxacykr-udibxacykr.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\wi2q1hw9qo-{0}-guc6mk6yco-guc6mk6yco.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\zmakulxzxm-{0}-hfo32bommv-hfo32bommv.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\j8mj7jclpt-{0}-etbglm6urt-etbglm6urt.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\gzwvk4ad10-{0}-a4a5g1oge7-a4a5g1oge7.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\909o8y5uxg-{0}-dkyj09cigq-dkyj09cigq.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\p4fmlk7jhq-{0}-bqjiyaj88i-bqjiyaj88i.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\130ptxpkc2-{0}-c2jlpeoesf-c2jlpeoesf.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\d7ipv98vxo-{0}-erw9l3u2r3-erw9l3u2r3.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\rgi2orpq2w-{0}-aexeepp0ev-aexeepp0ev.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\0hw5gmrpi1-{0}-d7shbmvgxk-d7shbmvgxk.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\1pkf6x5vy5-{0}-ausgxo2sd3-ausgxo2sd3.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\iye0drpuii-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\aycj9co2ki-{0}-cosvhxvwiu-cosvhxvwiu.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\739syn17y5-{0}-ub07r2b239-ub07r2b239.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\ax8y2ldodw-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\nitmmybl1m-{0}-b7pk76d08c-b7pk76d08c.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\gbkwzk9cl6-{0}-fsbi9cje9m-fsbi9cje9m.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\1obkf7aihb-{0}-rzd6atqjts-rzd6atqjts.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\c2isc7ztuo-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\mmm9uzc5q2-{0}-dxx9fxp4il-dxx9fxp4il.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\u4z9k2o8hc-{0}-jd9uben2k1-jd9uben2k1.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\r6jafjnang-{0}-khv3u5hwcm-khv3u5hwcm.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\vikk2m9e2y-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\odoqu63isd-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\v5alavxpay-{0}-c2oey78nd0-c2oey78nd0.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\0ojv01qonr-{0}-tdbxkamptv-tdbxkamptv.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\5goeuip8gh-{0}-j5mq2jizvt-j5mq2jizvt.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\in5o8a1dxt-{0}-06098lyss8-06098lyss8.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\fubccrrvqy-{0}-nvvlpmu67g-nvvlpmu67g.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\ngwgvaseit-{0}-s35ty4nyc5-s35ty4nyc5.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\vbkznt7ar9-{0}-pj5nd1wqec-pj5nd1wqec.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\r2p1d51u4x-{0}-46ein0sx1k-46ein0sx1k.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\bxouudhj7k-{0}-v0zj4ognzu-v0zj4ognzu.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\ezhdx3vfda-{0}-37tfw0ft22-37tfw0ft22.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\pryv17srdm-{0}-hrwsygsryq-hrwsygsryq.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\f0xx5aqkj4-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\2oz248ifo5-{0}-ft3s53vfgj-ft3s53vfgj.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\mwxb87mkcv-{0}-6cfz1n2cew-6cfz1n2cew.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\6yruoton3f-{0}-6pdc2jztkx-6pdc2jztkx.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\u4ra41jjs8-{0}-493y06b0oq-493y06b0oq.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\8lrtmcb2vz-{0}-iovd86k7lj-iovd86k7lj.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\czwu8p05z6-{0}-vr1egmr9el-vr1egmr9el.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\12zhfptnzb-{0}-kbrnm935zg-kbrnm935zg.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\mj0priruau-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\6rq7vi70br-{0}-y7v9cxd14o-y7v9cxd14o.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\ktp73pskm1-{0}-notf2xhcfb-notf2xhcfb.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\sbwghhtez6-{0}-h1s4sie4z3-h1s4sie4z3.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\asdl0d2syp-{0}-63fj8s7r0e-63fj8s7r0e.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\xf4zftb20z-{0}-0j3bgjxly4-0j3bgjxly4.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\k1gpyrqf42-{0}-47otxtyo56-47otxtyo56.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\q9p7kfwim7-{0}-4v8eqarkd7-4v8eqarkd7.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\mlsmlimytm-{0}-356vix0kms-356vix0kms.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\nr79c9yk5m-{0}-83jwlth58m-83jwlth58m.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\vpabl3psp3-{0}-mrlpezrjn3-mrlpezrjn3.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\0p34te8qn8-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\ebhde7332w-{0}-ag7o75518u-ag7o75518u.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\nhwawibikh-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\tbkt72b4ii-{0}-0i3buxo5is-0i3buxo5is.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\xi8l2rk8ey-{0}-o1o13a6vjx-o1o13a6vjx.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\6cxf1ekzrj-{0}-ttgo8qnofa-ttgo8qnofa.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\xn3zzmdncc-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\n1gvy1j7g2-{0}-muycvpuwrr-muycvpuwrr.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\v33w4kehvu-{0}-87fc7y1x7t-87fc7y1x7t.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\44ft6rsjfj-{0}-mlv21k5csn-mlv21k5csn.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\jf48tkbhqe-{0}-jxgcb6ikmo-jxgcb6ikmo.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\compressed\ocf2ciwy2z-{0}-jxgcb6ikmo-jxgcb6ikmo.gz
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\staticwebassets.build.json
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\staticwebassets.build.json.cache
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\staticwebassets.development.json
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\swae.build.ex.cache
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\AshkanCRM.csproj.Up2Date
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\AshkanCRM.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\refint\AshkanCRM.dll
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\AshkanCRM.pdb
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\AshkanCRM.genruntimeconfig.cache
+E:\project\Asp.net core\enterprise-ai-crm-platform\AshkanCRM\obj\Debug\net10.0\ref\AshkanCRM.dll

@@ -1,5 +1,29 @@
 @model IEnumerable<AshkanCRM.Models.WebhookDelivery>
-@{ ViewData["Title"]="مانیتور یکپارچه‌سازی"; }
-<div class="page-head"><div><p class="eyebrow">OBSERVABILITY</p><h1>مانیتور Integration و Webhook</h1><p>وضعیت ارسال Eventها، Retry و سلامت اتصال سیستم‌های خارجی.</p></div><a class="primary" href="/CRM/Integrations">Integration Hub</a></div>
-<div class="panel"><div class="table-wrap"><table><thead><tr><th>Endpoint</th><th>Event</th><th>Status</th><th>Attempts</th><th>آخرین تلاش</th></tr></thead><tbody>@foreach(var x in Model){<tr><td><b>@x.Endpoint</b></td><td><code>@x.Event</code></td><td><span class="badge">@x.Status</span></td><td>@x.Attempts</td><td>@x.LastAttempt</td></tr>}</tbody></table></div></div>
-<div class="grid-2"><div class="panel"><h2>Retry Policy</h2><p class="muted">ارسال‌های ناموفق با Backoff و محدودیت تلاش مجدد مدیریت می‌شوند.</p></div><div class="panel"><h2>Secret Hygiene</h2><p class="muted">کلیدهای واقعی نباید در UI یا Log نمایش داده شوند؛ فقط Prefix و Scope قابل مشاهده است.</p></div></div>
+@using System.Globalization
+@{
+    var en = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "en";
+    ViewData["Title"] = en ? "Integration monitoring" : "پایش یکپارچه‌سازی";
+}
+<div class="page-head">
+    <div><p class="eyebrow">@(en ? "OBSERVABILITY" : "پایش سیستم")</p>
+        <h1>@(en ? "Integration and webhook monitoring" : "پایش یکپارچه‌سازی و وب‌هوک")</h1>
+        <p>@(en ? "Review event deliveries, retry attempts and external connection health." : "وضعیت ارسال رویدادها، تلاش مجدد و سلامت اتصال سامانه‌های خارجی را بررسی کنید.")</p>
+    </div>
+    <a class="primary" asp-controller="CRM" asp-action="Integrations">@(en ? "Integration hub" : "مرکز یکپارچه‌سازی")</a>
+</div>
+<div class="panel"><div class="table-wrap"><table>
+    <thead><tr><th>@(en ? "Endpoint" : "نشانی مقصد")</th><th>@(en ? "Event" : "رویداد")</th><th>@(en ? "Status" : "وضعیت")</th><th>@(en ? "Attempts" : "تعداد تلاش‌ها")</th><th>@(en ? "Last attempt" : "آخرین تلاش")</th></tr></thead>
+    <tbody>
+    @if (Model != null && Model.Any()) {
+        foreach (var x in Model) {
+            <tr><td><b>@x.Endpoint</b></td><td><code>@x.Event</code></td><td><span class="badge">@x.Status</span></td><td>@x.Attempts</td><td>@x.LastAttempt</td></tr>
+        }
+    } else {
+        <tr><td colspan="5" class="muted">@(en ? "No webhook deliveries to display." : "هیچ گزارشی از ارسال وب‌هوک برای نمایش وجود ندارد.")</td></tr>
+    }
+    </tbody>
+</table></div></div>
+<div class="grid-2">
+    <div class="panel"><h2>@(en ? "Retry policy" : "سیاست تلاش مجدد")</h2><p class="muted">@(en ? "Failed deliveries are handled with backoff and a retry limit." : "ارسال‌های ناموفق با فاصله‌گذاری تدریجی و محدودیت تعداد تلاش مدیریت می‌شوند.")</p></div>
+    <div class="panel"><h2>@(en ? "Secret protection" : "حفاظت از اطلاعات محرمانه")</h2><p class="muted">@(en ? "Do not expose full credentials in the UI or logs; show only safe prefixes and scopes." : "کلیدهای محرمانه نباید به‌طور کامل در رابط کاربری یا گزارش‌ها نمایش داده شوند؛ فقط پیشوند و محدوده مجاز نمایش داده شود.")</p></div>
+</div>

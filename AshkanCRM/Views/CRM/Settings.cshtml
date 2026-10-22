@@ -1,1 +1,25 @@
-@{ViewData["Title"]="تنظیمات";}<div class="page-head"><div><p class="eyebrow">Administration</p><h1>تنظیمات سامانه</h1><p>امنیت، برند، اعلان‌ها و سیاست‌های سازمان.</p></div><button class="primary">ذخیره تغییرات</button></div><div class="settings-grid"><section class="panel"><h2>امنیت و نشست</h2><label class="setting"><span><b>احراز هویت چندمرحله‌ای</b><small>برای مدیران اجباری شود</small></span><input type="checkbox" checked></label><label class="setting"><span><b>خروج خودکار</b><small>پس از 8 ساعت عدم فعالیت</small></span><input type="checkbox" checked></label><label class="setting"><span><b>ثبت رویدادهای امنیتی</b><small>Audit Trail عملیات حساس</small></span><input type="checkbox" checked></label></section><section class="panel"><h2>تجربه کاربری</h2><label>نام سازمان<input value="Ashkan CRM"></label><label>زبان پیش‌فرض<select><option>فارسی</option><option>English</option></select></label><label>منطقه زمانی<select><option>Tehran (UTC+3:30)</option></select></label></section></div>
+@model AshkanCRM.Models.OrganizationSettingsVm
+@using System.Globalization
+@{ var fa = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "fa"; ViewData["Title"] = fa ? "تنظیمات سازمان" : "Organization settings"; }
+<div class="page-head"><div><p class="eyebrow">@(fa ? "مدیریت سازمان" : "ADMINISTRATION")</p><h1>@(fa ? "تنظیمات سازمان" : "Organization settings")</h1><p>@(fa ? "تنظیمات ثبت‌شده در پایگاه داده و قابل پیگیری در تاریخچه تغییرات" : "Database-backed settings with an audit trail")</p></div><a class="primary" asp-controller="CRM" asp-action="AdminHub">@(fa ? "داشبورد ادمین" : "Admin dashboard")</a></div>
+<section class="panel">
+ <h2>@(fa ? "اطلاعات و ترجیحات سازمان" : "Organization profile and preferences")</h2>
+ <p>@(fa ? "این گزینه‌ها فعلاً فقط ذخیره و در همین صفحه نمایش داده می‌شوند؛ تغییر منطقه زمانی یا واحد پول، داده‌ها و محاسبات گزارش‌های موجود را تبدیل نمی‌کند." : "These preferences are saved and displayed here; changing timezone or currency does not convert existing report data or calculations.")</p>
+ <form asp-controller="CRM" asp-action="SaveOrganizationSettings" method="post">
+  @Html.AntiForgeryToken()
+  <div asp-validation-summary="All" class="text-danger"></div>
+  <div class="grid-3">
+   <label>@(fa ? "نام سازمان" : "Organization name")<input asp-for="OrganizationName" maxlength="120" required /></label>
+   <label>@(fa ? "منطقه زمانی ترجیحی" : "Preferred timezone")<select asp-for="TimeZoneId"><option value="UTC">UTC</option><option value="Asia/Tehran">Asia/Tehran</option><option value="Europe/Berlin">Europe/Berlin</option><option value="Europe/London">Europe/London</option><option value="Europe/Stockholm">Europe/Stockholm</option></select></label>
+   <label>@(fa ? "واحد پول ترجیحی" : "Preferred reporting currency")<select asp-for="ReportingCurrency"><option value="EUR">EUR</option><option value="USD">USD</option><option value="IRR">IRR</option><option value="GBP">GBP</option><option value="SEK">SEK</option></select></label>
+   <label>@(fa ? "بازه پیش‌فرض گزارش (روز)" : "Default report period (days)")<input asp-for="DefaultReportingDays" type="number" min="7" max="365" required /></label>
+  </div>
+  <button type="submit" class="primary">@(fa ? "ذخیره تنظیمات" : "Save settings")</button>
+ </form>
+ @if(Model.UpdatedAtUtc.HasValue){<p class="muted">@(fa ? "آخرین تغییر" : "Last updated"): @((Model.UpdatedAtLocal??Model.UpdatedAtUtc.Value).ToString("yyyy-MM-dd HH:mm")) (@Model.TimeZoneId) — @Model.UpdatedBy</p>}
+</section>
+<section class="panel"><h2>@(fa ? "بخش‌های مدیریتی" : "Administration")</h2><div class="grid-3">
+<a class="panel" asp-controller="CRM" asp-action="Users"><h3>@(fa ? "کاربران" : "Users")</h3></a>
+<a class="panel" asp-controller="CRM" asp-action="AccessStudio"><h3>@(fa ? "دسترسی‌ها" : "Access controls")</h3></a>
+<a class="panel" asp-controller="CRM" asp-action="SecurityCenter"><h3>@(fa ? "مرکز امنیت" : "Security center")</h3></a>
+</div></section>

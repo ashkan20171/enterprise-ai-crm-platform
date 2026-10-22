@@ -1,0 +1,67 @@
+@model AshkanCRM.Models.SalesTargetActualReportVm
+@using System.Globalization
+@{
+    var en = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "en";
+    ViewData["Title"] = en ? "Sales target vs actual" : "هدف فروش در برابر عملکرد واقعی";
+    var maxValue = Model.Rows.Count == 0 ? 0m : Model.Rows.Max(x => Math.Max(x.Target, x.Actual));
+}
+<div class="hero-row">
+    <div>
+        <p class="eyebrow">@(en ? "Management analytics" : "تحلیل مدیریتی")</p>
+        <h1>@ViewData["Title"]</h1>
+        <p>@(en ? "Compare monthly targets with won deals, across all agents or an individual owner." : "مقایسه هدف ماهانه با فرصت‌های موفق، برای همه کارشناسان یا هر کارشناس به‌صورت جداگانه.")</p>
+    </div>
+    <a asp-controller="CRM" asp-action="Dashboard">@(en ? "Back to dashboard" : "بازگشت به داشبورد")</a>
+</div>
+<section class="panel" style="margin-block:18px;padding:22px">
+    <form method="get" asp-action="TargetVsActual" asp-controller="CRM" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+        <label for="months">@(en ? "Reporting period" : "بازه گزارش")</label>
+        <select id="months" name="months">
+            @foreach (var n in new[] { 3, 6, 12 })
+            {
+                <option value="@n" selected="@(Model.Months == n)">@(en ? $"{n} months" : $"{n} ماه")</option>
+            }
+        </select>
+        <label for="owner">@(en ? "Sales agent" : "کارشناس فروش")</label>
+        <select id="owner" name="owner">
+            <option value="">@(en ? "All agents" : "همه کارشناسان")</option>
+            @foreach (var agent in Model.Owners)
+            {
+                <option value="@agent" selected="@(Model.Owner == agent)">@agent</option>
+            }
+        </select>
+        <button type="submit">@(en ? "Apply" : "اعمال")</button>
+    </form>
+    <div style="margin-top:14px"><a class="btn" asp-controller="CRM" asp-action="PrintTargetVsActual" asp-route-months="@Model.Months" asp-route-owner="@Model.Owner" target="_blank" rel="noopener">@(en ? "Print / Save as PDF" : "چاپ / ذخیره PDF")</a>
+<a class="btn" asp-controller="CRM" asp-action="ExportTargetVsActualCsv" asp-route-months="@Model.Months" asp-route-owner="@Model.Owner">@(en ? "Export CSV (Excel compatible)" : "خروجی CSV سازگار با اکسل")</a>
+<a class="btn" asp-controller="CRM" asp-action="ExportTargetVsActualExcel" asp-route-months="@Model.Months" asp-route-owner="@Model.Owner">@(en ? "Download Excel (.xlsx)" : "دانلود اکسل (.xlsx)")</a></div>
+    <div class="crm64-kpis">
+        <div><small>@(en ? "Target" : "هدف")</small><strong>@Model.TotalTarget.ToString("N0")</strong></div>
+        <div><small>@(en ? "Actual" : "عملکرد واقعی")</small><strong>@Model.TotalActual.ToString("N0")</strong></div>
+        <div><small>@(en ? "Attainment" : "درصد تحقق")</small><strong>@Model.OverallAttainment.ToString("N1")%</strong></div>
+    </div>
+    <div class="crm64-chart" role="img" aria-label="@(en ? "Monthly target and actual sales comparison" : "نمودار مقایسه هدف و فروش واقعی ماهانه")">
+        @foreach (var row in Model.Rows)
+        {
+            var targetWidth = maxValue > 0 ? Math.Clamp(row.Target / maxValue * 100m, 0m, 100m) : 0m;
+            var actualWidth = maxValue > 0 ? Math.Clamp(row.Actual / maxValue * 100m, 0m, 100m) : 0m;
+            <div class="crm64-month">
+                <div class="crm64-month-title">@(new DateTime(row.Year, row.Month, 1).ToString("yyyy MMM", en ? CultureInfo.GetCultureInfo("en-US") : CultureInfo.GetCultureInfo("fa-IR")))</div>
+                <div class="crm64-bar"><span>@(en ? "Target" : "هدف")</span><div class="crm64-track"><i class="crm64-target" style="width:@(targetWidth.ToString("0.##",CultureInfo.InvariantCulture))%"></i></div><b>@row.Target.ToString("N0")</b></div>
+                <div class="crm64-bar"><span>@(en ? "Actual" : "واقعی")</span><div class="crm64-track"><i class="crm64-actual" style="width:@(actualWidth.ToString("0.##",CultureInfo.InvariantCulture))%"></i></div><b>@row.Actual.ToString("N0")</b></div>
+            </div>
+        }
+    </div>
+    <div class="table-wrap"><table><thead><tr>
+        <th>@(en ? "Month" : "ماه")</th><th>@(en ? "Target" : "هدف")</th><th>@(en ? "Stretch" : "هدف توسعه‌ای")</th><th>@(en ? "Actual" : "واقعی")</th><th>@(en ? "Won deals" : "فرصت‌های موفق")</th><th>@(en ? "Attainment" : "تحقق")</th>
+    </tr></thead><tbody>
+        @foreach (var row in Model.Rows)
+        {
+            <tr><td>@row.Year/@row.Month.ToString("00")</td><td>@row.Target.ToString("N0")</td><td>@row.Stretch.ToString("N0")</td><td>@row.Actual.ToString("N0")</td><td>@row.WonCount</td><td>@(row.Target > 0 ? row.Attainment.ToString("N1") + "%" : "—")</td></tr>
+        }
+    </tbody></table></div>
+    <p class="crm64-note">@(en ? "A missing target is shown as zero; attainment is not calculated for months without a target. Actual sales require a recorded close timestamp. All months use UTC." : "هدف ثبت‌نشده صفر نمایش داده می‌شود و درصد تحقق آن محاسبه نمی‌شود. فروش واقعی تنها شامل فرصت‌های دارای تاریخ بسته‌شدن ثبت‌شده است. ماه‌ها بر اساس UTC هستند.")</p>
+</section>
+<style>
+.crm64-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:22px 0}.crm64-kpis>div{background:rgba(56,119,185,.08);border:1px solid rgba(104,148,192,.18);padding:16px;border-radius:14px;display:grid;gap:8px}.crm64-kpis small{opacity:.75}.crm64-kpis strong{font-size:clamp(1.1rem,2.2vw,1.7rem);font-variant-numeric:tabular-nums}.crm64-chart{display:grid;gap:15px;margin:20px 0}.crm64-month{border-bottom:1px solid rgba(127,127,127,.15);padding-bottom:12px}.crm64-month-title{font-weight:700;margin-bottom:8px}.crm64-bar{display:grid;grid-template-columns:76px minmax(0,1fr) 110px;gap:10px;align-items:center;font-size:.88rem;margin:5px 0}.crm64-bar b{text-align:end;font-variant-numeric:tabular-nums}.crm64-track{height:13px;background:rgba(127,127,127,.12);border-radius:20px;overflow:hidden}.crm64-track i{display:block;height:100%;border-radius:20px}.crm64-target{background:#6485bd}.crm64-actual{background:#1aab8b}.crm64-note{opacity:.8;font-size:.86rem;margin-top:15px}@@media(max-width:640px){.crm64-kpis{grid-template-columns:1fr}.crm64-bar{grid-template-columns:52px minmax(0,1fr) 86px;gap:6px;font-size:.76rem}}
+</style>

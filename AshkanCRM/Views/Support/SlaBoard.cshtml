@@ -1,0 +1,16 @@
+@model IReadOnlyList<AshkanCRM.Models.SupportSlaRow>
+@{
+ ViewData["Title"] = System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "fa" ? "پایش SLA" : "SLA Board";
+ var fa = System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "fa";
+}
+<section class="container py-4" dir="@(fa ? "rtl" : "ltr")">
+ <h1>@(fa ? "پایش زمان پاسخ‌گویی" : "First-response SLA board")</h1>
+ <p class="text-muted">@(fa ? "سیاست آزمایشی: دوشنبه تا جمعه، ۰۹ تا ۱۷ به وقت UTC؛ تعطیلات رسمی لحاظ نشده است." : "Sample policy: Monday–Friday 09:00–17:00 UTC. Public holidays are not configured.")</p>
+ <div class="table-responsive"><table class="table table-striped align-middle"><thead><tr>
+ <th>#</th><th>@(fa ? "موضوع" : "Subject")</th><th>@(fa ? "اولویت" : "Priority")</th><th>@(fa ? "مسئول" : "Assignee")</th><th>@(fa ? "مهلت (UTC)" : "Deadline (UTC)")</th><th>@(fa ? "وضعیت" : "Status")</th>
+ </tr></thead><tbody>
+ @foreach(var item in Model){
+ <tr><td>@item.Id</td><td><a asp-controller="Support" asp-action="Details" asp-route-id="@item.Id">@item.Subject</a></td><td>@(item.Priority == "Critical" ? (fa ? "بحرانی" : "Critical") : item.Priority == "High" ? (fa ? "زیاد" : "High") : item.Priority == "Medium" ? (fa ? "متوسط" : "Medium") : item.Priority == "Low" ? (fa ? "کم" : "Low") : item.Priority)</td><td>@item.AssignedTo</td><td>@item.DeadlineUtc.ToString("yyyy-MM-dd HH:mm")</td><td>@(item.Answered ? (fa ? "پاسخ داده شده" : "Answered") : item.Breached ? (fa ? "گذشته از مهلت" : "Overdue") : (fa ? "در انتظار پاسخ" : "Pending"))</td></tr>
+ }
+ </tbody></table></div>
+</section>

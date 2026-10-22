@@ -1,0 +1,30 @@
+@model AshkanCRM.Models.SupportTicket
+@{ var isEnglish = System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "en"; ViewData["Title"]="Ticket #"+Model.Id; }
+<a class="support-back" asp-action="Index" data-fa="← بازگشت به تیکت‌ها" data-en="← Back to tickets">@(isEnglish ? "← Back to tickets" : "← بازگشت به تیکت‌ها")</a><section class="support-hero"><div><span class="support-eyebrow">TICKET #@Model.Id</span><h1>@Model.Subject</h1><p>@LocalStatus(Model.Category, isEnglish) · @LocalStatus(Model.Priority, isEnglish) · @LocalStatus(Model.Status, isEnglish)</p></div></section>
+@if(TempData["SupportError"] is string error){<div class="support-alert">@error</div>}
+<div class="support-grid"><section class="support-panel"><h2 data-fa="گفتگو و پاسخ‌ها" data-en="Conversation">@(isEnglish ? "Conversation" : "گفتگو و پاسخ‌ها")</h2><article class="support-message"><b>@Model.Requester</b><small>@Model.CreatedAtUtc.ToString("yyyy-MM-dd HH:mm") UTC</small><p>@Model.Description</p></article>@foreach(var reply in Model.Replies.OrderBy(x=>x.CreatedAtUtc)){<article class="support-message"><b>@reply.Author</b><small>@reply.CreatedAtUtc.ToString("yyyy-MM-dd HH:mm") UTC</small><p>@reply.Message</p></article>}<form asp-action="Reply" method="post"><input type="hidden" name="id" value="@Model.Id"/><label data-fa="پاسخ جدید" data-en="New reply">@(isEnglish ? "New reply" : "پاسخ جدید")</label><textarea name="message" required maxlength="3000" rows="4"></textarea><button class="support-primary" type="submit" data-fa="ارسال پاسخ" data-en="Send reply">@(isEnglish ? "Send reply" : "ارسال پاسخ")</button></form></section><aside class="support-panel"><h2 data-fa="جزئیات درخواست" data-en="Ticket details">@(isEnglish ? "Ticket details" : "جزئیات درخواست")</h2><p>@(isEnglish ? "Requester" : "درخواست‌دهنده"): @Model.Requester</p><p>@(isEnglish ? "Assigned to" : "ارجاع به"): @(string.IsNullOrEmpty(Model.AssignedTo)?"—":Model.AssignedTo)</p><p>@(isEnglish ? "Created" : "ایجادشده"): @Model.CreatedAtUtc.ToString("yyyy-MM-dd HH:mm") UTC</p>@if(User.IsInRole("Admin")||User.IsInRole("SalesManager")){<form asp-action="Update" method="post"><input type="hidden" name="id" value="@Model.Id"/><label>@(isEnglish ? "Status" : "وضعیت")</label><select name="status">@foreach(var st in new[]{"Open","InProgress","Waiting","Resolved","Closed","Reopened"}){if(Model.Status==st){<option selected value="@st">@LocalStatus(st, isEnglish)</option>}else{<option value="@st">@LocalStatus(st, isEnglish)</option>}}</select><label>@(isEnglish ? "Assign to (username)" : "ارجاع به (نام کاربری)")</label><input name="assignedTo" maxlength="180" value="@Model.AssignedTo"/><button type="submit" class="support-primary">@(isEnglish ? "Update ticket" : "به‌روزرسانی تیکت")</button></form>}</aside></div>@if(Model.Requester==User.Identity?.Name && (Model.Status=="Resolved" || Model.Status=="Closed")){<div class="support-panel"><h2 data-fa="ارزیابی پشتیبانی" data-en="Rate support">@(isEnglish ? "Rate support" : "ارزیابی پشتیبانی")</h2><form asp-action="Rate" method="post"><input type="hidden" name="id" value="@Model.Id"/><label data-fa="امتیاز از ۱ تا ۵" data-en="Rating (1–5)">@(isEnglish ? "Rating (1–5)" : "امتیاز از ۱ تا ۵")</label><select name="rating" required><option value="5">5 ★</option><option value="4">4 ★</option><option value="3">3 ★</option><option value="2">2 ★</option><option value="1">1 ★</option></select><label data-fa="نظر شما" data-en="Your feedback">@(isEnglish ? "Your feedback" : "نظر شما")</label><textarea name="comment" maxlength="1000"></textarea><button type="submit" class="support-primary" data-fa="ثبت ارزیابی" data-en="Submit feedback">@(isEnglish ? "Submit feedback" : "ثبت ارزیابی")</button></form></div>}
+@section Scripts { <script src="~/js/support-localization.js" asp-append-version="true"></script> }
+
+@if(User.IsInRole("Admin") || User.IsInRole("SalesManager")){<section class="support-panel"><h2 data-fa="ارجاع فوری" data-en="Escalate ticket">@(isEnglish ? "Escalate ticket" : "ارجاع فوری")</h2><form asp-action="Escalate" method="post"><input type="hidden" name="id" value="@Model.Id"/><textarea name="reason" maxlength="1000" required placeholder="@(isEnglish ? "Reason for escalation" : "دلیل ارجاع")"></textarea><button type="submit" class="support-primary" data-fa="ارجاع با اولویت بحرانی" data-en="Escalate as critical">@(isEnglish ? "Escalate as critical" : "ارجاع با اولویت بحرانی")</button></form></section>}
+<a asp-action="Knowledge" data-fa="پایگاه دانش" data-en="Knowledge base">@(isEnglish ? "Knowledge base" : "پایگاه دانش")</a>
+
+<section class="support-panel"><h2 data-fa="پیوست‌های تیکت" data-en="Ticket attachments">@(isEnglish ? "Ticket attachments" : "پیوست‌های تیکت")</h2>
+<form asp-action="Upload" method="post" enctype="multipart/form-data"><input type="hidden" name="id" value="@Model.Id"/><input type="file" name="file" accept=".pdf,.png,.jpg,.jpeg,.txt" required/><button class="support-primary" type="submit" data-fa="افزودن پیوست" data-en="Upload attachment">@(isEnglish ? "Upload attachment" : "افزودن پیوست")</button><small>PDF / PNG / JPEG / TXT · Max 2 MB</small></form>
+@{ var files = ViewBag.Attachments as List<AshkanCRM.Models.SupportAttachment> ?? new(); }
+@foreach(var item in files){<p><a asp-action="Download" asp-route-id="@item.Id">📎 @item.FileName</a> · @item.UploadedBy</p>}
+</section>
+
+@functions {
+    private static string LocalStatus(string? value, bool english)
+    {
+        if (english || string.IsNullOrEmpty(value)) return value ?? "";
+        return value switch
+        {
+            "Open" => "باز", "Reopened" => "بازگشایی‌شده", "InProgress" => "در حال بررسی",
+            "Waiting" => "در انتظار", "Resolved" => "حل‌شده", "Closed" => "بسته‌شده",
+            "Low" => "کم", "Medium" => "متوسط", "High" => "زیاد", "Critical" => "بحرانی",
+            "General" => "عمومی", "Technical" => "فنی", "Billing" => "مالی",
+            "FeatureRequest" => "درخواست قابلیت", _ => value
+        };
+    }
+}

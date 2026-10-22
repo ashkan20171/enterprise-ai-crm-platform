@@ -1,0 +1,44 @@
+@model AshkanCRM.Models.SalesTargetManagementVm
+@using System.Globalization
+@{
+ var en=CultureInfo.CurrentUICulture.TwoLetterISOLanguageName=="en";
+ ViewData["Title"]=en?"Manage sales targets":"مدیریت اهداف فروش";
+}
+<section class="panel" style="padding:24px;margin-block:20px">
+ <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+  <div><p class="eyebrow">@(en?"Sales operations":"عملیات فروش")</p><h1>@ViewData["Title"]</h1>
+   <p>@(en?"Set a monthly target for each sales agent. Saving an existing agent/month updates its target.":"هدف ماهانه هر کارشناس را ثبت کنید. ثبت دوباره همان کارشناس و ماه، هدف قبلی را به‌روزرسانی می‌کند.")</p></div>
+  <a class="btn" asp-controller="CRM" asp-action="TargetVsActual">@(en?"Target vs actual":"هدف در برابر عملکرد")</a>
+ </div>
+ <form method="get" asp-action="ManageSalesTargets" style="display:flex;gap:10px;align-items:center;margin:20px 0;flex-wrap:wrap">
+  <label for="yearFilter">@(en?"Year":"سال")</label><input id="yearFilter" name="year" type="number" min="2000" max="2100" value="@Model.Year" required />
+  <button type="submit">@(en?"View":"نمایش")</button>
+ </form>
+ <form method="post" asp-action="SaveSalesTarget" asp-controller="CRM" class="crm67-form">
+  @Html.AntiForgeryToken()
+  <input type="hidden" name="returnTo" value="ManageSalesTargets" />
+  <div><label for="owner">@(en?"Sales agent":"کارشناس فروش")</label>
+   <input id="owner" name="owner" list="crm67-owners" maxlength="180" required autocomplete="off" />
+   <datalist id="crm67-owners">@foreach(var name in Model.Owners){<option value="@name"></option>}</datalist>
+  </div>
+  <div><label for="targetYear">@(en?"Year":"سال")</label><input id="targetYear" type="number" name="year" value="@Model.Year" min="2000" max="2100" required /></div>
+  <div><label for="targetMonth">@(en?"Month":"ماه")</label><select id="targetMonth" name="month" required>@for(var m=1;m<=12;m++){<option value="@m">@m</option>}</select></div>
+  <div><label for="targetAmount">@(en?"Target amount":"مبلغ هدف")</label><input id="targetAmount" name="targetAmount" type="number" min="0" step="0.01" required /></div>
+  <div><label for="stretchAmount">@(en?"Stretch target":"هدف توسعه‌ای")</label><input id="stretchAmount" name="stretchAmount" type="number" min="0" step="0.01" required /></div>
+  <button type="submit">@(en?"Save target":"ذخیره هدف")</button>
+ </form>
+ <div class="table-wrap" style="margin-top:24px"><table><thead><tr>
+  <th>@(en?"Agent":"کارشناس")</th><th>@(en?"Year":"سال")</th><th>@(en?"Month":"ماه")</th><th>@(en?"Target":"هدف")</th><th>@(en?"Stretch":"توسعه‌ای")</th><th>@(en?"Report":"گزارش")</th>
+ </tr></thead><tbody>
+ @foreach(var item in Model.Rows){
+  <tr><td>@item.Owner</td><td>@item.Year</td><td>@item.Month</td><td>@item.Target.ToString("N0")</td><td>@item.Stretch.ToString("N0")</td>
+  <td><a asp-controller="CRM" asp-action="TargetVsActual" asp-route-owner="@item.Owner">@(en?"View":"مشاهده")</a></td></tr>
+ }
+ </tbody></table></div>
+ @if(Model.Rows.Count==0){<p style="margin-top:12px">@(en?"No targets recorded for this year.":"برای این سال هدفی ثبت نشده است.")</p>}
+</section>
+<style>
+.crm67-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;align-items:end;padding:18px;border-radius:16px;background:rgba(70,125,185,.07)}
+.crm67-form>div{display:grid;gap:7px;min-width:0}.crm67-form input,.crm67-form select{width:100%;min-width:0;box-sizing:border-box;padding:10px;border-radius:8px;border:1px solid rgba(127,127,127,.35)}
+.crm67-form button{min-height:42px}
+</style>

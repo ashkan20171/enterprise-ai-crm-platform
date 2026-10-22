@@ -1,0 +1,20 @@
+/* Stage 82: independent, keyboard-accessible sidebar scrolling */
+.sidebar{height:100dvh;max-height:100dvh;min-height:0;overflow:hidden}
+.sidebar>.brand{flex:0 0 auto;margin-bottom:14px}
+.sidebar>nav{flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#7168b6 #20263b;padding-inline-end:5px;padding-bottom:18px}
+.sidebar>nav::-webkit-scrollbar{width:8px}
+.sidebar>nav::-webkit-scrollbar-track{background:#20263b;border-radius:10px}
+.sidebar>nav::-webkit-scrollbar-thumb{background:#7168b6;border:2px solid #20263b;border-radius:10px}
+.sidebar>nav::-webkit-scrollbar-thumb:hover{background:#a49bf4}
+.sidebar>.sidebar-foot{flex:0 0 auto;margin-top:0;padding-top:12px;background:#151a2b}
+.sidebar-search{flex:0 0 auto;display:flex;align-items:center;gap:8px;background:#20263b;border:1px solid #39435d;border-radius:10px;padding:7px 10px;margin-bottom:10px;color:#c6c9dd}
+.sidebar-search:focus-within{outline:2px solid #9185ff;outline-offset:1px}
+.sidebar-search input{width:100%;min-width:0;background:transparent;border:0;outline:0;color:#fff;font-size:12px}
+.sidebar-search input::placeholder{color:#a5aec5}
+.sidebar-search-clear{border:0;background:transparent;color:#c6c9dd;cursor:pointer;padding:0 3px;font-size:17px}
+.sidebar-search-clear[hidden],.sidebar nav a[hidden],.sidebar nav .nav-label[hidden]{display:none!important}
+.sidebar-search-status{font-size:11px;color:#b9c2da;padding:4px 12px 9px}
+.sidebar-search-status[hidden]{display:none}
+.sidebar nav a:focus-visible{outline:2px solid #a49bf4;outline-offset:-2px}
+@media(max-width:1050px){.sidebar{height:100dvh;max-height:100dvh}}
+@media(prefers-reduced-motion:reduce){.sidebar nav{scroll-behavior:auto}}

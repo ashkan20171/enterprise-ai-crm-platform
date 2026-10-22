@@ -1,0 +1,99 @@
+@model List<AshkanCRM.Models.SupportTicket>
+@{
+    ViewData["Title"] = "Support Workspace";
+    var critical = Model.Count(x => x.Priority == "Critical");
+    var unassigned = Model.Count(x => string.IsNullOrWhiteSpace(x.AssignedTo));
+    var overdue = Model.Count(x => DateTime.UtcNow > x.CreatedAtUtc.AddHours(x.Priority switch { "Critical" => 4, "High" => 8, "Low" => 48, _ => 24 }));
+    var priorities = new[] { "Critical", "High", "Medium", "Low" };
+}
+<link rel="stylesheet" href="~/css/support-workspace-38.css" asp-append-version="true" />
+<main class="agent-workspace" id="agent-workspace">
+    <header class="agent-header">
+        <div>
+            <span class="agent-kicker" data-fa="مرکز عملیات پشتیبانی" data-en="SUPPORT OPERATIONS">مرکز عملیات پشتیبانی</span>
+            <h1 data-fa="میز کار کارشناسان" data-en="Agent workspace">میز کار کارشناسان</h1>
+            <p data-fa="پیگیری، اولویت‌بندی و رسیدگی سریع به درخواست‌ها" data-en="Prioritize and resolve customer requests">پیگیری، اولویت‌بندی و رسیدگی سریع به درخواست‌ها</p>
+        </div>
+        <a class="agent-cta" asp-action="AssignmentQueue" data-fa="صف تخصیص" data-en="Assignment queue">صف تخصیص</a>
+        <a class="agent-cta" asp-action="AgentPerformance" data-fa="عملکرد کارشناسان" data-en="Agent performance">عملکرد کارشناسان</a>
+        <a class="agent-cta" asp-action="SlaSettings" data-fa="تنظیمات SLA" data-en="SLA settings">تنظیمات SLA</a>
+        <a class="agent-cta" asp-action="EscalationReport" data-fa="گزارش ارجاع" data-en="Escalation report">گزارش ارجاع</a>
+        <a class="agent-cta" asp-controller="Support" asp-action="Index" data-fa="همه تیکت‌ها" data-en="All tickets">همه تیکت‌ها</a>
+    </header>
+    <section class="agent-metrics" aria-label="Support metrics">
+        <div class="agent-metric"><span data-fa="تیکت‌های فعال (تا ۲۰۰ مورد)" data-en="Active tickets (up to 200)">تیکت‌های فعال (تا ۲۰۰ مورد)</span><strong>@Model.Count</strong></div>
+        <div class="agent-metric"><span data-fa="اولویت بحرانی" data-en="Critical priority">اولویت بحرانی</span><strong>@critical</strong></div>
+        <div class="agent-metric"><span data-fa="بدون مسئول" data-en="Unassigned">بدون مسئول</span><strong>@unassigned</strong></div>
+        <div class="agent-metric"><span data-fa="عبور از مهلت تقریبی" data-en="Past indicative deadline">عبور از مهلت تقریبی</span><strong>@overdue</strong></div>
+    </section>
+    <section class="agent-panel" aria-label="Ticket queue">
+        <div class="agent-toolbar">
+            <div>
+                <h2 data-fa="صف رسیدگی" data-en="Ticket queue">صف رسیدگی</h2>
+                <div class="agent-live" role="status" aria-live="polite">
+                    <span id="support-live-status">Connecting…</span>
+                    <button id="support-refresh" type="button" hidden data-fa="تازه‌سازی" data-en="Refresh">تازه‌سازی</button>
+                </div>
+            </div>
+            <form method="get" class="agent-filter">
+                <label for="agent-priority" data-fa="اولویت" data-en="Priority">اولویت</label>
+                <select id="agent-priority" name="priority">
+                    <option value="" data-fa="همه" data-en="All">همه</option>
+                    @foreach (var priority in priorities)
+                    {
+                        <option value="@priority" selected="@(ViewBag.Priority == priority)">@priority</option>
+                    }
+                </select>
+                <button type="submit" data-fa="اعمال فیلتر" data-en="Apply filter">اعمال فیلتر</button>
+            </form>
+        </div>
+        <div class="agent-search">
+            <label for="agent-search" data-fa="جستجو در تیکت‌های نمایش‌داده‌شده" data-en="Search visible tickets">جستجو در تیکت‌های نمایش‌داده‌شده</label>
+            <input id="agent-search" type="search" autocomplete="off" data-fa-placeholder="عنوان، شماره یا مسئول..." data-en-placeholder="Subject, ID or assignee..." placeholder="عنوان، شماره یا مسئول..." />
+        </div>
+        <div class="agent-table-scroll">
+            <table class="agent-table">
+                <thead>
+                    <tr>
+                        <th scope="col" data-fa="شماره" data-en="ID">شماره</th>
+                        <th scope="col" data-fa="عنوان" data-en="Subject">عنوان</th>
+                        <th scope="col" data-fa="اولویت" data-en="Priority">اولویت</th>
+                        <th scope="col" data-fa="وضعیت" data-en="Status">وضعیت</th>
+                        <th scope="col" data-fa="مسئول" data-en="Assignee">مسئول</th>
+                        <th scope="col" data-fa="مهلت تقریبی" data-en="Indicative deadline">مهلت تقریبی</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var ticket in Model)
+                    {
+                        var hours = ticket.Priority switch { "Critical" => 4, "High" => 8, "Low" => 48, _ => 24 };
+                        var deadline = ticket.CreatedAtUtc.AddHours(hours);
+                        var isOverdue = DateTime.UtcNow > deadline;
+                        <tr data-agent-ticket>
+                            <td><a asp-action="Details" asp-route-id="@ticket.Id">#@ticket.Id</a></td>
+                            <td class="agent-subject">@ticket.Subject</td>
+                            <td><span class="agent-priority" data-priority="@ticket.Priority">@ticket.Priority</span></td>
+                            <td>@ticket.Status</td>
+                            <td>@(string.IsNullOrWhiteSpace(ticket.AssignedTo) ? "—" : ticket.AssignedTo)</td>
+                            <td>
+                                <time datetime="@deadline.ToString("yyyy-MM-ddTHH:mm:ssZ")">@deadline.ToString("yyyy-MM-dd HH:mm") UTC</time>
+                                @if (isOverdue)
+                                {
+                                    <span class="agent-overdue" data-fa="گذشته" data-en="Past due">گذشته</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <p id="agent-no-results" hidden data-fa="تیکتی مطابق جستجو پیدا نشد." data-en="No matching tickets found.">تیکتی مطابق جستجو پیدا نشد.</p>
+        <p class="agent-footnote" data-fa="مهلت‌ها بر اساس ساعت تقویمی و اولویت تخمین زده شده‌اند؛ معیار رسمی SLA پاسخ اولیه نیستند. آمار بر اساس حداکثر ۲۰۰ تیکت بارگذاری‌شده محاسبه شده است." data-en="Deadlines are calendar-hour estimates, not verified first-response SLA compliance. Metrics reflect up to 200 loaded tickets.">مهلت‌ها بر اساس ساعت تقویمی تخمین زده شده‌اند؛ معیار رسمی SLA نیستند.</p>
+    </section>
+</main>
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.min.js" crossorigin="anonymous"></script>
+    <script src="~/js/support-live.js" asp-append-version="true"></script>
+    <script src="~/js/support-workspace-38.js" asp-append-version="true"></script>
+    <script src="~/js/support-localization.js" asp-append-version="true"></script>
+}

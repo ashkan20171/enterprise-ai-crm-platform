@@ -1,4 +1,6 @@
+@using System.Globalization
+@{ var stage113English = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "en"; }
 @model IEnumerable<AshkanCRM.Models.KnowledgeArticle>
-@{ ViewData["Title"]="دانش سازمانی"; }
-<div class="page-head"><div><p class="eyebrow">KNOWLEDGE HUB</p><h1>پایگاه دانش تیم</h1><p>Playbookها، راهنماها و دانش مشترک فروش و پشتیبانی</p></div><button class="primary">＋ مقاله جدید</button></div>
-<div class="knowledge-grid">@foreach(var x in Model){<article class="feature-card"><span class="badge">@x.Category</span><h2>@x.Title</h2><p>@x.Author · بروزرسانی @x.Updated</p><footer><span>◉ @x.Views بازدید</span><span class="status">@x.Status</span></footer></article>}</div>
+@{ ViewData["Title"] = stage113English ? "Knowledge Base" : "دانش سازمانی"; }
+<div class="page-head"><div><p class="eyebrow">KNOWLEDGE HUB</p><h1>@(stage113English ? "Team Knowledge Base" : "پایگاه دانش تیم")</h1><p>@(stage113English ? "Playbooks, guides, and shared sales and support knowledge" : "Playbookها، راهنماها و دانش مشترک فروش و پشتیبانی")</p></div><button class="primary">@(stage113English ? "＋ New Article" : "＋ مقاله جدید")</button></div>
+<div class="knowledge-grid">@foreach(var x in Model){<article class="feature-card"><span class="badge">@x.Category</span><h2>@x.Title</h2><p>@x.Author · @(stage113English ? "Updated " : "بروزرسانی ")@x.Updated</p><footer><span>◉ @x.Views @(stage113English ? "views" : "بازدید")</span><span class="status">@x.Status</span></footer></article>}</div>

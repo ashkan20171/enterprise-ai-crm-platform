@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AshkanCRM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef1a108c8d3e84dcbc5ff9554ddc421dc8ecafda")]
 [assembly: System.Reflection.AssemblyProductAttribute("AshkanCRM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AshkanCRM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

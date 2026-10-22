@@ -1,0 +1,86 @@
+@using System.Globalization
+@{ var stage112English = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "en"; }
+@model AshkanCRM.Models.SupportAssignmentQueueViewModel
+@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+    ViewData["Title"] = stage112English ? "Ticket assignment queue" : "صف تخصیص تیکت‌ها";
+    var eligibleAgents = Model.Agents
+        .Where(a => a.Available && a.ActiveTickets < a.Capacity)
+        .OrderBy(a => a.ActiveTickets)
+        .ThenBy(a => a.UserName)
+        .ToList();
+}
+<main class="container py-4" style="max-width:1180px">
+    <header class="mb-4">
+        <h1 data-fa="صف تخصیص تیکت‌ها" data-en="Ticket assignment queue">@(stage112English ? "Ticket assignment queue" : "صف تخصیص تیکت‌ها")</h1>
+        <p class="text-muted" data-fa="تخصیص با تأیید مدیر انجام می‌شود." data-en="A manager must confirm ticket assignment.">@(stage112English ? "A manager must confirm ticket assignment." : "تخصیص با تأیید مدیر انجام می‌شود.")</p>
+    </header>
+    <section class="row g-3 mb-4" aria-label="@(stage112English ? "Agent workload" : "بار کاری کارشناسان")">
+        @foreach (var agent in Model.Agents)
+        {
+            <div class="col-md-4 col-xl-3">
+                <div class="card p-3 h-100">
+                    <strong>@agent.UserName</strong>
+                    <span class="small" data-fa="وضعیت حضور" data-en="Availability">@(stage112English ? "Availability" : "وضعیت حضور")</span>
+                    <span class="badge @(agent.Available ? "bg-success" : "bg-secondary")">@(agent.Available ? (stage112English ? "Available" : "در دسترس") : (stage112English ? "Offline / Off shift" : "آفلاین / خارج از شیفت"))</span>
+                    <span data-fa="تیکت فعال" data-en="Active tickets">@(stage112English ? "Active tickets" : "تیکت فعال")</span>
+                    <span class="fs-3 fw-bold">@agent.ActiveTickets / @agent.Capacity</span>
+                    <small class="text-muted">@string.Join(" · ", agent.Categories)</small>
+                </div>
+            </div>
+        }
+    </section>
+    <section class="card p-3" aria-label="@(stage112English ? "Unassigned tickets" : "تیکت‌های بدون مسئول")">
+        <h2 class="h5" data-fa="تیکت‌های بدون مسئول" data-en="Unassigned tickets">@(stage112English ? "Unassigned tickets" : "تیکت‌های بدون مسئول")</h2>
+        <div class="table-responsive">
+            <table class="table align-middle">
+                <thead>
+                    <tr>
+                        <th data-fa="تیکت" data-en="Ticket">@(stage112English ? "Ticket" : "تیکت")</th>
+                        <th data-fa="اولویت" data-en="Priority">@(stage112English ? "Priority" : "اولویت")</th>
+                        <th data-fa="تخصیص" data-en="Assignment">@(stage112English ? "Assignment" : "تخصیص")</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var ticket in Model.Unassigned)
+                    {
+                        var suggested = eligibleAgents
+                            .OrderByDescending(a => a.Categories.Contains(ticket.Category))
+                            .ThenBy(a => a.ActiveTickets)
+                            .ThenBy(a => a.UserName)
+                            .FirstOrDefault();
+                        var agentOptions = eligibleAgents.Select(a => new SelectListItem
+                        {
+                            Value = a.UserName,
+                            Text = $"{a.UserName} ({a.ActiveTickets}/{a.Capacity})",
+                            Selected = a.UserName == suggested?.UserName
+                        }).ToList();
+                        <tr>
+                            <td>
+                                <a asp-action="Details" asp-route-id="@ticket.Id">#@ticket.Id — @ticket.Subject</a>
+                            </td>
+                            <td>@(ticket.Priority == "Critical" ? (stage112English ? "Critical" : "بحرانی") : ticket.Priority == "High" ? (stage112English ? "High" : "زیاد") : ticket.Priority == "Medium" ? (stage112English ? "Medium" : "متوسط") : ticket.Priority == "Low" ? (stage112English ? "Low" : "کم") : ticket.Priority)</td>
+                            <td>
+                                <form asp-action="AssignTicket" method="post" class="d-flex flex-wrap gap-2">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="id" value="@ticket.Id" />
+                                    <select name="assignee" asp-items="agentOptions" class="form-select" style="max-width:240px" required aria-label="@(stage112English ? "Assignee" : "مسئول")"></select>
+                                    <button class="btn btn-primary" type="submit" disabled="@(agentOptions.Count == 0)" data-fa="تخصیص" data-en="Assign">@(stage112English ? "Assign" : "تخصیص")</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        @if (Model.Unassigned.Count == 0)
+        {
+            <p data-fa="تیکت بدون مسئول وجود ندارد." data-en="No unassigned tickets.">@(stage112English ? "No unassigned tickets." : "تیکت بدون مسئول وجود ندارد.")</p>
+        }
+    </section>
+    <p class="text-muted small mt-3" data-fa="پیشنهاد بر اساس سابقه دسته‌بندی و بار کاری است؛ تصمیم نهایی با مدیر است." data-en="Suggestions consider category history and workload; managers make the final decision.">@(stage112English ? "Suggestions consider category history and workload; managers make the final decision." : "پیشنهاد بر اساس سابقه دسته‌بندی و بار کاری است؛ تصمیم نهایی با مدیر است.")</p>
+    <a class="d-inline-block mt-3" asp-action="Workspace" data-fa="بازگشت به میز کار" data-en="Back to workspace">@(stage112English ? "Back to workspace" : "بازگشت به میز کار")</a>
+</main>
+@section Scripts {
+    <script src="~/js/support-localization.js" asp-append-version="true"></script>
+}

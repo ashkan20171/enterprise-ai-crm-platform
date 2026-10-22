@@ -1,5 +1,18 @@
 @model IEnumerable<AshkanCRM.Models.ApprovalItem>
-@{ ViewData["Title"]="تاییدیه‌ها"; }
-<div class="page-head"><div><span class="eyebrow">GOVERNANCE</span><h1>مرکز تاییدیه‌ها</h1><p>تخفیف‌ها، تغییر مالکیت، عملیات حساس و درخواست‌های امنیتی را با کنترل مدیریتی بررسی کنید.</p></div></div>
-<div class="grid cards-4"><div class="stat-card"><span>در انتظار</span><b>@Model.Count(x=>x.Status=="در انتظار")</b><small>نیازمند تصمیم</small></div><div class="stat-card"><span>تایید شده</span><b>@Model.Count(x=>x.Status=="تایید شده")</b><small>Workflow history</small></div><div class="stat-card"><span>اولویت بالا</span><b>@Model.Count(x=>x.Priority=="بالا")</b><small>Attention required</small></div><div class="stat-card"><span>Policy</span><b>2-step</b><small>برای عملیات حساس</small></div></div>
-<div class="panel"><div class="table-wrap"><table><thead><tr><th>درخواست</th><th>نوع</th><th>درخواست‌کننده</th><th>تاییدکننده</th><th>زمان</th><th>وضعیت</th><th>اقدام</th></tr></thead><tbody>@foreach(var x in Model){<tr><td><b>@x.Title</b></td><td>@x.Type</td><td>@x.RequestedBy</td><td>@x.Approver</td><td>@x.Created</td><td><span class="badge">@x.Status</span></td><td><button class="ghost">بررسی</button></td></tr>}</tbody></table></div></div>
+@using System.Globalization
+@{
+    var en = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "en";
+    ViewData["Title"] = en ? "Approvals" : "تأییدیه‌ها";
+    Func<string, string> status = value => en ? value switch { "در انتظار" => "Pending", "تایید شده" or "تأیید شده" => "Approved", "رد شده" => "Rejected", _ => value } : value switch { "Pending" => "در انتظار", "Approved" => "تأیید شده", "Rejected" => "رد شده", _ => value };
+}
+<div class="page-head"><div><span class="eyebrow">@(en ? "GOVERNANCE" : "حاکمیت و کنترل")</span><h1>@(en ? "Approval center" : "مرکز تأییدیه‌ها")</h1><p>@(en ? "Review discounts, ownership changes, sensitive actions and security requests." : "تخفیف‌ها، تغییر مالکیت، عملیات حساس و درخواست‌های امنیتی را با کنترل مدیریتی بررسی کنید.")</p></div></div>
+<div class="grid cards-4">
+ <div class="stat-card"><span>@(en ? "Pending" : "در انتظار")</span><b>@Model.Count(x => x.Status == "در انتظار" || x.Status == "Pending")</b><small>@(en ? "Awaiting decision" : "نیازمند تصمیم")</small></div>
+ <div class="stat-card"><span>@(en ? "Approved" : "تأیید شده")</span><b>@Model.Count(x => x.Status == "تایید شده" || x.Status == "تأیید شده" || x.Status == "Approved")</b><small>@(en ? "Workflow history" : "سوابق گردش کار")</small></div>
+ <div class="stat-card"><span>@(en ? "High priority" : "اولویت بالا")</span><b>@Model.Count(x => x.Priority == "بالا" || x.Priority == "High")</b><small>@(en ? "Attention required" : "نیازمند رسیدگی")</small></div>
+ <div class="stat-card"><span>@(en ? "Policy" : "سیاست")</span><b>2-step</b><small>@(en ? "For sensitive operations" : "برای عملیات حساس")</small></div>
+</div>
+<div class="panel"><div class="table-wrap"><table><thead><tr><th>@(en ? "Request" : "درخواست")</th><th>@(en ? "Type" : "نوع")</th><th>@(en ? "Requested by" : "درخواست‌کننده")</th><th>@(en ? "Approver" : "تأییدکننده")</th><th>@(en ? "Created" : "زمان")</th><th>@(en ? "Status" : "وضعیت")</th><th>@(en ? "Action" : "اقدام")</th></tr></thead><tbody>
+@if (!Model.Any()) { <tr><td colspan="7">@(en ? "No approval requests found." : "درخواست تأییدی یافت نشد.")</td></tr> }
+@foreach (var x in Model) { <tr><td><b>@x.Title</b></td><td>@x.Type</td><td>@x.RequestedBy</td><td>@x.Approver</td><td>@x.Created</td><td><span class="badge">@status(x.Status)</span></td><td><span class="badge">@(en ? "View only" : "فقط نمایش")</span></td></tr> }
+</tbody></table></div></div>

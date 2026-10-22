@@ -1,0 +1,11 @@
+/* Stage 86: drag-and-drop, density, visible drop affordance. */
+.sidebar-drag-handle { cursor: grab; user-select: none; touch-action: none; display: inline-flex; align-items: center; justify-content: center; min-width: 32px; min-height: 28px; border: 1px dashed rgba(160,175,205,.4); border-radius: 7px; color: #c4d1ef; }
+.sidebar-drag-handle:active { cursor: grabbing; }
+.sidebar-drag-handle:focus-visible { outline: 2px solid #a49bf4; outline-offset: 2px; }
+.sidebar-dragging { opacity: .45; }
+.sidebar-drop-target { outline: 2px dashed #a49bf4; outline-offset: -2px; border-radius: 10px; }
+.sidebar-density-select { display: block; width: 100%; margin-top: 8px; padding: 7px 9px; border: 1px solid #4d5872; border-radius: 8px; background: #20263b; color: #e6ebff; font: inherit; font-size: 12px; }
+.sidebar.sidebar-compact nav a { padding-block: 5px; }
+.sidebar.sidebar-compact .sidebar-group-content { row-gap: 0; }
+.sidebar.sidebar-compact .sidebar-order-controls { padding-bottom: 0; }
+@media (prefers-reduced-motion: reduce) { .sidebar-dragging, .sidebar-drop-target { transition: none; } }

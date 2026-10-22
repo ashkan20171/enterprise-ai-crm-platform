@@ -1,0 +1,12 @@
+/* Stage 84: accessible collapsible navigation sections. */
+.sidebar-group{min-width:0;margin-bottom:8px}
+.sidebar-group[hidden],.sidebar-group-content[hidden],.sidebar-group-source{display:none!important}
+.sidebar-group-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;gap:8px;background:transparent;color:#c9c5e9;border:0;border-radius:8px;text-align:start;padding:10px 12px;font-size:12px;font-weight:750;cursor:pointer}
+.sidebar-group-toggle:hover,.sidebar-group-toggle:focus-visible{background:#303954;color:#fff}
+.sidebar-group-toggle:focus-visible{outline:2px solid #b3a8ff;outline-offset:-2px}
+.sidebar-group-toggle:disabled{cursor:default;opacity:.85}
+.sidebar-group-chevron{display:inline-block;transition:transform .18s ease;font-size:18px;line-height:1}
+.sidebar-group.is-collapsed .sidebar-group-chevron{transform:rotate(-90deg)}
+.sidebar-group-content{min-width:0}
+.sidebar-group-content>.sidebar-nav-row{width:100%}
+@media(prefers-reduced-motion:reduce){.sidebar-group-chevron{transition:none}}

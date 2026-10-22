@@ -1,0 +1,15 @@
+/* Stage 83: favorites, active-route indicator, and pin controls. */
+.sidebar-nav-row{display:flex;align-items:center;min-width:0;position:relative}
+.sidebar-nav-row>a{flex:1 1 auto;min-width:0}
+.sidebar-pin{flex:0 0 27px;border:0;border-radius:7px;background:transparent;color:#c8c2f6;cursor:pointer;min-height:29px;font-size:17px}
+.sidebar-pin:hover,.sidebar-pin:focus-visible{background:#39435d;color:#fff;outline-offset:1px}
+.sidebar-nav-row[hidden],.sidebar-nav-row:has(>a[hidden]){display:none!important}
+.sidebar nav a.sidebar-current,.sidebar-favorite-link.sidebar-current{background:#34385b!important;border-inline-start:3px solid #b3a8ff;color:#fff!important;font-weight:700}
+.sidebar-favorites{flex:0 0 auto;max-height:26vh;overflow-y:auto;min-height:0;margin:0 0 10px;border-bottom:1px solid #39435d;padding-bottom:8px;scrollbar-width:thin}
+.sidebar-favorites[hidden]{display:none!important}
+.sidebar-favorites-heading{font-size:12px;color:#c9c3ed;font-weight:700;padding:6px 12px}
+.sidebar-favorite-row{display:flex;align-items:center;min-width:0}
+.sidebar-favorite-link{flex:1 1 auto;min-width:0;text-decoration:none;color:#e7e8f7;padding:8px 10px;border-radius:8px;font-size:12px}
+.sidebar-favorite-link:hover{background:#303954}
+.sidebar-favorite-remove{flex:0 0 27px;background:transparent;border:0;color:#e3d9f9;cursor:pointer;font-size:18px}
+.sidebar-favorite-remove:focus-visible{outline:2px solid #a49bf4}

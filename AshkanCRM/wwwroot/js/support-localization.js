@@ -1,0 +1,1 @@
+(()=>{const apply=()=>{const fa=document.documentElement.lang?.toLowerCase().startsWith('fa')||document.documentElement.dir==='rtl';document.querySelectorAll('[data-fa][data-en]').forEach(el=>{el.textContent=el.getAttribute(fa?'data-fa':'data-en')||'';});};apply();new MutationObserver(apply).observe(document.documentElement,{attributes:true,attributeFilter:['lang','dir']});})();

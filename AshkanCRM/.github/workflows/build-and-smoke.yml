@@ -1,0 +1,32 @@
+name: Build and smoke checks
+on:
+  push:
+  pull_request:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Restore
+        run: dotnet restore AshkanCRM.csproj
+      - name: Build
+        run: dotnet build AshkanCRM.csproj --configuration Release --no-restore
+      - name: JavaScript syntax
+        run: node --check wwwroot/js/crm77-report-interactions.js
+      - name: Report structure smoke checks
+        run: python scripts/verify_stage78.py
+      - name: Administrator security regression checks
+        run: python scripts/verify_stage79.py
+      - name: Administrator transaction regression checks
+        run: python scripts/verify_stage80.py
+      - name: Administrator account recovery regression checks
+        run: python scripts/verify_stage81.py

@@ -1,4 +1,15 @@
 @model IEnumerable<AshkanCRM.Models.FeatureFlagItem>
-@{ ViewData["Title"]="Feature Flags"; }
-<div class="page-head"><div><span class="eyebrow">ADMIN / RELEASE CONTROL</span><h1>Feature Flags</h1><p>قابلیت‌های جدید را بدون انتشار مجدد برای گروه‌های مشخص فعال یا غیرفعال کنید.</p></div></div>
-<div class="grid cards-2">@foreach(var x in Model){<div class="panel"><div class="panel-title"><div><h3>@x.Name</h3><code>@x.Key</code></div><span class="badge @(x.Enabled?"success":"")">@(x.Enabled?"فعال":"غیرفعال")</span></div><p>Audience: <b>@x.Audience</b></p><small>آخرین تغییر: @x.UpdatedBy</small><div class="panel-actions"><button class="@(x.Enabled?"ghost":"primary")">@(x.Enabled?"غیرفعال‌سازی":"فعال‌سازی")</button></div></div>}</div>
+@using System.Globalization
+@{
+    var en = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "en";
+    ViewData["Title"] = en ? "Feature flags" : "پرچم‌های قابلیت";
+}
+<div class="page-head"><div><span class="eyebrow">@(en ? "ADMIN / RELEASE CONTROL" : "مدیریت / کنترل انتشار")</span><h1>@(en ? "Feature flags" : "پرچم‌های قابلیت")</h1><p>@(en ? "Review feature availability for selected audiences without redeploying." : "وضعیت دسترسی قابلیت‌ها برای گروه‌های مختلف را بدون انتشار مجدد بررسی کنید.")</p></div></div>
+<div class="grid cards-2">
+@if (!Model.Any()) { <div class="panel"><p>@(en ? "No feature flags found." : "قابلیتی ثبت نشده است.")</p></div> }
+@foreach (var x in Model) {
+ <div class="panel"><div class="panel-title"><div><h3>@x.Name</h3><code>@x.Key</code></div><span class="badge @(x.Enabled ? "success" : "")">@(x.Enabled ? (en ? "Enabled" : "فعال") : (en ? "Disabled" : "غیرفعال"))</span></div>
+ <p>@(en ? "Audience:" : "گروه هدف:") <b>@x.Audience</b></p><small>@(en ? "Last changed by:" : "آخرین تغییر توسط:") @x.UpdatedBy</small>
+ <div class="panel-actions"><span class="badge">@(en ? "Read-only" : "فقط خواندنی")</span></div></div>
+}
+</div>

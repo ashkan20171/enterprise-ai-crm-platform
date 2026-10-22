@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>ورود به حساب کاربری</value>
+  </data>
+  <data name="RegisterTitle" xml:space="preserve">
+    <value>درخواست عضویت</value>
+  </data>
+  <data name="DeniedTitle" xml:space="preserve">
+    <value>دسترسی محدود است</value>
+  </data>
+  <data name="DeniedDescription" xml:space="preserve">
+    <value>نقش فعلی شما اجازه مشاهده این بخش را ندارد. در صورت نیاز با مدیر سامانه تماس بگیرید.</value>
+  </data>
+  <data name="BackDashboard" xml:space="preserve">
+    <value>بازگشت به داشبورد</value>
+  </data>
+  <data name="LoginPill" xml:space="preserve">
+    <value>✦ CRM نسل جدید</value>
+  </data>
+  <data name="LoginHero" xml:space="preserve">
+    <value>رابطه‌های بهتر.</value>
+  </data>
+  <data name="LoginHeroEm" xml:space="preserve">
+    <value>فروش هوشمندتر.</value>
+  </data>
+  <data name="LoginDescription" xml:space="preserve">
+    <value>تمام ارتباطات مشتری، فرصت‌های فروش و عملکرد تیم شما در یک فضای امن و یکپارچه.</value>
+  </data>
+  <data name="CustomerView" xml:space="preserve">
+    <value>نمای مشتری</value>
+  </data>
+  <data name="SecureAccess" xml:space="preserve">
+    <value>دسترسی امن</value>
+  </data>
+  <data name="AccessControl" xml:space="preserve">
+    <value>کنترل دسترسی</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>خوش آمدید</value>
+  </data>
+  <data name="LoginHelp" xml:space="preserve">
+    <value>برای ادامه، اطلاعات حساب خود را وارد کنید.</value>
+  </data>
+  <data name="WorkEmail" xml:space="preserve">
+    <value>ایمیل سازمانی</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>رمز عبور</value>
+  </data>
+  <data name="Remember" xml:space="preserve">
+    <value>مرا به خاطر بسپار</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>رمز را فراموش کرده‌اید؟</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>ورود امن ←</value>
+  </data>
+  <data name="DemoAccounts" xml:space="preserve">
+    <value>حساب‌های آزمایشی</value>
+  </data>
+  <data name="NoAccount" xml:space="preserve">
+    <value>حساب ندارید؟</value>
+  </data>
+  <data name="RegisterLink" xml:space="preserve">
+    <value>درخواست عضویت</value>
+  </data>
+  <data name="RegisterPill" xml:space="preserve">
+    <value>امن • منعطف • نقش‌محور</value>
+  </data>
+  <data name="RegisterHero" xml:space="preserve">
+    <value>تیمتان را حول</value>
+  </data>
+  <data name="RegisterHeroEm" xml:space="preserve">
+    <value>مشتری متحد کنید.</value>
+  </data>
+  <data name="RegisterDescription" xml:space="preserve">
+    <value>عضویت کاربران سازمانی پس از تأیید مدیر فعال می‌شود تا اصل حداقل دسترسی رعایت شود.</value>
+  </data>
+  <data name="GetStarted" xml:space="preserve">
+    <value>شروع همکاری</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>نام و نام خانوادگی</value>
+  </data>
+  <data name="FullNamePlaceholder" xml:space="preserve">
+    <value>نام کامل</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>شرکت / واحد</value>
+  </data>
+  <data name="CompanyPlaceholder" xml:space="preserve">
+    <value>نام سازمان</value>
+  </data>
+  <data name="SubmitRequest" xml:space="preserve">
+    <value>ارسال درخواست</value>
+  </data>
+  <data name="AlreadyMember" xml:space="preserve">
+    <value>قبلاً عضو هستید؟</value>
+  </data>
+  <data name="LoginLink" xml:space="preserve">
+    <value>ورود</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>ایمیل یا رمز عبور صحیح نیست یا حساب غیرفعال است.</value>
+  </data>
+  <data name="LockedOut" xml:space="preserve">
+    <value>حساب کاربری موقتاً قفل شده است.</value>
+  </data>
+  <data name="IncorrectCredentials" xml:space="preserve">
+    <value>ایمیل یا رمز عبور صحیح نیست.</value>
+  </data>
+  <data name="EmailExists" xml:space="preserve">
+    <value>این ایمیل قبلاً ثبت شده است.</value>
+  </data>
+  <data name="RegistrationPending" xml:space="preserve">
+    <value>درخواست عضویت ثبت شد. حساب پس از تأیید مدیر فعال می‌شود.</value>
+  </data>
+  <data name="DuplicateUserName" xml:space="preserve">
+    <value>این نام کاربری قبلاً ثبت شده است.</value>
+  </data>
+  <data name="DuplicateEmail" xml:space="preserve">
+    <value>این ایمیل قبلاً ثبت شده است.</value>
+  </data>
+  <data name="PasswordTooShort" xml:space="preserve">
+    <value>رمز عبور کوتاه‌تر از حد مجاز است.</value>
+  </data>
+  <data name="PasswordRequiresDigit" xml:space="preserve">
+    <value>رمز عبور باید حداقل یک عدد داشته باشد.</value>
+  </data>
+  <data name="PasswordRequiresUpper" xml:space="preserve">
+    <value>رمز عبور باید حداقل یک حرف بزرگ داشته باشد.</value>
+  </data>
+  <data name="PasswordRequiresLower" xml:space="preserve">
+    <value>رمز عبور باید حداقل یک حرف کوچک داشته باشد.</value>
+  </data>
+  <data name="PasswordRequiresNonAlphanumeric" xml:space="preserve">
+    <value>رمز عبور باید حداقل یک نماد داشته باشد.</value>
+  </data>
+  <data name="RegistrationFailed" xml:space="preserve">
+    <value>ثبت‌نام انجام نشد. اطلاعات را بررسی کنید.</value>
+  </data>
+  <data name="SmartCrm" xml:space="preserve">
+    <value>مرکز هوشمند ارتباط با مشتری</value>
+  </data>
+  <data name="Workspace" xml:space="preserve">
+    <value>فضای کاری</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>داشبورد</value>
+  </data>
+  <data name="Customers" xml:space="preserve">
+    <value>مشتریان</value>
+  </data>
+  <data name="Deals" xml:space="preserve">
+    <value>فرصت‌های فروش</value>
+  </data>
+  <data name="Tasks" xml:space="preserve">
+    <value>کارها</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>گزارش‌ها و تحلیل</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>مدیریت سیستم</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>تنظیمات</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="QuickAdd" xml:space="preserve">
+    <value>ایجاد سریع</value>
+  </data>
+  <data name="SearchMenu" xml:space="preserve">
+    <value>جست‌وجوی منو</value>
+  </data>
+  <data name="SearchGlobal" xml:space="preserve">
+    <value>جستجو در مشتریان، معاملات، کارها...</value>
+  </data>
+  <data name="UserManagement" xml:space="preserve">
+    <value>مدیریت کاربران</value>
+  </data>
+  <data name="SupportTickets" xml:space="preserve">
+    <value>تیکتینگ و پشتیبانی</value>
+  </data>
+  <data name="UsersPermissions" xml:space="preserve">
+    <value>کاربران و دسترسی‌ها</value>
+  </data>
+</root>

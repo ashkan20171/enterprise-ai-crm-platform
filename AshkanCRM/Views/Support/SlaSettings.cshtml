@@ -1,0 +1,22 @@
+@using System.Globalization
+@{ var stage112English = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "en"; }
+@model AshkanCRM.Models.SupportSlaSettingsViewModel
+@{
+ ViewData["Title"] = stage112English ? "SLA configuration" : "تنظیمات SLA";
+}
+<main class="container py-4" style="max-width:1050px">
+ <header class="mb-4"><h1 data-fa="تنظیمات مؤثر SLA" data-en="Effective SLA configuration">@(stage112English ? "Effective SLA configuration" : "تنظیمات مؤثر SLA")</h1>
+ <p data-fa="این صفحه تنظیمات فعال را نمایش می‌دهد؛ تغییر آن‌ها فعلاً از appsettings انجام می‌شود." data-en="Read-only view of active settings. Edit appsettings to change the policy.">@(stage112English ? "Read-only view of active settings. Edit appsettings to change the policy." : "این صفحه تنظیمات فعال را نمایش می‌دهد؛ تغییر آن‌ها فعلاً از appsettings انجام می‌شود.")</p></header>
+ <div class="row g-3">
+  <div class="col-md-6"><section class="card p-3 h-100"><h2 class="h5" data-fa="تقویم کاری" data-en="Business calendar">@(stage112English ? "Business calendar" : "تقویم کاری")</h2><dl>
+   <dt data-fa="منطقه زمانی" data-en="Time zone">@(stage112English ? "Time zone" : "منطقه زمانی")</dt><dd>@Model.TimeZone</dd>
+   <dt data-fa="ساعات فعالیت" data-en="Opening hours">@(stage112English ? "Opening hours" : "ساعات فعالیت")</dt><dd>@Model.OpeningHour:00 – @Model.ClosingHour:00</dd>
+   <dt data-fa="روزهای کاری" data-en="Working days">@(stage112English ? "Working days" : "روزهای کاری")</dt><dd>@string.Join(", ", Model.WorkingDays)</dd>
+   <dt data-fa="تعطیلات ثبت‌شده" data-en="Configured holidays">@(stage112English ? "Configured holidays" : "تعطیلات ثبت‌شده")</dt><dd>@(Model.Holidays.Length==0 ? "—" : string.Join(", ",Model.Holidays))</dd>
+  </dl></section></div>
+  <div class="col-md-6"><section class="card p-3 h-100"><h2 class="h5" data-fa="مهلت اولین پاسخ" data-en="First-response targets">@(stage112English ? "First-response targets" : "مهلت اولین پاسخ")</h2><table class="table"><thead><tr><th data-fa="اولویت" data-en="Priority">@(stage112English ? "Priority" : "اولویت")</th><th data-fa="ساعت کاری" data-en="Business hours">@(stage112English ? "Business hours" : "ساعت کاری")</th></tr></thead><tbody>
+  <tr><td>@(stage112English ? "Critical" : "بحرانی")</td><td>@Model.CriticalHours</td></tr><tr><td>@(stage112English ? "High" : "زیاد")</td><td>@Model.HighHours</td></tr><tr><td>@(stage112English ? "Medium" : "متوسط")</td><td>@Model.MediumHours</td></tr><tr><td>@(stage112English ? "Low" : "کم")</td><td>@Model.LowHours</td></tr>
+  </tbody></table></section></div>
+ </div><nav class="d-flex flex-wrap gap-3 mt-4"><a asp-action="SlaBoard" data-fa="تابلوی SLA" data-en="SLA board">@(stage112English ? "SLA board" : "تابلوی SLA")</a><a asp-action="EscalationReport" data-fa="گزارش ارجاع" data-en="Escalation report">@(stage112English ? "Escalation report" : "گزارش ارجاع")</a><a asp-action="Workspace" data-fa="میز کار" data-en="Workspace">@(stage112English ? "Workspace" : "میز کار")</a></nav>
+</main>
+@section Scripts {<script src="~/js/support-localization.js" asp-append-version="true"></script>}

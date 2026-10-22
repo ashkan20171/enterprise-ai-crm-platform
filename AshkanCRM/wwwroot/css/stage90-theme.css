@@ -1,0 +1,22 @@
+/* Stage 90: consistent design tokens for light/dark and per-user accent selection. */
+html[data-crm-accent="indigo"]{--primary:#6558e8;--primary2:#8578ff;--brand:#6558e8}
+html[data-crm-accent="teal"]{--primary:#0f766e;--primary2:#0d9488;--brand:#0f766e}
+html[data-crm-accent="amber"]{--primary:#b45309;--primary2:#d97706;--brand:#b45309}
+html[data-theme="dark"]{--bg:#101522;--surface:#1a2232;--surface2:#253044;--text:#f0f4fc;--muted:#b2bdd0;--line:#354259;--border:#354259;--soft:#253044;--shadow:0 12px 32px rgba(0,0,0,.24)}
+html[data-theme="light"]{--border:var(--line);--soft:var(--surface2)}
+html[data-theme="dark"][data-crm-accent="indigo"]{--primary:#a79cff;--primary2:#8174e8}
+html[data-theme="dark"][data-crm-accent="teal"]{--primary:#5eead4;--primary2:#0d9488}
+html[data-theme="dark"][data-crm-accent="amber"]{--primary:#fbbf24;--primary2:#d97706}
+html[data-theme="dark"] .content :is(.panel,.card,.feature-card,.goal-card,.command-card,.automation-card,.deal-card,.stats article,.launch-card,.calendar-shell){background:var(--surface);color:var(--text);border-color:var(--line)}
+html[data-theme="dark"] .content :is(input,select,textarea){background:var(--surface2);color:var(--text);border-color:var(--line)}
+html[data-theme="dark"] .content :is(th,td){border-color:var(--line)}
+html[data-theme="dark"] .content :is(.badge,.status,.success-pill){background:var(--surface2)}
+html[data-theme="dark"] .content :is(.feature-icon,.stat-icon){background:var(--surface2)}
+html[data-theme="dark"] .content :is(.table-wrap,.kanban-col){scrollbar-color:var(--line) transparent}
+html[data-theme="dark"] .content :is(input,textarea)::placeholder{color:var(--muted)}
+html[data-theme="dark"] .content :is(.chart,.calendar-head){border-color:var(--line)}
+html[data-crm-font-size="large"] .content{font-size:1.075rem;line-height:1.65}
+html[data-crm-font-size="large"] .content :is(input,select,button,td,th){font-size:1em}
+html[data-theme="dark"] :is(.primary,.sidebar .brand-mark){color:#fff}
+:where(a,button,input,select,textarea):focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){html[data-theme] .content *{scroll-behavior:auto;animation-duration:.01ms!important;transition-duration:.01ms!important}}

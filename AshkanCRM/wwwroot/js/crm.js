@@ -1,5 +1,5 @@
 const ui={
-'مرکز هوشمند ارتباط با مشتری':'Smart Customer Center','فضای کاری':'Workspace','داشبورد':'Dashboard','مرکز فرمان':'Command Center','مشتریان':'Customers','سرنخ‌ها':'Leads','فرصت‌های فروش':'Sales Pipeline','پیشنهادها':'Quotes','محصولات':'Products','کارها':'Tasks','فعالیت‌ها':'Activities','تقویم':'Calendar','پایگاه دانش':'Knowledge Base','اعلان‌ها':'Notifications','پشتیبانی':'Support','بازاریابی':'Marketing','گزارش‌ها و تحلیل':'Reports & Analytics','هوش درآمد':'Revenue Intelligence','اتوماسیون':'Automation','مدیریت':'Administration','کاربران و دسترسی‌ها':'Users & Access','ماتریس دسترسی':'Permission Matrix','مرکز امنیت':'Security Center','مدیریت داده':'Data Management','تنظیمات':'Settings','خروج':'Sign out',
+'مرکز هوشمند ارتباط با مشتری':'Smart Customer Center','فضای کاری':'Workspace','داشبورد':'Dashboard','مرکز فرمان':'Command Center','مشتریان':'Customers','سرنخ‌ها':'Leads','فرصت‌های فروش':'Sales Pipeline','پیشنهادها':'Quotes','محصولات':'Products','کارها':'Tasks','فعالیت‌ها':'Activities','تقویم':'Calendar','پایگاه دانش':'Knowledge Base','اعلان‌ها':'Notifications','پشتیبانی':'Support','تیکتینگ و پشتیبانی':'Support Tickets','بازاریابی':'Marketing','گزارش‌ها و تحلیل':'Reports & Analytics','هوش درآمد':'Revenue Intelligence','اتوماسیون':'Automation','مدیریت':'Administration','کاربران و دسترسی‌ها':'Users & Access','ماتریس دسترسی':'Permission Matrix','مرکز امنیت':'Security Center','مدیریت داده':'Data Management','تنظیمات':'Settings','خروج':'Sign out',
 'مرکز فرمان CRM':'CRM Command Center','نمای یکپارچه از ریسک‌ها، اقدامات فوری و سلامت عملیات':'Unified view of risks, urgent actions and operational health','نمای کلی کسب‌وکار':'Business overview','سلام':'Hello','امروز فرصت خوبی برای پیشبرد فروش و ساختن رابطه‌های بهتر است.':'Today is a good day to move deals forward and build stronger customer relationships.','فرصت جدید':'New deal','مشتریان فعال':'Active customers','ارزش پایپ‌لاین':'Pipeline value','فروش موفق':'Closed won','کارهای باز':'Open tasks','روند فروش':'Sales trend','پایپ‌لاین فروش':'Sales pipeline','بر اساس مرحله':'By stage','فرصت‌های اخیر':'Recent deals','آخرین تغییرات تیم فروش':'Latest sales team changes','مشاهده همه':'View all','جستجو در مشتریان، معاملات، کارها...':'Search customers, deals, tasks...','＋ ایجاد سریع':'＋ Quick create',
 'مشتری':'Customer','شرکت':'Company','مالک':'Owner','مرحله':'Stage','ارزش':'Value','احتمال':'Probability','وضعیت':'Status','عملیات':'Actions','نام':'Name','ایمیل':'Email','نقش':'Role','واحد':'Department','آخرین ورود':'Last login','فعال':'Active','ویرایش':'Edit','جزئیات':'Details','شماره':'Number','موضوع':'Subject','اولویت':'Priority','مسئول':'Assignee','سررسید':'Due date','نوع':'Type','نتیجه':'Result','منبع':'Source','امتیاز':'Score','زمان':'Time','عنوان':'Title','بخش':'Section','فایل':'File','مبلغ':'Amount','اعتبار تا':'Valid until','محصولات و خدمات':'Products & Services',
 'مدیریت سرنخ‌ها':'Lead Management','امتیازدهی، منبع جذب و وضعیت پیگیری سرنخ‌های فروش.':'Scoring, acquisition source and follow-up status for sales leads.','کل سرنخ‌ها':'Total leads','واجد شرایط':'Qualified','میانگین امتیاز':'Average score','سرنخ جدید':'New lead','صف سرنخ‌ها':'Lead queue','تماس‌ها، جلسات و ایمیل‌ها در یک Timeline واحد.':'Calls, meetings and emails in one unified timeline.','ثبت فعالیت':'Log activity','مرکز فعالیت‌ها':'Activity Center','تقویم CRM':'CRM Calendar','نمای متمرکز قرارها، تماس‌ها، جلسات و Follow-upها.':'A focused view of appointments, calls, meetings and follow-ups.','رویداد جدید':'New event','مرکز اعلان‌ها':'Notification Center','هشدارهای فروش، SLA و بازاریابی بر اساس نقش کاربر.':'Sales, SLA and marketing alerts based on the user role.','خواندن همه':'Mark all read',
@@ -11,7 +11,7 @@ const ui={
 'مدیریت ادمین':'Admin Management','داشبورد ادمین':'Admin Dashboard','تعریف کاربر':'Create User','تعریف کاربر جدید':'Create New User','مدیریت دسترسی‌ها':'Manage Permissions','دستیار هوشمند CRM':'CRM AI Copilot','خلاصه هوشمند امروز':'Today’s AI Summary','سؤال از Copilot':'Ask Copilot','اقدامات پیشنهادی ادمین':'Admin Recommended Actions','سلامت عملیات':'Operational Health','کل کاربران':'Total Users','کاربران فعال':'Active Users','حساب قفل‌شده':'Locked Accounts','نقش‌های سیستم':'System Roles','کاربران و دسترسی‌ها':'Users & Access','ردیابی فعالیت‌های حساس و تغییرات مدیریتی.':'Track sensitive activity and administrative changes.','مدیریت متمرکز کاربران، دسترسی‌ها، امنیت، داده و یکپارچه‌سازی‌ها.':'Centralized management of users, access, security, data and integrations.','تحلیل داده‌های CRM برای اولویت‌بندی فروش، ریسک، پشتیبانی و اقدام بعدی. پیشنهادها تصمیم‌یار هستند و اقدام نهایی با کاربر است.':'Analyze CRM data to prioritize sales, risk, support and next actions. Suggestions support decisions; the user remains in control.','سؤال خود را درباره داده‌های CRM بنویسید...':'Ask a question about your CRM data...','ارسال':'Send','فرصت':'Deal','سیگنال':'Signal','پایش':'Monitor','نیازمند اقدام':'Action Required','Deal Risk Radar':'Deal Risk Radar','Next Best Actions':'Next Best Actions','Ask CRM':'Ask CRM'
 };
 const originalText=new WeakMap(),originalPlaceholder=new WeakMap(),originalTitle=new WeakMap();
-let lang=localStorage.getItem('crm-lang')||'fa';
+let lang=(document.documentElement.lang||'fa').toLowerCase().startsWith('en')?'en':'fa';
 function enText(s){let lead=s.match(/^\s*/)?.[0]||'',trail=s.match(/\s*$/)?.[0]||'',v=s.trim();if(!v)return s;if(ui[v])return lead+ui[v]+trail;let out=v;Object.entries(ui).sort((a,b)=>b[0].length-a[0].length).forEach(([fa,en])=>{out=out.split(fa).join(en)});return lead+out+trail}
 function walk(root=document.body){const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);let n;while(n=w.nextNode()){if(n.parentElement?.closest('script,style,code'))continue;if(!originalText.has(n))originalText.set(n,n.nodeValue);n.nodeValue=lang==='en'?enText(originalText.get(n)):originalText.get(n)}document.querySelectorAll('[placeholder]').forEach(el=>{if(!originalPlaceholder.has(el))originalPlaceholder.set(el,el.placeholder);el.placeholder=lang==='en'?enText(originalPlaceholder.get(el)):originalPlaceholder.get(el)});document.querySelectorAll('[title]').forEach(el=>{if(!originalTitle.has(el))originalTitle.set(el,el.title);el.title=lang==='en'?enText(originalTitle.get(el)):originalTitle.get(el)})}
 function applyLang(){document.documentElement.lang=lang;document.documentElement.dir=lang==='fa'?'rtl':'ltr';document.body?.setAttribute('dir',lang==='fa'?'rtl':'ltr');walk();document.querySelectorAll('#langBtn,[data-lang-toggle]').forEach(b=>b.textContent=lang==='fa'?'EN':'FA');document.title=lang==='en'?enText(document.title):document.title.replace(/^Sign in/,'ورود').replace(/^Register/,'ثبت نام')}
@@ -45,7 +45,7 @@ Object.assign(ui, {
 'اتصال جدید':'New integration','اتصال امن سرویس‌های خارجی با Scope محدود.':'Securely connect external services with limited scopes.','ارسال رویداد Deal/Lead/Ticket به سیستم‌های خارجی.':'Send deal, lead and ticket events to external systems.','نام':'Name','آخرین استفاده':'Last used',
 'تنظیمات سامانه':'System Settings','امنیت، برند، اعلان‌ها و سیاست‌های سازمان.':'Security, branding, notifications and organizational policies.','ذخیره تغییرات':'Save changes',
 'فعال':'Active','حل شده':'Resolved','درحال بررسی':'Under review','در حال پیگیری':'In follow-up','جدید':'New','واجد شرایط':'Qualified','فوری':'Urgent','بالا':'High','متوسط':'Medium','کم':'Low','انجام شده':'Done','درحال انجام':'In progress','برنامه‌ریزی شده':'Scheduled','ارسال شده':'Sent','ماه جاری':'Current month','همین حالا':'Just now','دقیقه قبل':'minutes ago','ساعت قبل':'hour ago','روز قبل':'days ago','دیروز':'Yesterday','فردا':'Tomorrow','شنبه':'Saturday',
-'مدیر سیستم':'System Administrator','سارا احمدی':'Sara Ahmadi','علی رضایی':'Ali Rezaei','مریم کریمی':'Maryam Karimi','رضا حیدری':'Reza Heydari','نگار حسینی':'Negar Hosseini','فروش':'Sales','مدیریت':'Management','پشتیبانی':'Support','بازاریابی':'Marketing',
+'مدیر سیستم':'System Administrator','سارا احمدی':'Sara Ahmadi','علی رضایی':'Ali Rezaei','مریم کریمی':'Maryam Karimi','رضا حیدری':'Reza Heydari','نگار حسینی':'Negar Hosseini','فروش':'Sales','مدیریت':'Management','پشتیبانی':'Support','تیکتینگ و پشتیبانی':'Support Tickets','بازاریابی':'Marketing',
 'فناوری سپهر':'Sepehr Technology','راهکار نوین':'Novin Solutions','پارس داده':'Pars Data','آتیه سازان':'Atieh Sazan','ابر شرق':'Abr Shargh',
 'مرکز کنترل ادمین':'Admin Control Center','بازبینی دسترسی':'Access Review','چرخه عمر کاربران':'User Lifecycle','سلامت دسترسی':'Access Health','اقدامات مدیریتی پیشنهادی':'Recommended Admin Actions','بازبینی دوره‌ای نقش‌ها و مجوزها':'Periodic review of roles and permissions','کاربران بدون ورود اخیر':'Users without recent sign-in','مجوزهای پرریسک':'High-risk permissions','کنترل‌های پیشنهادی':'Recommended controls'
 });
@@ -84,3 +84,58 @@ Object.assign(ui,{
 'جستجوی سراسری':'Global Search','جستجوی Permission-aware در مشتریان، سرنخ‌ها و فرصت‌های فروش.':'Permission-aware search across customers, leads and deals.','پیش‌بینی درآمد بر اساس Dealهای واقعی SQL و احتمال هر مرحله.':'Revenue forecast based on persisted SQL deals and stage probability.'
 });
 if(lang==='en') walk();
+
+
+// Stage 27: bidirectional localization for mixed-language navigation and server fragments.
+(() => {
+  const terms = {
+    'AI Operations':'عملیات هوش مصنوعی','Customer Intelligence':'هوشمندی مشتریان',
+    'Next Best Action':'اقدام پیشنهادی بعدی','Integration Monitor':'پایش یکپارچه‌سازی',
+    'Team Workspace':'فضای کاری تیم','Sales Pipeline':'قیف فروش',
+    'Live Operations':'عملیات زنده','Security Operations':'عملیات امنیتی',
+    'Data Governance':'حاکمیت داده','Lead Routing':'تخصیص سرنخ',
+    'Health Center':'مرکز سلامت سامانه','Workflow Studio':'استودیوی گردش کار',
+    'API & Webhooks':'رابط برنامه‌نویسی و وب‌هوک‌ها',
+    'Open':'باز','Closed':'بسته','Pending':'در انتظار','Active':'فعال',
+    'Inactive':'غیرفعال','Save':'ذخیره','Cancel':'انصراف','Search':'جستجو',
+    'Filter':'فیلتر','Export':'خروجی','Create':'ایجاد','Edit':'ویرایش',
+    'Delete':'حذف','Details':'جزئیات','Settings':'تنظیمات',
+    'Dashboard':'داشبورد','Customers':'مشتریان','Leads':'سرنخ‌ها',
+    'Deals':'فرصت‌های فروش','Tasks':'وظایف','Notifications':'اعلان‌ها',
+    'Reports':'گزارش‌ها','Loading...':'در حال بارگذاری...'
+  };
+  Object.entries(terms).forEach(([en, fa]) => { if (typeof ui !== 'undefined' && !ui[fa]) ui[fa] = en; });
+  const originals = new WeakMap();
+  const excluded = 'script,style,code,pre,textarea,input,[contenteditable],.user-content,[data-no-translate]';
+  function localize(root) {
+    const fa = (localStorage.getItem('crm-lang') || 'fa') === 'fa';
+    const nodes = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    let node;
+    while ((node = nodes.nextNode())) {
+      if (node.parentElement?.closest(excluded)) continue;
+      if (!originals.has(node)) originals.set(node, node.nodeValue);
+      const initial = originals.get(node);
+      const trimmed = initial.trim();
+      if (!trimmed || !terms[trimmed]) continue;
+      const translated = fa ? terms[trimmed] : trimmed;
+      const next = initial.replace(trimmed, translated);
+      if (node.nodeValue !== next) node.nodeValue = next;
+    }
+    const desiredLang = fa ? 'fa' : 'en';
+    const desiredDir = fa ? 'rtl' : 'ltr';
+    if (document.documentElement.lang !== desiredLang) document.documentElement.lang = desiredLang;
+    if (document.documentElement.dir !== desiredDir) document.documentElement.dir = desiredDir;
+  }
+  let scheduled = false;
+  function update() {
+    if (scheduled) return;
+    scheduled = true;
+    queueMicrotask(() => { scheduled = false; localize(document.body); });
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    update();
+    document.getElementById('langBtn')?.addEventListener('click', () => setTimeout(update, 0));
+    document.querySelectorAll('[data-lang-toggle]').forEach(el => el.addEventListener('click', () => setTimeout(update, 0)));
+    new MutationObserver(update).observe(document.body, { childList:true, subtree:true });
+  });
+})();

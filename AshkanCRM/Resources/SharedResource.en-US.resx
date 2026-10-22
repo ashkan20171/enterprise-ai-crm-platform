@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>Sign in to your account</value>
+  </data>
+  <data name="RegisterTitle" xml:space="preserve">
+    <value>Request membership</value>
+  </data>
+  <data name="DeniedTitle" xml:space="preserve">
+    <value>Access denied</value>
+  </data>
+  <data name="DeniedDescription" xml:space="preserve">
+    <value>Your current role cannot access this page. Contact an administrator if you need access.</value>
+  </data>
+  <data name="BackDashboard" xml:space="preserve">
+    <value>Back to dashboard</value>
+  </data>
+  <data name="LoginPill" xml:space="preserve">
+    <value>✦ Next-generation CRM</value>
+  </data>
+  <data name="LoginHero" xml:space="preserve">
+    <value>Better relationships.</value>
+  </data>
+  <data name="LoginHeroEm" xml:space="preserve">
+    <value>Smarter sales.</value>
+  </data>
+  <data name="LoginDescription" xml:space="preserve">
+    <value>Manage customer relationships, opportunities and team performance in one secure workspace.</value>
+  </data>
+  <data name="CustomerView" xml:space="preserve">
+    <value>Customer view</value>
+  </data>
+  <data name="SecureAccess" xml:space="preserve">
+    <value>Secure access</value>
+  </data>
+  <data name="AccessControl" xml:space="preserve">
+    <value>Access control</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="LoginHelp" xml:space="preserve">
+    <value>Enter your account details to continue.</value>
+  </data>
+  <data name="WorkEmail" xml:space="preserve">
+    <value>Work email</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Remember" xml:space="preserve">
+    <value>Remember me</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Forgot password?</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>Sign in →</value>
+  </data>
+  <data name="DemoAccounts" xml:space="preserve">
+    <value>Demo accounts</value>
+  </data>
+  <data name="NoAccount" xml:space="preserve">
+    <value>No account?</value>
+  </data>
+  <data name="RegisterLink" xml:space="preserve">
+    <value>Request membership</value>
+  </data>
+  <data name="RegisterPill" xml:space="preserve">
+    <value>Secure • Flexible • Role-based</value>
+  </data>
+  <data name="RegisterHero" xml:space="preserve">
+    <value>Bring your team</value>
+  </data>
+  <data name="RegisterHeroEm" xml:space="preserve">
+    <value>together for customers.</value>
+  </data>
+  <data name="RegisterDescription" xml:space="preserve">
+    <value>New organizational accounts require administrator approval to ensure least-privilege access.</value>
+  </data>
+  <data name="GetStarted" xml:space="preserve">
+    <value>Get started</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="FullNamePlaceholder" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Company / department</value>
+  </data>
+  <data name="CompanyPlaceholder" xml:space="preserve">
+    <value>Organization name</value>
+  </data>
+  <data name="SubmitRequest" xml:space="preserve">
+    <value>Submit request</value>
+  </data>
+  <data name="AlreadyMember" xml:space="preserve">
+    <value>Already a member?</value>
+  </data>
+  <data name="LoginLink" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="InvalidCredentials" xml:space="preserve">
+    <value>Invalid email or password, or the account is inactive.</value>
+  </data>
+  <data name="LockedOut" xml:space="preserve">
+    <value>This account is temporarily locked.</value>
+  </data>
+  <data name="IncorrectCredentials" xml:space="preserve">
+    <value>Invalid email or password.</value>
+  </data>
+  <data name="EmailExists" xml:space="preserve">
+    <value>This email is already registered.</value>
+  </data>
+  <data name="RegistrationPending" xml:space="preserve">
+    <value>Your membership request was submitted. The account will be activated after administrator approval.</value>
+  </data>
+  <data name="DuplicateUserName" xml:space="preserve">
+    <value>This username is already in use.</value>
+  </data>
+  <data name="DuplicateEmail" xml:space="preserve">
+    <value>This email is already registered.</value>
+  </data>
+  <data name="PasswordTooShort" xml:space="preserve">
+    <value>The password is too short.</value>
+  </data>
+  <data name="PasswordRequiresDigit" xml:space="preserve">
+    <value>The password must contain a digit.</value>
+  </data>
+  <data name="PasswordRequiresUpper" xml:space="preserve">
+    <value>The password must contain an uppercase letter.</value>
+  </data>
+  <data name="PasswordRequiresLower" xml:space="preserve">
+    <value>The password must contain a lowercase letter.</value>
+  </data>
+  <data name="PasswordRequiresNonAlphanumeric" xml:space="preserve">
+    <value>The password must contain a symbol.</value>
+  </data>
+  <data name="RegistrationFailed" xml:space="preserve">
+    <value>Registration failed. Check your information.</value>
+  </data>
+  <data name="SmartCrm" xml:space="preserve">
+    <value>Smart customer relationship management</value>
+  </data>
+  <data name="Workspace" xml:space="preserve">
+    <value>Workspace</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Customers" xml:space="preserve">
+    <value>Customers</value>
+  </data>
+  <data name="Deals" xml:space="preserve">
+    <value>Deals</value>
+  </data>
+  <data name="Tasks" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Reports &amp; Analytics</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Log out</value>
+  </data>
+  <data name="QuickAdd" xml:space="preserve">
+    <value>Quick add</value>
+  </data>
+  <data name="SearchMenu" xml:space="preserve">
+    <value>Search menu</value>
+  </data>
+  <data name="SearchGlobal" xml:space="preserve">
+    <value>Search customers, deals, tasks...</value>
+  </data>
+  <data name="UserManagement" xml:space="preserve">
+    <value>Manage users</value>
+  </data>
+  <data name="SupportTickets" xml:space="preserve">
+    <value>Support tickets</value>
+  </data>
+  <data name="UsersPermissions" xml:space="preserve">
+    <value>Users &amp; Permissions</value>
+  </data>
+</root>

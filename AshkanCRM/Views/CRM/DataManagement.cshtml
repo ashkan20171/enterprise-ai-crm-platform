@@ -1,5 +1,19 @@
 @model IEnumerable<AshkanCRM.Models.ImportJob>
-@{ViewData["Title"]="Data Management";}
-<div class="page-head"><div><span class="eyebrow">DATA OPERATIONS</span><h1>مدیریت داده</h1><p>Import، کیفیت داده، Deduplication و سیاست نگهداری</p></div><button class="primary">＋ Import جدید</button></div>
-<div class="stats-grid"><div class="stat"><span>Data quality</span><b>96.8%</b><small>↑ 1.4% این ماه</small></div><div class="stat"><span>Duplicates</span><b>27</b><small>نیازمند Merge</small></div><div class="stat"><span>Missing fields</span><b>41</b><small>در 18 رکورد</small></div><div class="stat"><span>Last backup</span><b>02:00</b><small>موفق</small></div></div>
-<section class="panel"><div class="panel-title"><h3>Import history</h3></div><div class="table-wrap"><table><thead><tr><th>فایل</th><th>Entity</th><th>Owner</th><th>نتیجه</th><th>موفق</th><th>خطا</th><th>زمان</th></tr></thead><tbody>@foreach(var x in Model){<tr><td><b>@x.FileName</b></td><td>@x.Entity</td><td>@x.Owner</td><td><span class="badge good">@x.Status</span></td><td>@x.Success / @x.Total</td><td>@x.Failed</td><td>@x.Created</td></tr>}</tbody></table></div></section>
+@using System.Globalization
+@{
+    var fa = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "fa";
+    ViewData["Title"] = fa ? "مدیریت داده" : "Data Management";
+    var jobs = Model?.ToList() ?? new List<AshkanCRM.Models.ImportJob>();
+}
+<div class="page-head"><div><p class="eyebrow">DATA OPERATIONS</p><h1>@(fa ? "مدیریت داده" : "Data Management")</h1><p>@(fa ? "تاریخچه واردسازی داده و دسترسی به ابزارهای کیفیت داده" : "Import history and data quality tools")</p></div><a class="secondary" asp-controller="CRM" asp-action="AdminHub">@(fa ? "بازگشت به مدیریت" : "Back to administration")</a></div>
+<div class="stats-grid"><div class="stat"><span>@(fa ? "عملیات واردسازی ثبت‌شده" : "Recorded import jobs")</span><b>@jobs.Count</b><small>@(fa ? "براساس تاریخچه موجود" : "From available history")</small></div></div>
+<div class="grid-3">
+<a class="panel" asp-controller="CRM" asp-action="DataQuality"><h3>@(fa ? "کیفیت داده" : "Data quality")</h3><p>@(fa ? "بررسی داده‌ها" : "Inspect data quality")</p></a>
+<a class="panel" asp-controller="CRM" asp-action="DuplicateDetection"><h3>@(fa ? "موارد تکراری" : "Duplicate detection")</h3><p>@(fa ? "شناسایی موارد احتمالی تکراری" : "Identify possible duplicates")</p></a>
+<a class="panel" asp-controller="CRM" asp-action="DataGovernance"><h3>@(fa ? "حاکمیت داده" : "Data governance")</h3><p>@(fa ? "بررسی سیاست‌ها" : "Review governance policies")</p></a>
+</div>
+<section class="panel"><div class="panel-title"><h3>@(fa ? "تاریخچه واردسازی" : "Import history")</h3></div><div class="table-wrap"><table><thead><tr><th>@(fa ? "فایل" : "File")</th><th>@(fa ? "موجودیت" : "Entity")</th><th>@(fa ? "مسئول" : "Owner")</th><th>@(fa ? "وضعیت" : "Status")</th><th>@(fa ? "موفق / کل" : "Successful / Total")</th><th>@(fa ? "ناموفق" : "Failed")</th><th>@(fa ? "زمان" : "Created")</th></tr></thead><tbody>
+@if(jobs.Count == 0){<tr><td colspan="7">@(fa ? "هنوز عملیات واردسازی ثبت نشده است." : "No import jobs have been recorded yet.")</td></tr>}
+@foreach(var x in jobs){<tr><td><b>@x.FileName</b></td><td>@x.Entity</td><td>@x.Owner</td><td>@x.Status</td><td>@x.Success / @x.Total</td><td>@x.Failed</td><td>@x.Created</td></tr>}
+</tbody></table></div></section>
+<section class="panel"><p>@(fa ? "آمار کیفیت، پشتیبان‌گیری و موارد تکراری تنها زمانی باید نمایش داده شوند که از منبع واقعی محاسبه شده باشند." : "Quality, backup and duplicate metrics should only be shown when calculated from a real data source.")</p></section>

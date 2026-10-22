@@ -1,5 +1,22 @@
 @model IEnumerable<AshkanCRM.Models.LoginAuditEntity>
-@{ ViewData["Title"]="Security Operations"; }
-<div class="page-head"><div><span class="eyebrow">SECURITY • AUDIT</span><h1>Security Operations</h1><p>Login telemetry, lockout signals and traceable authentication events.</p></div><a class="chip" href="/health">Health endpoint</a></div>
-<div class="kpi-grid"><article class="kpi"><small>Successful / 24h</small><strong>@ViewBag.Success24h</strong></article><article class="kpi"><small>Failed / 24h</small><strong>@ViewBag.Failed24h</strong></article></div>
-<div class="card table-wrap"><table><thead><tr><th>User</th><th>Result</th><th>IP</th><th>Time UTC</th></tr></thead><tbody>@foreach(var x in Model){<tr><td>@x.UserName</td><td><span class="status">@(x.Succeeded?"Success":x.Result)</span></td><td>@x.IpAddress</td><td>@x.CreatedAtUtc.ToString("u")</td></tr>}</tbody></table></div>
+@using System.Globalization
+@{
+    var fa = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "fa";
+    ViewData["Title"] = fa ? "عملیات امنیتی" : "Security Operations";
+}
+<div class="page-head"><div><span class="eyebrow">@(fa ? "امنیت و ممیزی" : "SECURITY & AUDIT")</span><h1>@(fa ? "عملیات امنیتی" : "Security Operations")</h1><p>@(fa ? "رویدادهای ورود، تلاش‌های ناموفق و سابقه احراز هویت ثبت‌شده." : "Recorded login events, failed attempts and authentication history.")</p></div><a class="chip" href="/health">@(fa ? "وضعیت سرویس" : "Service health")</a></div>
+<div class="kpi-grid"><article class="kpi"><small>@(fa ? "ورود موفق / ۲۴ ساعت" : "Successful / 24h")</small><strong>@ViewBag.Success24h</strong></article><article class="kpi"><small>@(fa ? "ورود ناموفق / ۲۴ ساعت" : "Failed / 24h")</small><strong>@ViewBag.Failed24h</strong></article></div>
+<div class="card table-wrap"><table><thead><tr><th>@(fa ? "کاربر" : "User")</th><th>@(fa ? "نتیجه" : "Result")</th><th>IP</th><th>@(fa ? "زمان (UTC)" : "Time (UTC)")</th></tr></thead><tbody>
+@if (Model != null && Model.Any())
+{
+    foreach (var x in Model)
+    {
+        var result = x.Succeeded ? (fa ? "موفق" : "Success") : x.Result;
+        <tr><td>@x.UserName</td><td><span class="status">@result</span></td><td><bdi>@x.IpAddress</bdi></td><td><time dir="ltr">@x.CreatedAtUtc.ToString("u")</time></td></tr>
+    }
+}
+else
+{
+    <tr><td colspan="4">@(fa ? "رویدادی برای نمایش وجود ندارد." : "No authentication events to display.")</td></tr>
+}
+</tbody></table></div>

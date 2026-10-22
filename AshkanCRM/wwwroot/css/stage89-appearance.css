@@ -1,0 +1,12 @@
+.crm89-panel{padding:10px;margin:8px 6px 12px;border:1px solid rgba(150,166,201,.3);border-radius:12px;color:#e9eefc;background:rgba(15,25,48,.18)}
+.crm89-panel summary{cursor:pointer;font-size:13px;font-weight:700;padding:5px 0}
+.crm89-field{display:flex;flex-direction:column;gap:5px;font-size:12px;margin-top:11px}
+.crm89-field select{width:100%;padding:7px;border:1px solid #65718a;border-radius:7px;background:#20283e;color:#fff}
+.crm89-reset{margin-top:12px;width:100%;padding:7px;border-radius:7px;border:1px solid #7583a4;background:transparent;color:inherit;cursor:pointer}
+html[data-crm-accent="teal"]{--primary:#0d9488;--accent:#0d9488;--brand:#0d9488}
+html[data-crm-accent="amber"]{--primary:#d97706;--accent:#d97706;--brand:#d97706}
+html[data-crm-font-size="large"] .content{font-size:1.075rem}
+html[data-crm-font-size="large"] .sidebar nav{font-size:1.045em}
+html[data-crm-appearance="dark"] .content{color-scheme:dark}
+html[data-crm-appearance="light"] .content{color-scheme:light}
+@media(prefers-reduced-motion:reduce){.crm89-panel *{transition:none!important}}

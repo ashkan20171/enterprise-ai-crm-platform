@@ -1,0 +1,21 @@
+/* Stage 26: accessible responsive visual refinement */
+:root{--premium-focus:#38bdf8;--premium-ease:cubic-bezier(.2,.8,.2,1)}
+body{background:radial-gradient(ellipse 85% 45% at 92% -15%,rgba(99,102,241,.13),transparent),var(--bg);font-feature-settings:'ss01' on}
+.sidebar{box-shadow:10px 0 40px rgba(15,23,42,.045)}
+.content{max-width:1600px;margin-inline:auto;width:100%;padding-bottom:6rem}
+.card,.panel,.stat-card,.metric-card{border:1px solid var(--line);box-shadow:0 10px 32px rgba(20,27,54,.045);transition:transform .22s var(--premium-ease),box-shadow .22s var(--premium-ease)}
+@media(hover:hover){.card:hover,.panel:hover,.stat-card:hover,.metric-card:hover{transform:translateY(-2px);box-shadow:0 18px 45px rgba(20,27,54,.085)}}
+button,a,input,select,textarea{touch-action:manipulation}
+:where(a,button,input,select,textarea,[tabindex]):focus-visible{outline:3px solid var(--premium-focus)!important;outline-offset:3px}
+button,.primary,.chip{min-height:38px}
+input,select,textarea{max-width:100%;accent-color:var(--primary)}
+.table-wrap,.table-responsive{overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+table{border-collapse:separate;border-spacing:0}th{position:sticky;top:0;background:var(--surface);z-index:1}td,th{vertical-align:middle}
+#crm26-command{position:fixed;inset:0;background:rgba(9,16,33,.55);backdrop-filter:blur(8px);z-index:9999;display:none;align-items:flex-start;justify-content:center;padding:12vh 16px 16px}
+#crm26-command.is-open{display:flex}#crm26-command .cmd-panel{width:min(620px,100%);background:var(--surface);border:1px solid var(--line);border-radius:22px;box-shadow:0 30px 90px rgba(0,0,0,.25);padding:18px}
+#crm26-command input{width:100%;padding:15px;border:1px solid var(--line);border-radius:12px;background:var(--surface2);color:var(--text);font-size:1rem}
+#crm26-command .cmd-links{display:grid;gap:5px;max-height:50vh;overflow:auto;margin-top:12px}#crm26-command .cmd-links a{display:block;padding:12px;border-radius:10px;text-decoration:none;color:var(--text)}#crm26-command .cmd-links a:hover,#crm26-command .cmd-links a:focus-visible{background:var(--surface2)}
+.crm26-mobile-nav{display:none}
+@media(max-width:900px){.content{padding-inline:14px}.global-search{max-width:220px}.crm26-mobile-nav{display:flex;position:fixed;bottom:0;inset-inline:0;z-index:900;background:var(--surface);border-top:1px solid var(--line);justify-content:space-around;padding:8px max(8px,env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom));box-shadow:0 -8px 28px rgba(15,23,42,.08)}.crm26-mobile-nav a{color:var(--text);text-decoration:none;padding:8px 12px;font-size:12px;border-radius:10px}.crm26-mobile-nav a:focus-visible{background:var(--surface2)}}
+@media(max-width:600px){.global-search{display:none!important}.content{padding-inline:10px}.top-actions{gap:5px}dialog{max-width:calc(100vw - 20px)!important}table{min-width:620px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}

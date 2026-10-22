@@ -1,4 +1,22 @@
-@{ViewData["Title"]="Security Center";}
-<div class="page-head"><div><span class="eyebrow">SECURITY & GOVERNANCE</span><h1>مرکز امنیت</h1><p>کنترل Session، سیاست دسترسی، Audit و آمادگی سازمانی</p></div><button class="secondary">دانلود گزارش امنیتی</button></div>
-<div class="stats-grid"><div class="stat"><span>Security posture</span><b>92%</b><small>Strong</small></div><div class="stat"><span>Active sessions</span><b>14</b><small>5 کاربر</small></div><div class="stat"><span>Failed logins</span><b>3</b><small>24 ساعت اخیر</small></div><div class="stat"><span>Audit coverage</span><b>100%</b><small>Critical actions</small></div></div>
-<div class="grid-2"><section class="panel"><h3>Policy controls</h3><div class="activity"><span class="activity-icon">✓</span><div><b>Least privilege</b><p>Role-based navigation و endpoint authorization فعال است.</p></div></div><div class="activity"><span class="activity-icon">✓</span><div><b>Secure session</b><p>Cookie authentication با Access Denied و Session expiry.</p></div></div><div class="activity"><span class="activity-icon">✓</span><div><b>Audit trail</b><p>رویدادهای حساس برای بررسی مدیر نگهداری می‌شوند.</p></div></div></section><section class="panel"><h3>Security checklist</h3><p>☑ HTTPS enforcement</p><p>☑ Role-based authorization</p><p>☑ Protected admin workspace</p><p>☑ Export governance</p><p>☐ MFA provider integration</p><p>☐ External secret vault</p></section></div>
+@using System.Globalization
+@{
+    var fa = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "fa";
+    ViewData["Title"] = fa ? "مرکز امنیت" : "Security Center";
+}
+<div class="page-head">
+  <div><p class="eyebrow">SECURITY &amp; GOVERNANCE</p><h1>@(fa ? "مرکز امنیت" : "Security Center")</h1>
+  <p>@(fa ? "بررسی وضعیت دسترسی‌ها و رفتن به صفحات عملیاتی؛ شاخص‌های امنیتی تأییدنشده نمایش داده نمی‌شوند." : "Review access controls and open operational tools. Unverified security scores are intentionally not displayed.")</p></div>
+  <a class="secondary" asp-controller="CRM" asp-action="AdminHub">@(fa ? "داشبورد مدیریت" : "Admin dashboard")</a>
+</div>
+<div class="grid-3">
+  <a class="panel" asp-controller="CRM" asp-action="Sessions"><h3>@(fa ? "نشست‌های کاربران" : "User sessions")</h3><p>@(fa ? "بررسی اطلاعات نشست‌های ثبت‌شده" : "Review recorded session information")</p></a>
+  <a class="panel" asp-controller="CRM" asp-action="AuditLog"><h3>@(fa ? "گزارش رویدادها" : "Audit log")</h3><p>@(fa ? "مرور رویدادهای ثبت‌شده در سامانه" : "Inspect events recorded by the application")</p></a>
+  <a class="panel" asp-controller="CRM" asp-action="Permissions"><h3>@(fa ? "ماتریس دسترسی" : "Permission matrix")</h3><p>@(fa ? "بررسی نقش‌ها و مجوزهای تعریف‌شده" : "Review configured roles and permissions")</p></a>
+  <a class="panel" asp-controller="CRM" asp-action="AccessStudio"><h3>@(fa ? "استودیو دسترسی" : "Access studio")</h3><p>@(fa ? "مدیریت مجوزهای اختصاصی کاربران" : "Manage user-specific access grants")</p></a>
+  <a class="panel" asp-controller="CRM" asp-action="Users"><h3>@(fa ? "حساب‌های کاربری" : "User accounts")</h3><p>@(fa ? "مدیریت کاربران، نقش‌ها و رمز عبور" : "Manage accounts, roles and passwords")</p></a>
+  <a class="panel" asp-controller="CRM" asp-action="SecurityOperations"><h3>@(fa ? "عملیات امنیتی" : "Security operations")</h3><p>@(fa ? "دسترسی به ابزارهای عملیاتی امنیت" : "Open operational security tools")</p></a>
+</div>
+<section class="panel"><h2>@(fa ? "محدودیت‌های پایش" : "Monitoring limitations")</h2>
+  <p>@(fa ? "این صفحه امتیاز امنیت، تعداد ورود ناموفق یا درصد پوشش ممیزی را محاسبه نمی‌کند؛ برای نمایش چنین شاخص‌هایی باید منبع داده و روش اندازه‌گیری معتبر پیاده‌سازی شود." : "This page does not calculate a security score, failed-login count or audit coverage percentage. Those metrics require validated data sources and calculation rules.")</p>
+  <p>@(fa ? "فعال بودن MFA، HTTPS یا یکپارچه‌سازی با خزانه اسرار باید در محیط استقرار بررسی شود و صرفاً از روی این صفحه قابل تأیید نیست." : "MFA, HTTPS and secret-vault integration must be verified in the deployed environment; this page does not certify them.")</p>
+</section>
